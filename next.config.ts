@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  allowedDevOrigins: [
+    `${process.env.REPLIT_DEV_DOMAIN}`,
+    "*.replit.dev",
+    "*.janeway.replit.dev",
+  ],
 };
 
 export default nextConfig;
