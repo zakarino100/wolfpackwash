@@ -16,7 +16,7 @@ export function Header() {
             priority
           />
           <span className="leading-tight">
-            <span className="block text-[11px] text-amber-300/80">Wolf Pack Wash</span>
+            <span className="block text-[11px] text-white/80">Wolf Pack Wash</span>
             <span className="block text-white">Exterior Cleaning</span>
           </span>
         </Link>
@@ -38,7 +38,7 @@ export function Header() {
           </Link>
           <Link
             href={siteConfig.primaryCta.href}
-            className="inline-flex rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-black transition hover:bg-amber-300"
+            className="inline-flex rounded-full bg-[#C81920] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#a8141a]"
           >
             {siteConfig.primaryCta.label}
           </Link>

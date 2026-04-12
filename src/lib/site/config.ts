@@ -19,7 +19,7 @@ export const siteConfig = {
   },
   heroVideo: {
     src: "https://wolfpackwashnc.com/wp-content/uploads/2025/05/Scene-4-Crew-at-Work-Shot-5.mp4",
-    poster: "/images/hero-poster.jpg",
+    poster: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80",
   },
   nav: [
     { label: "Home", href: "/" },

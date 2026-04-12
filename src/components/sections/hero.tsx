@@ -13,7 +13,7 @@ export function Hero() {
         transition={{ duration: 1.2, ease: "easeOut" }}
         className="pointer-events-none absolute inset-0 z-20"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.22),transparent_26%),radial-gradient(circle_at_78%_18%,rgba(255,255,255,0.16),transparent_22%),radial-gradient(circle_at_50%_0%,rgba(70,180,255,0.22),transparent_34%)] blur-2xl" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(200,25,32,0.22),transparent_26%),radial-gradient(circle_at_78%_18%,rgba(200,25,32,0.12),transparent_22%),radial-gradient(circle_at_50%_0%,rgba(200,25,32,0.18),transparent_34%)] blur-2xl" />
       </motion.div>
 
       <div className="absolute inset-0">
@@ -30,7 +30,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black" />
       </div>
 
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-28 bg-[linear-gradient(180deg,rgba(98,197,255,0.35),rgba(98,197,255,0.06),transparent)] blur-2xl" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-28 bg-[linear-gradient(180deg,rgba(200,25,32,0.25),rgba(200,25,32,0.06),transparent)] blur-2xl" />
 
       <div className="relative mx-auto flex min-h-[78svh] w-full max-w-7xl items-end px-4 pb-12 pt-24 sm:px-6 sm:pb-16 lg:items-center lg:px-8">
         <motion.div
@@ -39,7 +39,7 @@ export function Hero() {
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
           className="max-w-3xl"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-amber-300 sm:text-sm">
+          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#C81920] sm:text-sm">
             Exterior cleaning that actually moves the needle
           </p>
           <h1 className="mt-4 text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
@@ -52,7 +52,7 @@ export function Hero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href={siteConfig.primaryCta.href}
-              className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-black transition hover:bg-amber-300"
+              className="inline-flex items-center justify-center rounded-full bg-[#C81920] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#a8141a]"
             >
               {siteConfig.primaryCta.label}
             </Link>
