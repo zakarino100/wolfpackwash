@@ -8,6 +8,7 @@ export default function Page() {
       title={pageContent.driveway.title}
       description={pageContent.driveway.description}
       sourcePage="/driveway-pressure-washing"
+      image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80"
       bullets={[
         'Treat driveway as a fast visual win.',
         'Support house wash bundle framing naturally.',

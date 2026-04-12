@@ -8,6 +8,7 @@ export default function Page() {
       title={pageContent.residential.title}
       description={pageContent.residential.description}
       sourcePage="/residential"
+      image="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&q=80"
       bullets={[
         'Sell convenience, speed, and a visibly better-looking property.',
         'Tie house washing, windows, gutters, and concrete into one ecosystem.',

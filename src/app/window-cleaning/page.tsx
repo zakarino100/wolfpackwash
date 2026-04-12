@@ -8,10 +8,11 @@ export default function Page() {
       title={pageContent.windowCleaning.title}
       description={pageContent.windowCleaning.description}
       sourcePage="/window-cleaning"
+      image="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=1600&q=80"
       bullets={[
-        'Sell the visual result and streak-free finish.',
-        'Position route scheduling as a smart value move.',
-        'Support add-on logic without making the initial quote feel heavy.',
+        'Interior and exterior glass cleaned streak-free every time.',
+        'Natural light comes back immediately — homeowners notice right away.',
+        'Easy to bundle with house washing for a full exterior refresh.',
       ]}
     />
   );

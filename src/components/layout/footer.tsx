@@ -9,11 +9,11 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <Image src="/logos/wolfpack_wash_shield_logo_transparent.svg" alt="Wolf Pack Wash logo" width={56} height={56} className="h-14 w-14 object-contain" />
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Wolf Pack Wash</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/80">Wolf Pack Wash</p>
           </div>
           <h2 className="mt-3 text-2xl font-semibold">Real results, fast response, clean systems.</h2>
           <p className="mt-3 max-w-xl text-sm text-white/70">
-            Mobile-first exterior cleaning website rebuild focused on speed, trust, and lead conversion.
+            Professional exterior cleaning across the Triangle — house washing, windows, gutters, concrete, lighting, and recurring care.
           </p>
         </div>
         <div>

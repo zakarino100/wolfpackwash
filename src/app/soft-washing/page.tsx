@@ -8,6 +8,7 @@ export default function Page() {
       title={pageContent.softWashing.title}
       description={pageContent.softWashing.description}
       sourcePage="/soft-washing"
+      image="https://images.unsplash.com/photo-1505409628601-edc9af17fda6?w=1600&q=80"
       bullets={[
         'Explain the process in plain homeowner language.',
         'Show why soft washing is safer than blasting siding with pressure.',

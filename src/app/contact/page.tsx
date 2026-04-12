@@ -8,6 +8,7 @@ export default function Page() {
       title={pageContent.contact.title}
       description={pageContent.contact.description}
       sourcePage="/contact"
+      image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80"
       bullets={[
         'This should be one of the strongest pure conversion pages on the site.',
         'Keep the quote form fast and mobile-friendly.',

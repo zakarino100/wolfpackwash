@@ -8,10 +8,11 @@ export default function Page() {
       title={pageContent.houseWashing.title}
       description={pageContent.houseWashing.description}
       sourcePage="/house-washing"
+      image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
       bullets={[
-        'This page should support both SEO and paid-media conversion.',
-        'Use strong proof and clear package framing.',
-        'Keep the quote path frictionless and obvious.',
+        'Soft-wash process is safe for all siding types including vinyl, brick, and wood.',
+        'Removes pollen, mildew, algae, and grime — not just surface dirt.',
+        'Fast turnaround with clear before-and-after results every time.',
       ]}
     />
   );

@@ -8,6 +8,7 @@ export default function Page() {
       title={pageContent.gallery.title}
       description={pageContent.gallery.description}
       sourcePage="/gallery"
+      image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
       bullets={[
         'Organize by service so the content sells instead of overwhelming.',
         'Use before-and-after visuals as primary trust assets.',

@@ -8,6 +8,7 @@ export default function Page() {
       title={pageContent.services.title}
       description={pageContent.services.description}
       sourcePage="/services"
+      image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
       bullets={[
         'Guide users into the exact service they need without friction.',
         'Create strong internal links for SEO and user flow.',

@@ -8,10 +8,11 @@ export default function Page() {
       title={pageContent.gutterCleaning.title}
       description={pageContent.gutterCleaning.description}
       sourcePage="/gutter-cleaning"
+      image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80"
       bullets={[
-        'Lead with protection and overflow prevention.',
-        'Make it easy to bundle with house wash or recurring care.',
-        'Keep the page trust-heavy and simple to act on.',
+        'Prevents water overflow, fascia damage, and foundation erosion.',
+        'Pairs naturally with house washing and the exterior care plan.',
+        'Fast, low-mess service that protects your home year-round.',
       ]}
     />
   );

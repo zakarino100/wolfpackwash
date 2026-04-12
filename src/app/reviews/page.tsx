@@ -8,6 +8,7 @@ export default function Page() {
       title={pageContent.reviews.title}
       description={pageContent.reviews.description}
       sourcePage="/reviews"
+      image="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80"
       bullets={[
         'Stack strong trust, proof, and local validation.',
         'Keep the reading experience light and mobile-friendly.',

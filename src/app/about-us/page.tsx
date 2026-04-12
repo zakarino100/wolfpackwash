@@ -8,6 +8,7 @@ export default function Page() {
       title={pageContent.about.title}
       description={pageContent.about.description}
       sourcePage="/about-us"
+      image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80"
       bullets={[
         'Lead with trust, local credibility, and responsiveness.',
         'Keep the tone direct, professional, and easy to believe.',

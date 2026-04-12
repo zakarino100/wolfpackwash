@@ -8,6 +8,7 @@ export default function Page() {
       title={pageContent.holidayLights.title}
       description={pageContent.holidayLights.description}
       sourcePage="/holiday-lights-installation"
+      image="https://images.unsplash.com/photo-1543589923-c8a5f239b5f6?w=1600&q=80"
       bullets={[
         'Keep the page focused on seasonal urgency and professional install.',
         'Use this as both SEO protection and seasonal paid-media destination if needed.',

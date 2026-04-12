@@ -65,7 +65,7 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
       }
 
       setStatus("success");
-      setMessage("Quote request sent. We’ll follow up fast.");
+      setMessage("Quote request sent. We'll follow up fast.");
       setForm(initialState);
     } catch {
       setStatus("error");
@@ -76,7 +76,7 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
   return (
     <div className="rounded-[2rem] border border-white/10 bg-white/5 p-5 sm:p-6">
       <div className="mb-5">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Fast quote</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">Fast quote</p>
         <h3 className="mt-2 text-2xl font-semibold text-white">{title}</h3>
         <p className="mt-2 text-sm leading-6 text-white/65">
           Mobile-first form, page attribution built in, and every lead routed into Healthy Home.
@@ -104,7 +104,7 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
                   className={[
                     "rounded-2xl border px-4 py-3 text-left text-sm transition",
                     active
-                      ? "border-amber-300 bg-amber-300/10 text-white"
+                      ? "border-[#C81920] bg-[#C81920]/10 text-white"
                       : "border-white/10 bg-black/30 text-white/70 hover:border-white/25",
                   ].join(" ")}
                 >
@@ -120,7 +120,7 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
           <select
             value={form.frequency}
             onChange={(event) => setForm((c) => ({ ...c, frequency: event.target.value }))}
-            className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-300"
+            className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-[#C81920]"
           >
             <option value="">Select frequency</option>
             {frequencyOptions.map((option) => (
@@ -142,7 +142,7 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
             value={form.notes ?? ""}
             onChange={(event) => setForm((c) => ({ ...c, notes: event.target.value }))}
             rows={compact ? 3 : 4}
-            className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-300"
+            className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-[#C81920]"
             placeholder="Anything we should know about the property, urgency, or service needs?"
           />
         </div>
@@ -150,7 +150,7 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
         <button
           type="submit"
           disabled={!canSubmit || status === "submitting"}
-          className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-5 py-3 text-sm font-semibold text-black transition hover:bg-amber-300 disabled:cursor-not-allowed disabled:opacity-60"
+          className="inline-flex w-full items-center justify-center rounded-full bg-[#C81920] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#a8141a] disabled:cursor-not-allowed disabled:opacity-60"
         >
           {status === "submitting" ? "Submitting..." : "Get Free Quote"}
         </button>
@@ -174,7 +174,7 @@ function Input({ label, value, onChange }: InputProps) {
       <input
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-300"
+        className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-[#C81920]"
       />
     </div>
   );
