@@ -5,7 +5,7 @@ outputs = []
 id = "XzDi6cwjj9850WXv6SODo"
 uri = "file://public/service-images/house-washing.png"
 type = "image"
-title = "house washing Raleigh NC"
+title = "house wash pollen grime before after"
 
 [[generated]]
 id = "-YOMTG7aVbff1hvkdya5s"
@@ -17,7 +17,7 @@ title = "roof washing soft wash shingles"
 id = "6XiV1OdwiUYBtBEQk0Kiy"
 uri = "file://public/service-images/window-cleaning.png"
 type = "image"
-title = "window cleaning residential home"
+title = "window cleaning streak-free sparkling glass"
 
 [[generated]]
 id = "4YEwmnnLmKdPzUYb3JvmA"
@@ -35,7 +35,7 @@ title = "deck pressure washing wood cleaning"
 id = "BAsm5VMGA2b-zpEJJBPei"
 uri = "file://public/service-images/concrete-cleaning.png"
 type = "image"
-title = "driveway pressure washing concrete"
+title = "concrete driveway before after stains removed"
 
 [[generated]]
 id = "eFcpomJ_JNAiYKGFS_rTD"
@@ -47,7 +47,7 @@ title = "holiday Christmas lights home exterior"
 id = "bLXN08ybR8x71FXNMy4uU"
 uri = "file://public/service-images/permanent-lighting.png"
 type = "image"
-title = "permanent RGB LED exterior lighting home"
+title = "permanent LED roofline lighting red vivid"
 
 [[generated]]
 id = "jtAIZo1nunrKusA9k_Lqw"
@@ -132,3 +132,33 @@ id = "Eisoya62eZN7vzAeshvqu"
 uri = "file://public/hero-images/fence-pressure-washing.png"
 type = "image"
 title = "fence pressure washing wood cleaning"
+
+[[generated]]
+id = "N4gUZosqNQQdNIO2mj22r"
+uri = "file://public/gallery-images/house-wash.png"
+type = "image"
+title = "house wash gallery portrait"
+
+[[generated]]
+id = "9o07WZMFn8lMp3DwUnRgc"
+uri = "file://public/gallery-images/window-cleaning.png"
+type = "image"
+title = "window cleaning streak-free gallery"
+
+[[generated]]
+id = "Bu83JUaG-Disk-kOCORsS"
+uri = "file://public/gallery-images/driveway-wash.png"
+type = "image"
+title = "driveway pressure wash stains lifted"
+
+[[generated]]
+id = "bmdOVEQu9G2VhOM1rJBu1"
+uri = "file://public/gallery-images/permanent-lighting.png"
+type = "image"
+title = "permanent lighting red roofline curb appeal"
+
+[[generated]]
+id = "5LwP6-_mFDRgW2S603DM-"
+uri = "file://public/images/hero-poster.png"
+type = "image"
+title = "hero poster crew at work NC home"

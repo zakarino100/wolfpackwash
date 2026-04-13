@@ -5,19 +5,19 @@ import { Reveal } from "@/components/ui/reveal";
 const cards = [
   {
     label: "House wash - pollen and grime gone",
-    img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    img: "/gallery-images/house-wash.png",
   },
   {
     label: "Window cleaning - streak-free finish",
-    img: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80",
+    img: "/gallery-images/window-cleaning.png",
   },
   {
     label: "Driveway pressure wash - stains lifted",
-    img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+    img: "/gallery-images/driveway-wash.png",
   },
   {
     label: "Permanent lighting - year-round curb appeal",
-    img: "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=800&q=80",
+    img: "/gallery-images/permanent-lighting.png",
   },
 ];
 

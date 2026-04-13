@@ -20,7 +20,7 @@ export const siteConfig = {
   heroVideo: {
     src: "https://wolfpackwashnc.com/wp-content/uploads/2025/05/Scene-4-Crew-at-Work-Shot-5.mp4",
     mobileSrc: "https://wolfpackwashnc.com/wp-content/uploads/2025/05/Scene-4-Crew-at-Work-Shot-5.mp4",
-    poster: "/images/hero-poster.jpg",
+    poster: "/images/hero-poster.png",
   },
   nav: [
     { label: "Home", href: "/" },
