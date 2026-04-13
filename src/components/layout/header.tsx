@@ -12,7 +12,7 @@ export function Header() {
             alt="Wolf Pack Wash logo"
             width={68}
             height={68}
-            className="h-14 w-14 object-contain drop-shadow-[0_10px_24px_rgba(0,0,0,0.28)] sm:h-16 sm:w-16"
+            className="h-14 w-14 object-contain [filter:drop-shadow(0_0_8px_rgba(255,255,255,0.18))_drop-shadow(0_0_2px_rgba(255,255,255,0.30))] sm:h-16 sm:w-16"
             priority
           />
           <span className="leading-tight">
