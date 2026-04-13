@@ -5,7 +5,7 @@ outputs = []
 id = "XzDi6cwjj9850WXv6SODo"
 uri = "file://public/service-images/house-washing.png"
 type = "image"
-title = "house wash pollen grime before after"
+title = "realistic house washing service card"
 
 [[generated]]
 id = "-YOMTG7aVbff1hvkdya5s"
@@ -35,7 +35,7 @@ title = "deck pressure washing wood cleaning"
 id = "BAsm5VMGA2b-zpEJJBPei"
 uri = "file://public/service-images/concrete-cleaning.png"
 type = "image"
-title = "concrete driveway before after stains removed"
+title = "realistic concrete cleaning service card"
 
 [[generated]]
 id = "eFcpomJ_JNAiYKGFS_rTD"
@@ -137,7 +137,7 @@ title = "fence pressure washing wood cleaning"
 id = "N4gUZosqNQQdNIO2mj22r"
 uri = "file://public/gallery-images/house-wash.png"
 type = "image"
-title = "house wash gallery portrait"
+title = "realistic house wash soft washing portrait"
 
 [[generated]]
 id = "9o07WZMFn8lMp3DwUnRgc"
@@ -149,7 +149,7 @@ title = "window cleaning streak-free gallery"
 id = "Bu83JUaG-Disk-kOCORsS"
 uri = "file://public/gallery-images/driveway-wash.png"
 type = "image"
-title = "driveway pressure wash stains lifted"
+title = "realistic driveway pressure washing portrait"
 
 [[generated]]
 id = "bmdOVEQu9G2VhOM1rJBu1"
