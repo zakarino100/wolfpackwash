@@ -168,7 +168,7 @@ export function Hero() {
         >
           <CityTicker />
           <h1 className="mt-4 text-5xl font-semibold leading-[1.1] text-white sm:text-6xl lg:text-7xl">
-            The Triangle's Best Softwash Team.
+            Most Trusted in the Triangle.
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-7 text-white/85">
             House washing, windows, gutters, concrete, and lighting - done right, every time. Fast quote, same-day response.
