@@ -16,13 +16,8 @@ export function Header() {
             priority
           />
           <span className="leading-tight">
-<<<<<<< HEAD
-            <span className="block text-[11px] text-white/80">Wolf Pack Wash</span>
-            <span className="block text-white">Exterior Cleaning</span>
-=======
             <span className="block text-[13px] font-bold tracking-[0.22em] text-white sm:text-[14px]">Wolf Pack Wash</span>
             <span className="block text-[9px] tracking-[0.28em] text-sky-200/75 sm:text-[10px]">Exterior Cleaning</span>
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
           </span>
         </Link>
 
