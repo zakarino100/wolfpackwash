@@ -12,24 +12,27 @@ export default function Page() {
       title={pageContent.contact.title}
       description={pageContent.contact.description}
       sourcePage="/contact"
-      image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80"
+      image="/hero-images/contact.png"
       bullets={[
-        'This should be one of the strongest pure conversion pages on the site, not a generic contact-afterthought page.',
-        'Keep the quote form fast, mobile-friendly, and clear enough that the homeowner knows what happens next.',
-        'Support both call-now visitors and form-first visitors without making either path feel second-class.',
+        'Fill out the quick form below and we\'ll get back to you the same day with pricing and availability - no waiting, no runaround.',
+        'Prefer to talk it through? Call us directly and we can scope the job, answer questions, and lock in a date on the spot.',
+        'We serve Raleigh, Cary, Apex, Holly Springs, Morrisville, Fuquay-Varina, Garner, and the broader Triangle area.',
       ]}
       steps={[
         {
           title: 'Tell us what you need',
-          body: 'Keep the form focused on the information that helps move the quote forward, not a bunch of unnecessary friction.',
+          body: 'Fill out the quick form with your service, address, and any details about the job. Takes less than two minutes.',
+          image: '/step-images/choose-service.png',
         },
         {
           title: 'We follow up fast',
-          body: 'Set the expectation for quick communication and a clear next step so the lead feels handled, not dumped into a void.',
+          body: 'Most requests get a same-day response with clear pricing and available scheduling - no waiting, no callbacks that go nowhere.',
+          image: '/step-images/get-quote.png',
         },
         {
-          title: 'Lock in the job',
-          body: 'Make the finish line obvious: quote approved, date set, and the property on the way to looking better.',
+          title: 'Lock in the date',
+          body: 'Approve the quote, pick a date, and we handle the rest. Show up day-of to a crew that\'s on time and ready to work.',
+          image: '/step-images/crew-arrives.png',
         },
       ]}
     />
