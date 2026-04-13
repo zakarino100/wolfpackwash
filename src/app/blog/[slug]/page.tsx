@@ -20,7 +20,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   return (
     <article className="bg-[#07111b] py-20 text-white sm:py-28">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">{post.category}</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">{post.category}</p>
         <h1 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">{post.title}</h1>
         <p className="mt-5 max-w-3xl text-base leading-8 text-white/78">{post.description}</p>
         <div className="mt-6 flex flex-wrap gap-4 text-xs uppercase tracking-[0.24em] text-white/45">

@@ -65,7 +65,7 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
       }
 
       setStatus("success");
-      setMessage("Quote request sent. We’ll follow up fast.");
+      setMessage("Quote request sent. We'll follow up fast.");
       setForm(initialState);
     } catch {
       setStatus("error");
@@ -75,14 +75,14 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
 
   return (
     <div className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.04))] p-5 shadow-[0_30px_80px_rgba(0,0,0,0.24)] sm:p-6">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.7),transparent)] opacity-70" />
-      <div className="pointer-events-none absolute -left-20 top-0 h-40 w-40 rounded-full bg-sky-300/12 blur-3xl transition duration-700 group-hover:bg-sky-300/18" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.5),transparent)] opacity-70" />
+      <div className="pointer-events-none absolute -left-20 top-0 h-40 w-40 rounded-full bg-[#C81920]/8 blur-3xl transition duration-700 group-hover:bg-[#C81920]/12" />
 
       <div className="relative mb-5">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Fast quote</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">Fast quote</p>
         <h3 className="mt-2 text-2xl font-semibold text-white">{title}</h3>
         <p className="mt-2 text-sm leading-6 text-white/65">
-          Mobile-first form, page attribution built in, and every lead routed into Healthy Home.
+          Fill this out and we'll get back to you the same day with pricing and availability.
         </p>
       </div>
 
@@ -107,11 +107,11 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
                   className={[
                     "relative overflow-hidden rounded-2xl border px-4 py-3 text-left text-sm transition duration-200 active:scale-[0.985]",
                     active
-                      ? "border-amber-300 bg-amber-300/12 text-white shadow-[0_0_0_1px_rgba(252,211,77,0.16)]"
+                      ? "border-[#C81920] bg-[#C81920]/10 text-white shadow-[0_0_0_1px_rgba(200,25,32,0.20)]"
                       : "border-white/10 bg-black/30 text-white/70 hover:border-white/25 hover:bg-white/[0.04]",
                   ].join(" ")}
                 >
-                  <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.6),transparent)] opacity-60" />
+                  <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.4),transparent)] opacity-60" />
                   {service}
                 </button>
               );
@@ -124,7 +124,7 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
           <select
             value={form.frequency}
             onChange={(event) => setForm((c) => ({ ...c, frequency: event.target.value }))}
-            className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-300 focus:bg-white/[0.04]"
+            className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-[#C81920] focus:bg-white/[0.04]"
           >
             <option value="">Select frequency</option>
             {frequencyOptions.map((option) => (
@@ -146,15 +146,15 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
             value={form.notes ?? ""}
             onChange={(event) => setForm((c) => ({ ...c, notes: event.target.value }))}
             rows={compact ? 3 : 4}
-            className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-300 focus:bg-white/[0.04]"
-            placeholder="Anything we should know about the property, urgency, or service needs?"
+            className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-[#C81920] focus:bg-white/[0.04]"
+            placeholder="Any details about your property or what you need done?"
           />
         </div>
 
         <button
           type="submit"
           disabled={!canSubmit || status === "submitting"}
-          className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-5 py-3 text-sm font-semibold text-black shadow-[0_16px_40px_rgba(245,158,11,0.22)] transition duration-200 hover:bg-amber-300 hover:shadow-[0_20px_48px_rgba(245,158,11,0.28)] active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-60"
+          className="inline-flex w-full items-center justify-center rounded-full bg-[#C81920] px-5 py-3 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(200,25,32,0.30)] transition duration-200 hover:bg-[#a8141a] hover:shadow-[0_20px_48px_rgba(200,25,32,0.38)] active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-60"
         >
           {status === "submitting" ? "Submitting..." : "Get Free Quote"}
         </button>
@@ -178,7 +178,7 @@ function Input({ label, value, onChange }: InputProps) {
       <input
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-300 focus:bg-white/[0.04]"
+        className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-[#C81920] focus:bg-white/[0.04]"
       />
     </div>
   );

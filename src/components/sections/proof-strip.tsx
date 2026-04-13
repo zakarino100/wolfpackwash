@@ -1,10 +1,10 @@
 import { Reveal } from "@/components/ui/reveal";
 
 const items = [
-  "Fast quote turnaround",
-  "Clear communication from quote to completion",
-  "House washing, windows, gutters, concrete, and lighting",
-  "Built to convert on mobile without feeling cheap",
+  "Same-day quote response on most requests",
+  "Serving Raleigh, Cary, Apex, Holly Springs & the Triangle",
+  "House washing, windows, gutters, concrete & lighting",
+  "100% satisfaction guaranteed on every job",
 ];
 
 export function ProofStrip() {
