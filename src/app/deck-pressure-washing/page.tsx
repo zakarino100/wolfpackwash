@@ -23,7 +23,7 @@ export default function Page() {
         {
           title: 'Get a fast, free quote',
           body: 'Tell us the approximate size and material of your deck. We\'ll respond the same day with pricing and available scheduling.',
-          image: '/step-images/deck.png',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'We wash and restore the surface',

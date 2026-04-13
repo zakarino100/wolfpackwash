@@ -23,7 +23,7 @@ export default function Page() {
         {
           title: 'Request your holiday lighting quote',
           body: 'Book early to lock in your install date. We\'ll discuss your home, the look you want, and the full scope of the installation.',
-          image: '/step-images/holiday-lights.png',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'We design and install everything professionally',
@@ -40,7 +40,7 @@ export default function Page() {
         { src: '/step-images/holiday-lights.png', alt: 'Professional holiday light installation on home in Raleigh NC' },
         { src: '/step-images/holiday-lights.png', alt: 'Christmas lighting installation - Triangle area home' },
         { src: '/step-images/perm-lighting.png', alt: 'Holiday lighting on roofline - Cary NC' },
-        { src: 'https://images.unsplash.com/photo-1513031300226-c8fb12de9ade?w=800&q=80', alt: 'Professional holiday lighting install - Wake County NC' },
+        { src: '/step-images/get-quote.png', alt: 'Professional holiday lighting install - Wake County NC' },
       ]}
       faqs={[
         {

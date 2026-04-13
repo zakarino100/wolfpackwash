@@ -23,7 +23,7 @@ export default function Page() {
         {
           title: 'Choose the plan that fits your home',
           body: 'We\'ll walk through your property\'s needs and recommend the right tier - whether you want basic annual maintenance or full-coverage recurring care.',
-          image: '/step-images/clean-result.png',
+          image: '/step-images/choose-service.png',
         },
         {
           title: 'We schedule and handle everything',

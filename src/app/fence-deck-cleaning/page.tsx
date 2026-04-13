@@ -33,7 +33,7 @@ export default function Page() {
         {
           title: 'Your entire outdoor space looks like it belongs together',
           body: 'Clean fence, clean deck - the whole backyard feels restored and usable again. No more avoiding the space because it looks rough or feels slippery.',
-          image: '/step-images/deck.png',
+          image: '/step-images/clean-result.png',
         },
       ]}
       gallery={[

@@ -23,7 +23,7 @@ export default function Page() {
         {
           title: 'Request a fast quote',
           body: 'Give us details about your driveway size and any specific staining concerns. We respond the same day with pricing and scheduling.',
-          image: '/step-images/concrete.png',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'We treat and pressure wash the surface',

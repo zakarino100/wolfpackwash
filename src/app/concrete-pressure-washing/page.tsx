@@ -23,7 +23,7 @@ export default function Page() {
         {
           title: 'Request your quote',
           body: 'Tell us which surfaces need cleaning - driveway, walkways, patio, or all three. We\'ll get back to you the same day with pricing.',
-          image: '/step-images/concrete.png',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'We treat and pressure wash the surface',
