@@ -32,8 +32,8 @@ function CityTicker() {
   }, []);
 
   return (
-    <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.32em] text-[#C81920] sm:text-sm">
-      <span className="opacity-60">Serving</span>
+    <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.32em] sm:text-sm">
+      <span className="text-white/60">Serving</span>
       <span className="relative inline-flex h-[1.3em] w-[200px] overflow-hidden align-bottom">
         <AnimatePresence mode="wait">
           <motion.span
@@ -42,7 +42,7 @@ function CityTicker() {
             animate={{ opacity: 1, y: "0%" }}
             exit={{ opacity: 0, y: "-60%" }}
             transition={{ duration: 0.32, ease: "easeInOut" }}
-            className="absolute bottom-0 left-0 whitespace-nowrap"
+            className="absolute bottom-0 left-0 whitespace-nowrap text-white"
           >
             {cities[index]}
           </motion.span>
