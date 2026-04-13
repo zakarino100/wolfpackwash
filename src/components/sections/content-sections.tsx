@@ -28,7 +28,7 @@ export function ServiceHighlights() {
   ];
 
   return (
-    <section className="bg-black py-16 text-white sm:py-20">
+    <section className="bg-[#07111b] py-16 text-white sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="max-w-2xl">
@@ -42,7 +42,14 @@ export function ServiceHighlights() {
         <div className="mt-8 grid gap-4 lg:grid-cols-2">
           {items.map((item, index) => (
             <Reveal key={item.title} delay={index * 0.08}>
+<<<<<<< HEAD
               <Link href={item.href} className="block rounded-[2rem] border border-white/10 bg-white/5 p-6 transition hover:border-[#C81920]/40 hover:bg-white/[0.07]">
+=======
+              <Link
+                href={item.href}
+                className="block rounded-[2rem] border border-white/10 bg-white/[0.05] p-6 shadow-[0_22px_60px_rgba(0,0,0,0.16)] transition duration-200 hover:-translate-y-0.5 hover:border-amber-300/40 hover:bg-white/[0.07]"
+              >
+>>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
                 <h3 className="text-2xl font-semibold">{item.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-white/70">{item.body}</p>
               </Link>
@@ -56,8 +63,8 @@ export function ServiceHighlights() {
 
 export function ConversionBand() {
   return (
-    <section className="bg-neutral-950 py-16 text-white sm:py-20">
-      <div className="mx-auto grid max-w-7xl gap-8 rounded-[2rem] border border-white/10 bg-white/[0.04] px-6 py-8 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+    <section className="bg-[#0a1520] py-16 text-white sm:py-20">
+      <div className="mx-auto grid max-w-7xl gap-8 rounded-[2rem] border border-white/10 bg-white/[0.04] px-6 py-8 shadow-[0_28px_80px_rgba(0,0,0,0.18)] sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <Reveal>
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">Why it converts</p>
@@ -81,8 +88,13 @@ export function ConversionBand() {
 
 export function CtaBand() {
   return (
+<<<<<<< HEAD
     <section className="bg-black py-16 text-white sm:py-20">
       <div className="mx-auto max-w-7xl rounded-[2rem] border border-[#C81920]/20 bg-[linear-gradient(135deg,rgba(200,25,32,0.18),rgba(255,255,255,0.03))] px-6 py-10 text-center sm:px-8">
+=======
+    <section className="bg-[#07111b] py-16 text-white sm:py-20">
+      <div className="mx-auto max-w-7xl rounded-[2rem] border border-amber-300/20 bg-[linear-gradient(135deg,rgba(200,25,32,0.18),rgba(255,255,255,0.03))] px-6 py-10 text-center shadow-[0_28px_80px_rgba(0,0,0,0.18)] sm:px-8">
+>>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
         <Reveal>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">Ready when you are</p>
           <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Get the quote, lock the date, and keep the property looking sharp.</h2>
@@ -90,10 +102,20 @@ export function CtaBand() {
             Use the quick quote flow for pricing, route scheduling, and recurring-plan conversations without dragging the process out.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+<<<<<<< HEAD
             <Link href={siteConfig.primaryCta.href} className="inline-flex rounded-full bg-[#C81920] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#a8141a]">
+=======
+            <Link
+              href={siteConfig.primaryCta.href}
+              className="inline-flex rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-black shadow-[0_16px_40px_rgba(245,158,11,0.22)] transition duration-200 hover:bg-amber-300 hover:shadow-[0_20px_48px_rgba(245,158,11,0.28)] active:scale-[0.99]"
+            >
+>>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
               {siteConfig.primaryCta.label}
             </Link>
-            <Link href={siteConfig.secondaryCta.href} className="inline-flex rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/30 hover:bg-white/5">
+            <Link
+              href={siteConfig.secondaryCta.href}
+              className="inline-flex rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:border-white/30 hover:bg-white/5 active:scale-[0.99]"
+            >
               {siteConfig.secondaryCta.label}
             </Link>
           </div>
@@ -105,7 +127,7 @@ export function CtaBand() {
 
 export function ContactSection({ sourcePage = "/" }: { sourcePage?: string }) {
   return (
-    <section className="bg-black py-16 text-white sm:py-20">
+    <section className="bg-[#07111b] py-16 text-white sm:py-20">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
         <Reveal>
           <div>

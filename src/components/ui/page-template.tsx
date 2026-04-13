@@ -19,6 +19,7 @@ export function PageTemplate({
   image,
 }: PageTemplateProps) {
   return (
+<<<<<<< HEAD
     <section className="relative isolate overflow-hidden bg-black text-white">
       {image && (
         <div className="absolute inset-0">
@@ -35,8 +36,13 @@ export function PageTemplate({
       )}
       <div className="relative mx-auto max-w-4xl px-4 py-24 text-left sm:px-6 sm:py-32 lg:px-8">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">{eyebrow}</p>
+=======
+    <section className="bg-[#07111b] py-20 text-white sm:py-28">
+      <div className="mx-auto max-w-4xl px-4 text-left sm:px-6 lg:px-8">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">{eyebrow}</p>
+>>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
         <h1 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">{title}</h1>
-        <p className="mt-5 max-w-3xl text-base leading-8 text-white/70">{description}</p>
+        <p className="mt-5 max-w-3xl text-base leading-8 text-white/78">{description}</p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <Link
             href={primaryHref}

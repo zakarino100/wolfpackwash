@@ -1,5 +1,9 @@
+import type { Metadata } from 'next';
 import { PageBuilder } from '@/components/ui/page-builder';
 import { pageContent } from '@/lib/site/page-content';
+import { pageSeo } from '@/lib/site/page-seo';
+
+export const metadata: Metadata = pageSeo.houseWashing;
 
 export default function Page() {
   return (
@@ -10,9 +14,32 @@ export default function Page() {
       sourcePage="/house-washing"
       image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
       bullets={[
+<<<<<<< HEAD
         'Soft-wash process is safe for all siding types including vinyl, brick, and wood.',
         'Removes pollen, mildew, algae, and grime — not just surface dirt.',
         'Fast turnaround with clear before-and-after results every time.',
+=======
+        'Safe soft washing helps remove grime, algae, and buildup without treating the siding like concrete.',
+        'This page should support both SEO traffic and people ready to buy after seeing an ad or referral.',
+        'Lead with the visual result, trust cues, and an easy quote path before the visitor gets distracted.',
+      ]}
+      steps={[
+        {
+          title: 'Send photos or request a fast quote',
+          body: 'Homeowners should be able to start from their phone in under a minute, without jumping through weird hoops.',
+          image: '/generated/wpw-housewash-before-after.jpg',
+        },
+        {
+          title: 'We recommend the right wash for the surface',
+          body: 'Set expectations clearly, explain the process simply, and make the homeowner feel confident the house is being treated the right way.',
+          image: '/generated/wpw-hero-home-clean-premium.jpg',
+        },
+        {
+          title: 'The home looks cleaner fast',
+          body: 'The finished result should feel like a visible curb-appeal upgrade, not just another contractor visit that blurred together.',
+          image: '/generated/wpw-housewash-before-after.jpg',
+        },
+>>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
       ]}
     />
   );

@@ -4,20 +4,25 @@ import { siteConfig } from "@/lib/site/config";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[rgba(10,10,10,0.82)] backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-black/10 bg-[rgba(8,12,18,0.72)] backdrop-blur-xl">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-3 text-sm font-semibold tracking-[0.2em] text-white uppercase">
+        <Link href="/" className="flex items-center gap-3 text-sm font-semibold text-white uppercase">
           <Image
-            src="/logos/wolfpack_wash_shield_logo_transparent.svg"
+            src="/logos/wolfpack_wash_shield_transparent.png"
             alt="Wolf Pack Wash logo"
             width={68}
             height={68}
-            className="h-14 w-14 object-contain sm:h-16 sm:w-16"
+            className="h-14 w-14 object-contain drop-shadow-[0_10px_24px_rgba(0,0,0,0.28)] sm:h-16 sm:w-16"
             priority
           />
           <span className="leading-tight">
+<<<<<<< HEAD
             <span className="block text-[11px] text-white/80">Wolf Pack Wash</span>
             <span className="block text-white">Exterior Cleaning</span>
+=======
+            <span className="block text-[13px] font-bold tracking-[0.22em] text-white sm:text-[14px]">Wolf Pack Wash</span>
+            <span className="block text-[9px] tracking-[0.28em] text-sky-200/75 sm:text-[10px]">Exterior Cleaning</span>
+>>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
           </span>
         </Link>
 

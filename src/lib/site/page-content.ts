@@ -67,21 +67,21 @@ export const pageContent = {
   },
   houseWashing: {
     eyebrow: "House Washing",
-    title: "Soft-wash the grime off and bring the curb appeal back fast.",
+    title: "Wash off the grime and make the whole house look sharp again fast.",
     description:
-      "This is a primary money page. It should be sharp, price-aware, and full of proof so it works for both organic traffic and paid media spillover.",
+      "House washing is one of the fastest visual wins on the property. This page should feel high-converting, show the result clearly, and make it easy to request a quote before the homeowner clicks away.",
   },
   windowCleaning: {
     eyebrow: "Window Cleaning",
-    title: "Clean glass, better light, stronger curb appeal.",
+    title: "Clean glass changes the way the whole property feels.",
     description:
-      "This page should sell the visual result, the streak-free finish, and how easy it is to add windows into a bigger exterior care plan.",
+      "Window cleaning should sell the brighter look, the streak-free finish, and how easy it is to bundle into a larger exterior refresh without adding friction.",
   },
   gutterCleaning: {
     eyebrow: "Gutter Cleaning",
-    title: "Keep water moving and protect the house from preventable damage.",
+    title: "Keep water flowing the way it should and prevent expensive problems later.",
     description:
-      "This page should speak to protection, overflow prevention, and the convenience of bundling gutter work with other exterior services.",
+      "Gutter cleaning should make the protection angle obvious while still feeling easy to buy. Homeowners should understand the risk of waiting and the convenience of bundling it with house washing or window cleaning.",
   },
   concrete: {
     eyebrow: "Concrete Pressure Washing",

@@ -4,6 +4,8 @@ import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { ScrollToTop } from "@/components/ui/scroll-to-top";
+import { JsonLd } from "@/components/seo/json-ld";
+import { buildLocalBusinessJsonLd } from "@/lib/site/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +19,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wolfpackwashnc.com"),
-  title: "Wolf Pack Wash | Exterior Cleaning",
-  description: "Mobile-first exterior cleaning website rebuild for Wolf Pack Wash.",
+  title: "Wolf Pack Wash | House Washing, Window Cleaning, Gutters, and Exterior Cleaning",
+  description: "Wolf Pack Wash helps homeowners with house washing, window cleaning, gutter cleaning, concrete cleaning, and exterior lighting with fast quotes and strong local service.",
   icons: {
     icon: [
       { url: "/logos/wolfpack_wash_shield_logo_transparent.svg", type: "image/svg+xml" },
@@ -48,6 +50,14 @@ export const metadata: Metadata = {
     description: "Fast quotes, clean systems, and strong exterior results across the Triangle.",
     images: ["/logos/wolfpack_wash_shield_transparent.png"],
   },
+  keywords: [
+    "Wolf Pack Wash",
+    "house washing",
+    "window cleaning",
+    "gutter cleaning",
+    "pressure washing Raleigh NC",
+    "exterior cleaning Wake County",
+  ],
 };
 
 export default function RootLayout({
@@ -57,7 +67,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full bg-black text-white">
+      <body className="min-h-full bg-[#07111b] text-white">
+        <JsonLd data={buildLocalBusinessJsonLd()} />
         <ScrollToTop />
         <div className="flex min-h-screen flex-col">
           <Header />

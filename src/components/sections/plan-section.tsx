@@ -2,13 +2,17 @@ import { siteConfig } from "@/lib/site/config";
 
 export function PlanSection() {
   return (
-    <section className="bg-black py-16 text-white sm:py-20">
+    <section className="bg-[#07111b] py-16 text-white sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
+<<<<<<< HEAD
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">Recurring revenue offer</p>
+=======
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Stay ahead of the buildup</p>
+>>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
           <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">{siteConfig.recurringPlan.name}</h2>
-          <p className="mt-4 text-sm leading-7 text-white/70 sm:text-base">
-            Three tiers, clear value separation, and enough perceived spread that the middle package becomes the easy yes.
+          <p className="mt-4 text-sm leading-7 text-white/78 sm:text-base">
+            Position recurring care as the smart homeowner move. Fewer surprise problems, easier upkeep, priority scheduling, and less grime stacking up between cleanings.
           </p>
         </div>
 
@@ -34,7 +38,7 @@ export function PlanSection() {
                 ))}
               </ul>
               <div className="mt-8 rounded-2xl border border-dashed border-white/15 px-4 py-3 text-sm text-white/55">
-                Pricing placeholder, finalize after tier review.
+                Final pricing can be added later, but the value stack should already make the middle tier feel like the easy yes.
               </div>
             </article>
           ))}
