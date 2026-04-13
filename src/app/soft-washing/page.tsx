@@ -15,7 +15,7 @@ export default function Page() {
       image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
       bullets={[
         'Soft washing uses low-pressure water (comparable to a garden hose) combined with biodegradable cleaning solutions to safely treat mold, mildew, algae, pollen, and bacteria.',
-        'Unlike high-pressure washing, soft washing won\'t damage vinyl siding, stucco, wood, painted surfaces, or older brick — making it the right approach for most homes.',
+        'Unlike high-pressure washing, soft washing won\'t damage vinyl siding, stucco, wood, painted surfaces, or older brick - making it the right approach for most homes.',
         'Because it kills the root cause of staining rather than just blasting it off, soft wash results last significantly longer than traditional pressure washing.',
         'Wolf Pack Wash uses soft washing as the preferred method for house washing across Raleigh, Cary, Apex, Holly Springs, and the Triangle.',
       ]}
@@ -27,7 +27,7 @@ export default function Page() {
         },
         {
           title: 'We apply soft wash solution at low pressure',
-          body: 'Our crew pre-wets landscaping, applies biodegradable cleaning solution to your siding, and allows it to dwell before rinsing — safely removing organic growth without surface damage.',
+          body: 'Our crew pre-wets landscaping, applies biodegradable cleaning solution to your siding, and allows it to dwell before rinsing - safely removing organic growth without surface damage.',
           image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
         },
         {
@@ -37,10 +37,10 @@ export default function Page() {
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'Soft washing — safe low-pressure house cleaning in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Home exterior after soft wash treatment — Triangle area' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Soft washing results on vinyl siding — Wake County' },
-        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Clean home exterior after soft wash — Cary NC' },
+        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'Soft washing - safe low-pressure house cleaning in Raleigh NC' },
+        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Home exterior after soft wash treatment - Triangle area' },
+        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Soft washing results on vinyl siding - Wake County' },
+        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Clean home exterior after soft wash - Cary NC' },
       ]}
       faqs={[
         {
@@ -53,7 +53,7 @@ export default function Page() {
         },
         {
           q: 'How long do soft washing results last?',
-          a: 'Because soft washing kills the root cause of organic staining rather than just blasting it off, results typically last 4-6 times longer than traditional pressure washing — usually 1-3 years depending on your home\'s environment and tree coverage.',
+          a: 'Because soft washing kills the root cause of organic staining rather than just blasting it off, results typically last 4-6 times longer than traditional pressure washing - usually 1-3 years depending on your home\'s environment and tree coverage.',
         },
         {
           q: 'Are the cleaning solutions safe for my plants and pets?',

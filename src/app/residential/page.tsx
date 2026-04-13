@@ -14,7 +14,7 @@ export default function Page() {
       sourcePage="/residential"
       image="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&q=80"
       bullets={[
-        'One company for every exterior surface — house washing, windows, gutters, concrete, driveways, decks, fences, and lighting, all handled by one reliable team.',
+        'One company for every exterior surface - house washing, windows, gutters, concrete, driveways, decks, fences, and lighting, all handled by one reliable team.',
         'No coordinating multiple contractors or chasing down separate quotes. We scope the whole property and handle everything in the right order.',
         'Most homeowners combine services in a single visit for a complete exterior refresh that would take weeks to coordinate with separate companies.',
         'We serve homeowners across Raleigh, Cary, Apex, Holly Springs, Morrisville, and Wake County NC.',
@@ -27,12 +27,12 @@ export default function Page() {
         },
         {
           title: 'Get a clear quote the same day',
-          body: 'We respond with clear pricing and availability — no estimates that change at the door, no pressure to add services you don\'t need.',
+          body: 'We respond with clear pricing and availability - no estimates that change at the door, no pressure to add services you don\'t need.',
           image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
         },
         {
           title: 'Enjoy the curb-appeal improvement',
-          body: 'The results are visible immediately — cleaner siding, streak-free windows, open gutters, bright concrete. One visit, complete exterior.',
+          body: 'The results are visible immediately - cleaner siding, streak-free windows, open gutters, bright concrete. One visit, complete exterior.',
           image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
         },
       ]}
@@ -43,15 +43,15 @@ export default function Page() {
         },
         {
           q: 'Can I get multiple services done in one visit?',
-          a: 'Yes — that\'s one of the most efficient and cost-effective ways to work with us. Popular combinations include house washing + windows + gutters, or driveway + concrete + sidewalk. We sequence everything to maximize quality.',
+          a: 'Yes - that\'s one of the most efficient and cost-effective ways to work with us. Popular combinations include house washing + windows + gutters, or driveway + concrete + sidewalk. We sequence everything to maximize quality.',
         },
         {
           q: 'How often should a home exterior be professionally cleaned?',
-          a: 'Most Triangle-area homeowners benefit from at least one full exterior cleaning per year — typically in spring after pollen season. Homes with heavy tree coverage, algae issues, or north-facing surfaces may need semi-annual service.',
+          a: 'Most Triangle-area homeowners benefit from at least one full exterior cleaning per year - typically in spring after pollen season. Homes with heavy tree coverage, algae issues, or north-facing surfaces may need semi-annual service.',
         },
         {
           q: 'Do you offer recurring service plans for homeowners?',
-          a: 'Yes — our Exterior Care Plan puts your home on a recurring maintenance schedule with priority scheduling and member pricing. It\'s the best option for homeowners who want consistent results without having to call every season.',
+          a: 'Yes - our Exterior Care Plan puts your home on a recurring maintenance schedule with priority scheduling and member pricing. It\'s the best option for homeowners who want consistent results without having to call every season.',
         },
       ]}
     />

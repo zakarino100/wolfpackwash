@@ -16,7 +16,7 @@ export default function Page() {
       bullets={[
         'Driveways accumulate oil stains, tire marks, pollen, algae, and dark traffic buildup that make the whole front of your home look neglected.',
         'A professional pressure wash lifts stubborn stains and buildup that household hoses and detergents simply can\'t reach.',
-        'Most homeowners see an immediate before-and-after improvement — a clean driveway is one of the fastest curb appeal upgrades you can make.',
+        'Most homeowners see an immediate before-and-after improvement - a clean driveway is one of the fastest curb appeal upgrades you can make.',
         'We serve Raleigh, Cary, Apex, Holly Springs, Morrisville, and all of Wake County NC.',
       ]}
       steps={[
@@ -27,7 +27,7 @@ export default function Page() {
         },
         {
           title: 'We treat and pressure wash the surface',
-          body: 'Our crew pre-treats stained areas and applies the right pressure for your driveway material — removing oil, algae, and buildup without surface damage.',
+          body: 'Our crew pre-treats stained areas and applies the right pressure for your driveway material - removing oil, algae, and buildup without surface damage.',
           image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80',
         },
         {
@@ -37,15 +37,15 @@ export default function Page() {
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80', alt: 'Driveway pressure washing — removing oil stains and buildup in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80', alt: 'Before and after driveway cleaning — Triangle area' },
+        { src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80', alt: 'Driveway pressure washing - removing oil stains and buildup in Raleigh NC' },
+        { src: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80', alt: 'Before and after driveway cleaning - Triangle area' },
         { src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80', alt: 'Clean concrete driveway after professional pressure washing' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Driveway cleaning results — Wake County NC' },
+        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Driveway cleaning results - Wake County NC' },
       ]}
       faqs={[
         {
           q: 'Can you remove oil stains from a driveway?',
-          a: 'Yes — with the right pre-treatment, we can significantly reduce or fully remove oil stains, rust marks, tire tracks, and organic staining from most concrete and asphalt driveways.',
+          a: 'Yes - with the right pre-treatment, we can significantly reduce or fully remove oil stains, rust marks, tire tracks, and organic staining from most concrete and asphalt driveways.',
         },
         {
           q: 'How long does driveway pressure washing take?',
@@ -53,11 +53,11 @@ export default function Page() {
         },
         {
           q: 'How often should I get my driveway pressure washed?',
-          a: 'Most homeowners in the Raleigh area benefit from annual driveway cleaning — typically in spring. Driveways with heavy vehicle use, oil exposure, or tree coverage may benefit from twice-yearly cleaning.',
+          a: 'Most homeowners in the Raleigh area benefit from annual driveway cleaning - typically in spring. Driveways with heavy vehicle use, oil exposure, or tree coverage may benefit from twice-yearly cleaning.',
         },
         {
           q: 'Can driveway cleaning be bundled with other services?',
-          a: 'Yes — driveway washing pairs naturally with house washing, sidewalk cleaning, and concrete work. Bundle services for the most cost-effective way to refresh the entire exterior in one visit.',
+          a: 'Yes - driveway washing pairs naturally with house washing, sidewalk cleaning, and concrete work. Bundle services for the most cost-effective way to refresh the entire exterior in one visit.',
         },
       ]}
     />

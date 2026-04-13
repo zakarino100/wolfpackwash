@@ -27,25 +27,25 @@ export default function Page() {
         },
         {
           title: 'We clean the entire approach to your home',
-          body: 'Our crew removes algae, mold, stains, and built-up grime from sidewalks and walkways — leaving clean, bright concrete from curb to doorstep.',
+          body: 'Our crew removes algae, mold, stains, and built-up grime from sidewalks and walkways - leaving clean, bright concrete from curb to doorstep.',
           image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
         },
         {
           title: 'A cleaner, safer approach to the front door',
-          body: 'Clean walkways change the first impression of your home before a visitor ever reaches the door — and reduce slip hazards from algae and mold buildup.',
+          body: 'Clean walkways change the first impression of your home before a visitor ever reaches the door - and reduce slip hazards from algae and mold buildup.',
           image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80', alt: 'Sidewalk pressure washing — cleaning walkways in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80', alt: 'Clean concrete sidewalk after pressure washing — Triangle area' },
+        { src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80', alt: 'Sidewalk pressure washing - cleaning walkways in Raleigh NC' },
+        { src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80', alt: 'Clean concrete sidewalk after pressure washing - Triangle area' },
         { src: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80', alt: 'Removing algae and stains from walkways in Wake County' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Sidewalk and walkway cleaning results — Cary NC' },
+        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Sidewalk and walkway cleaning results - Cary NC' },
       ]}
       faqs={[
         {
           q: 'Why does my sidewalk look dark or green?',
-          a: 'The dark coloring is usually algae, mold, or mildew growing on the concrete surface — especially in shaded or damp areas. It\'s very common in the Triangle\'s humid climate and is removed effectively with professional pressure washing.',
+          a: 'The dark coloring is usually algae, mold, or mildew growing on the concrete surface - especially in shaded or damp areas. It\'s very common in the Triangle\'s humid climate and is removed effectively with professional pressure washing.',
         },
         {
           q: 'Is sidewalk pressure washing safe for old concrete?',
@@ -53,7 +53,7 @@ export default function Page() {
         },
         {
           q: 'Can sidewalk washing be bundled with driveway cleaning?',
-          a: 'Absolutely — it\'s one of the most common combinations we do. Bundle sidewalk and driveway washing for the most efficient way to clean all your concrete surfaces in one visit.',
+          a: 'Absolutely - it\'s one of the most common combinations we do. Bundle sidewalk and driveway washing for the most efficient way to clean all your concrete surfaces in one visit.',
         },
         {
           q: 'How long does sidewalk cleaning take?',

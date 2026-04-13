@@ -14,7 +14,7 @@ export default function Page() {
       sourcePage="/commercial"
       image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80"
       bullets={[
-        'Clean commercial exteriors create stronger first impressions for customers, tenants, and visitors — and demonstrate that the property is actively managed.',
+        'Clean commercial exteriors create stronger first impressions for customers, tenants, and visitors - and demonstrate that the property is actively managed.',
         'We handle building exteriors, storefronts, parking areas, sidewalks, concrete, and windows for commercial properties across Wake County.',
         'Recurring maintenance plans available for property managers who need consistent scheduling and predictable results without the back-and-forth.',
         'We serve commercial clients across Raleigh, Cary, Apex, Holly Springs, and the Triangle NC metro area.',
@@ -43,7 +43,7 @@ export default function Page() {
         },
         {
           q: 'Can you work around our business hours?',
-          a: 'Yes — we offer flexible scheduling for commercial clients, including early morning, evening, and weekend availability to minimize impact on your operations or tenants.',
+          a: 'Yes - we offer flexible scheduling for commercial clients, including early morning, evening, and weekend availability to minimize impact on your operations or tenants.',
         },
         {
           q: 'Do you offer recurring commercial maintenance plans?',

@@ -15,14 +15,14 @@ export default function Page() {
       image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
       bullets={[
         'Soft washing uses low-pressure water and biodegradable solutions to safely remove pollen, algae, mold, and mildew from vinyl, brick, stucco, and wood siding.',
-        'Unlike high-pressure blasting, soft washing treats the root cause of staining — killing organic growth so results last longer.',
+        'Unlike high-pressure blasting, soft washing treats the root cause of staining - killing organic growth so results last longer.',
         'Most house washes improve curb appeal immediately and can be bundled with window cleaning and gutter cleaning for a full exterior refresh in one visit.',
         'We serve Raleigh, Cary, Apex, Holly Springs, Morrisville, and the surrounding Triangle area.',
       ]}
       steps={[
         {
           title: 'Get a fast, free quote',
-          body: 'Fill out our quick form or call us directly. We respond the same day with pricing and availability — no waiting, no runaround.',
+          body: 'Fill out our quick form or call us directly. We respond the same day with pricing and availability - no waiting, no runaround.',
           image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
         },
         {
@@ -32,15 +32,15 @@ export default function Page() {
         },
         {
           title: 'Your home looks sharp again',
-          body: 'Pollen, algae, and grime are gone. The curb appeal improvement is immediate — most homeowners say it looks like a completely different house.',
+          body: 'Pollen, algae, and grime are gone. The curb appeal improvement is immediate - most homeowners say it looks like a completely different house.',
           image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'House washing — removing pollen and algae from siding' },
+        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'House washing - removing pollen and algae from siding' },
         { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Clean home exterior after soft wash treatment' },
         { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Before and after house washing in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Professional exterior cleaning results — Triangle NC' },
+        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Professional exterior cleaning results - Triangle NC' },
       ]}
       faqs={[
         {
@@ -49,7 +49,7 @@ export default function Page() {
         },
         {
           q: 'How often should I get my house washed in Raleigh NC?',
-          a: 'Most Triangle-area homeowners benefit from a house wash once a year — typically in spring after pollen season. Homes with heavy tree coverage or north-facing siding may need it twice a year due to faster algae and mold growth.',
+          a: 'Most Triangle-area homeowners benefit from a house wash once a year - typically in spring after pollen season. Homes with heavy tree coverage or north-facing siding may need it twice a year due to faster algae and mold growth.',
         },
         {
           q: 'Is soft washing safe for my plants and landscaping?',
@@ -57,7 +57,7 @@ export default function Page() {
         },
         {
           q: 'Can you bundle house washing with other services?',
-          a: 'Absolutely — bundling house washing with window cleaning and gutter cleaning is one of the most popular combinations we offer. You save time, we can sequence the work efficiently, and the whole exterior gets done in one visit.',
+          a: 'Absolutely - bundling house washing with window cleaning and gutter cleaning is one of the most popular combinations we offer. You save time, we can sequence the work efficiently, and the whole exterior gets done in one visit.',
         },
       ]}
     />

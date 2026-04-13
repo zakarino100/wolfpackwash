@@ -8,7 +8,7 @@ const cards: Record<string, { href: string; body: string }> = {
   },
   "Roof Washing": {
     href: "/roof-washing",
-    body: "Safely remove algae, black streaks, and lichen from your roof with soft washing — protecting your shingles and extending roof life.",
+    body: "Safely remove algae, black streaks, and lichen from your roof with soft washing - protecting your shingles and extending roof life.",
   },
   "Window Cleaning": {
     href: "/window-cleaning",
@@ -20,7 +20,7 @@ const cards: Record<string, { href: string; body: string }> = {
   },
   "Fence & Deck Cleaning": {
     href: "/fence-deck-cleaning",
-    body: "Restore both surfaces in a single visit — removing mold, mildew, and weathered buildup from fences and decks so your outdoor space looks sharp again.",
+    body: "Restore both surfaces in a single visit - removing mold, mildew, and weathered buildup from fences and decks so your outdoor space looks sharp again.",
   },
   "Concrete Cleaning": {
     href: "/concrete-pressure-washing",
@@ -32,7 +32,7 @@ const cards: Record<string, { href: string; body: string }> = {
   },
   "Permanent Lighting": {
     href: "/permanent-lighting",
-    body: "Permanent RGB exterior lighting that keeps your home looking dialed in 365 days a year — any color, any occasion.",
+    body: "Permanent RGB exterior lighting that keeps your home looking dialed in 365 days a year - any color, any occasion.",
   },
 };
 
@@ -42,7 +42,7 @@ export function ServiceGrid() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">Our services</p>
-          <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Everything your home's exterior needs — under one roof.</h2>
+          <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Everything your home's exterior needs - under one roof.</h2>
           <p className="mt-4 text-sm leading-7 text-white/78 sm:text-base">
             Pick one service or bundle several. We keep the quote process fast and the scheduling flexible so you can get it done without the hassle.
           </p>

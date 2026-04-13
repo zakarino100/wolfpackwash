@@ -14,7 +14,7 @@ export default function Page() {
       sourcePage="/fence-pressure-washing"
       image="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=1600&q=80"
       bullets={[
-        'Wood, vinyl, and composite fences collect mold, mildew, algae, and grime quickly — especially in shaded or humid areas of the Triangle.',
+        'Wood, vinyl, and composite fences collect mold, mildew, algae, and grime quickly - especially in shaded or humid areas of the Triangle.',
         'Professional pressure washing restores the appearance of your fence and extends its life, often delaying costly replacement by years.',
         'A clean fence dramatically improves the overall curb appeal and "kept" feel of your entire property.',
         'We serve Raleigh, Cary, Apex, Holly Springs, and all of Wake County NC.',
@@ -27,20 +27,20 @@ export default function Page() {
         },
         {
           title: 'We lift the buildup and weathered look',
-          body: 'Our crew uses the right pressure and technique for your fence material — removing mold, algae, and grime without damaging wood grain or vinyl surfaces.',
+          body: 'Our crew uses the right pressure and technique for your fence material - removing mold, algae, and grime without damaging wood grain or vinyl surfaces.',
           image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80',
         },
         {
           title: 'The fence looks fresh without replacement cost',
-          body: 'In most cases, a professional wash restores the look of the fence better than homeowners expect — and at a fraction of the replacement cost.',
+          body: 'In most cases, a professional wash restores the look of the fence better than homeowners expect - and at a fraction of the replacement cost.',
           image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80', alt: 'Fence pressure washing — restoring wood and vinyl fences in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80', alt: 'Before and after fence washing — mold and algae removal' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Clean fence and home exterior after service — Triangle area' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Fence cleaning results — Wake County NC' },
+        { src: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80', alt: 'Fence pressure washing - restoring wood and vinyl fences in Raleigh NC' },
+        { src: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80', alt: 'Before and after fence washing - mold and algae removal' },
+        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Clean fence and home exterior after service - Triangle area' },
+        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Fence cleaning results - Wake County NC' },
       ]}
       faqs={[
         {
@@ -49,7 +49,7 @@ export default function Page() {
         },
         {
           q: 'Is pressure washing safe for vinyl fences?',
-          a: 'Yes — we use appropriate pressure settings for vinyl, which is more sensitive than wood. Lower pressure with the right technique cleans vinyl effectively without causing warping, cracking, or surface damage.',
+          a: 'Yes - we use appropriate pressure settings for vinyl, which is more sensitive than wood. Lower pressure with the right technique cleans vinyl effectively without causing warping, cracking, or surface damage.',
         },
         {
           q: 'Should I stain or seal my wood fence after washing?',

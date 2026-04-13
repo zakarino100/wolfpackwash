@@ -4,7 +4,7 @@ export const pageSeo = {
   home: buildMetadata({
     title: 'Wolf Pack Wash | #1 Softwash & Exterior Cleaning in Raleigh, NC',
     description:
-      'Wolf Pack Wash — the Triangle\'s trusted softwash and exterior cleaning team. House washing, window cleaning, gutter cleaning, concrete, driveway, deck, and lighting services in Raleigh, Cary, Apex, and Holly Springs NC. Same-day quotes.',
+      'Wolf Pack Wash - the Triangle\'s trusted softwash and exterior cleaning team. House washing, window cleaning, gutter cleaning, concrete, driveway, deck, and lighting services in Raleigh, Cary, Apex, and Holly Springs NC. Same-day quotes.',
     path: '/',
     keywords: [
       'softwash Raleigh NC', 'house washing Raleigh', 'exterior cleaning near me',
@@ -23,12 +23,12 @@ export const pageSeo = {
   services: buildMetadata({
     title: 'Exterior Cleaning Services in Raleigh NC | Wolf Pack Wash',
     description:
-      'House washing, soft washing, window cleaning, gutter cleaning, concrete, driveway, deck, fence, sidewalk pressure washing, holiday lighting, and permanent lighting — all from Wolf Pack Wash in Raleigh NC.',
+      'House washing, soft washing, window cleaning, gutter cleaning, concrete, driveway, deck, fence, sidewalk pressure washing, holiday lighting, and permanent lighting - all from Wolf Pack Wash in Raleigh NC.',
     path: '/services',
     keywords: ['exterior cleaning services Raleigh', 'pressure washing services Raleigh NC', 'Wolf Pack Wash services'],
   }),
   contact: buildMetadata({
-    title: 'Get a Free Quote | Wolf Pack Wash — Raleigh NC Exterior Cleaning',
+    title: 'Get a Free Quote | Wolf Pack Wash - Raleigh NC Exterior Cleaning',
     description:
       'Request a free exterior cleaning quote from Wolf Pack Wash. We serve Raleigh, Cary, Apex, and Holly Springs NC with same-day quote response. House washing, gutters, windows, concrete, and more.',
     path: '/contact',
@@ -37,7 +37,7 @@ export const pageSeo = {
   houseWashing: buildMetadata({
     title: 'House Washing in Raleigh NC | Wolf Pack Wash Soft Wash Service',
     description:
-      'Professional house washing and soft washing in Raleigh, Cary, Apex, and Holly Springs NC. Wolf Pack Wash removes pollen, algae, mold, and mildew safely — restoring curb appeal fast. Same-day quotes.',
+      'Professional house washing and soft washing in Raleigh, Cary, Apex, and Holly Springs NC. Wolf Pack Wash removes pollen, algae, mold, and mildew safely - restoring curb appeal fast. Same-day quotes.',
     path: '/house-washing',
     keywords: [
       'house washing Raleigh NC', 'soft washing Raleigh', 'softwash near me',
@@ -48,7 +48,7 @@ export const pageSeo = {
   windowCleaning: buildMetadata({
     title: 'Window Cleaning in Raleigh NC | Wolf Pack Wash',
     description:
-      'Professional window cleaning in Raleigh, Cary, Apex, and Holly Springs NC. Streak-free glass inside and out — Wolf Pack Wash delivers better light and a sharper-looking home. Get a same-day quote.',
+      'Professional window cleaning in Raleigh, Cary, Apex, and Holly Springs NC. Streak-free glass inside and out - Wolf Pack Wash delivers better light and a sharper-looking home. Get a same-day quote.',
     path: '/window-cleaning',
     keywords: [
       'window cleaning Raleigh NC', 'window washing Raleigh', 'window cleaning Cary NC',
@@ -188,7 +188,7 @@ export const pageSeo = {
   fenceDeck: buildMetadata({
     title: 'Fence & Deck Cleaning in Raleigh NC | Wolf Pack Wash',
     description:
-      'Professional fence and deck cleaning in Raleigh, Cary, Apex, and Holly Springs NC. Wolf Pack Wash removes mold, mildew, algae, and weathered buildup from fences and decks in a single visit — restoring your outdoor space without replacement cost.',
+      'Professional fence and deck cleaning in Raleigh, Cary, Apex, and Holly Springs NC. Wolf Pack Wash removes mold, mildew, algae, and weathered buildup from fences and decks in a single visit - restoring your outdoor space without replacement cost.',
     path: '/fence-deck-cleaning',
     keywords: [
       'fence and deck cleaning Raleigh NC', 'deck and fence washing Cary NC',
@@ -199,7 +199,7 @@ export const pageSeo = {
   roofWashing: buildMetadata({
     title: 'Roof Washing in Raleigh NC | Soft Wash Roof Cleaning | Wolf Pack Wash',
     description:
-      'Professional roof washing in Raleigh, Cary, Apex, and Holly Springs NC. Wolf Pack Wash uses soft washing to safely remove algae, black streaks, lichen, and staining from shingles — extending roof life without warranty damage.',
+      'Professional roof washing in Raleigh, Cary, Apex, and Holly Springs NC. Wolf Pack Wash uses soft washing to safely remove algae, black streaks, lichen, and staining from shingles - extending roof life without warranty damage.',
     path: '/roof-washing',
     keywords: [
       'roof washing Raleigh NC', 'roof cleaning Raleigh NC', 'soft wash roof cleaning Raleigh',
@@ -209,7 +209,7 @@ export const pageSeo = {
     ],
   }),
   blog: buildMetadata({
-    title: 'Exterior Cleaning Tips & Guides | Wolf Pack Wash Blog — Raleigh NC',
+    title: 'Exterior Cleaning Tips & Guides | Wolf Pack Wash Blog - Raleigh NC',
     description:
       'Exterior cleaning tips and homeowner guides from Wolf Pack Wash in Raleigh NC. Articles on house washing, gutter cleaning, soft washing, pressure washing, and home exterior care across the Triangle.',
     path: '/blog',

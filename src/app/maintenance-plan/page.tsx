@@ -14,7 +14,7 @@ export default function Page() {
       sourcePage="/maintenance-plan"
       image="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80"
       bullets={[
-        'Stop chasing appointments every spring — a recurring care plan keeps your home clean year-round on a schedule that works for you.',
+        'Stop chasing appointments every spring - a recurring care plan keeps your home clean year-round on a schedule that works for you.',
         'Plan members get priority scheduling, member-only pricing, and are first in the queue when spots fill up seasonally.',
         'Regular exterior care prevents buildup, extends the life of your siding and gutters, and keeps the property looking maintained between visits.',
         'Choose from Starter, Preferred, and Signature tiers depending on the size of your home and how much coverage you want.',
@@ -22,12 +22,12 @@ export default function Page() {
       steps={[
         {
           title: 'Choose the plan that fits your home',
-          body: 'We\'ll walk through your property\'s needs and recommend the right tier — whether you want basic annual maintenance or full-coverage recurring care.',
+          body: 'We\'ll walk through your property\'s needs and recommend the right tier - whether you want basic annual maintenance or full-coverage recurring care.',
           image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
         },
         {
           title: 'We schedule and handle everything',
-          body: 'As a plan member, you\'re automatically prioritized for scheduling. You don\'t have to call every season — we\'ll reach out to confirm your next visit.',
+          body: 'As a plan member, you\'re automatically prioritized for scheduling. You don\'t have to call every season - we\'ll reach out to confirm your next visit.',
           image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
         },
         {
@@ -37,10 +37,10 @@ export default function Page() {
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Well-maintained home exterior — Raleigh NC exterior care plan' },
+        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Well-maintained home exterior - Raleigh NC exterior care plan' },
         { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Clean home year-round with recurring exterior service' },
-        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'House washing as part of annual exterior care plan — Triangle NC' },
-        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Exterior care plan results — Wake County home maintenance' },
+        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'House washing as part of annual exterior care plan - Triangle NC' },
+        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Exterior care plan results - Wake County home maintenance' },
       ]}
       faqs={[
         {
@@ -49,11 +49,11 @@ export default function Page() {
         },
         {
           q: 'How often do plan members receive service?',
-          a: 'Frequency depends on your tier — Starter members typically receive annual service, Preferred members receive semi-annual or quarterly visits, and Signature members get the highest frequency with full-priority scheduling.',
+          a: 'Frequency depends on your tier - Starter members typically receive annual service, Preferred members receive semi-annual or quarterly visits, and Signature members get the highest frequency with full-priority scheduling.',
         },
         {
           q: 'Do I save money with a plan vs. booking individual services?',
-          a: 'Yes — plan members receive member-only pricing that is lower than standard per-service rates, plus priority scheduling that guarantees availability during peak seasons.',
+          a: 'Yes - plan members receive member-only pricing that is lower than standard per-service rates, plus priority scheduling that guarantees availability during peak seasons.',
         },
         {
           q: 'Can I cancel the plan if my needs change?',

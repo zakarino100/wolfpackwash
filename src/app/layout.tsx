@@ -63,7 +63,7 @@ export const metadata: Metadata = {
         url: "/logos/wolfpack_wash_shield_transparent.png",
         width: 1200,
         height: 630,
-        alt: "Wolf Pack Wash — Raleigh NC Exterior Cleaning",
+        alt: "Wolf Pack Wash - Raleigh NC Exterior Cleaning",
       },
     ],
     type: "website",

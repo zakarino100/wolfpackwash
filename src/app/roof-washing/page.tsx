@@ -14,8 +14,8 @@ export default function Page() {
       sourcePage="/roof-washing"
       image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
       bullets={[
-        'Those dark streaks on your roof are caused by Gloeocapsa magma — an algae species that feeds on the limestone filler in asphalt shingles, accelerating granule loss and shortening roof life.',
-        'Pressure washing a roof is too aggressive and can void shingle warranties. We use soft washing — low pressure with a professional-grade algaecide solution — to safely remove staining without damage.',
+        'Those dark streaks on your roof are caused by Gloeocapsa magma - an algae species that feeds on the limestone filler in asphalt shingles, accelerating granule loss and shortening roof life.',
+        'Pressure washing a roof is too aggressive and can void shingle warranties. We use soft washing - low pressure with a professional-grade algaecide solution - to safely remove staining without damage.',
         'A professionally cleaned roof can add years of life to your shingles and immediately improve the overall appearance of the entire home from the street.',
         'We serve homeowners in Raleigh, Cary, Apex, Holly Springs, Morrisville, and all of Wake County NC.',
       ]}
@@ -27,7 +27,7 @@ export default function Page() {
         },
         {
           title: 'We soft wash the roof from the ground up',
-          body: 'Our crew applies a professional-grade soft wash solution to the roof surface — safely killing algae, mold, lichen, and bacteria without walking on the shingles or using damaging pressure.',
+          body: 'Our crew applies a professional-grade soft wash solution to the roof surface - safely killing algae, mold, lichen, and bacteria without walking on the shingles or using damaging pressure.',
           image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
         },
         {
@@ -37,10 +37,10 @@ export default function Page() {
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'Roof washing — removing algae and black streaks from shingles in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Clean home exterior after roof soft wash — Triangle area' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Roof cleaning results — before and after soft washing in Wake County' },
-        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Professional roof washing service — Cary NC' },
+        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'Roof washing - removing algae and black streaks from shingles in Raleigh NC' },
+        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Clean home exterior after roof soft wash - Triangle area' },
+        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Roof cleaning results - before and after soft washing in Wake County' },
+        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Professional roof washing service - Cary NC' },
       ]}
       faqs={[
         {

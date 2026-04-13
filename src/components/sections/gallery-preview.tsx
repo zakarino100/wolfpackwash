@@ -4,19 +4,19 @@ import { Reveal } from "@/components/ui/reveal";
 
 const cards = [
   {
-    label: "House wash — pollen and grime gone",
+    label: "House wash - pollen and grime gone",
     img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
   },
   {
-    label: "Window cleaning — streak-free finish",
+    label: "Window cleaning - streak-free finish",
     img: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80",
   },
   {
-    label: "Driveway pressure wash — stains lifted",
+    label: "Driveway pressure wash - stains lifted",
     img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
   },
   {
-    label: "Permanent lighting — year-round curb appeal",
+    label: "Permanent lighting - year-round curb appeal",
     img: "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=800&q=80",
   },
 ];
@@ -30,7 +30,7 @@ export function GalleryPreview() {
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">Our work</p>
             <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Real results on real properties across the Triangle.</h2>
             <p className="mt-4 text-sm leading-7 text-white/78 sm:text-base">
-              Every job we do is a before-and-after worth showing. House washing, windows, concrete, and lighting — see what a difference the right team makes.
+              Every job we do is a before-and-after worth showing. House washing, windows, concrete, and lighting - see what a difference the right team makes.
             </p>
           </div>
         </Reveal>

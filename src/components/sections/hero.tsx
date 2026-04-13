@@ -125,7 +125,7 @@ export function Hero() {
             The Triangle's Best Softwash Team.
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-7 text-white/85">
-            House washing, windows, gutters, concrete, and lighting — done right, every time. Fast quote, same-day response.
+            House washing, windows, gutters, concrete, and lighting - done right, every time. Fast quote, same-day response.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

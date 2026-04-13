@@ -14,15 +14,15 @@ export default function Page() {
       sourcePage="/permanent-lighting"
       image="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=1600&q=80"
       bullets={[
-        'Permanent RGB lighting is installed once and stays on your home year-round — no setup, no takedown, no seasonal hassle.',
+        'Permanent RGB lighting is installed once and stays on your home year-round - no setup, no takedown, no seasonal hassle.',
         'Change colors and schedules directly from your phone: white for everyday, red and green for Christmas, blue and red for the Fourth of July, or any color for game days.',
-        'Built with commercial-grade weather-resistant fixtures that are designed to last — far superior to consumer lighting products.',
+        'Built with commercial-grade weather-resistant fixtures that are designed to last - far superior to consumer lighting products.',
         'A permanent lighting install adds measurable curb appeal, distinction, and value to your home in Raleigh, Cary, Apex, and Holly Springs.',
       ]}
       steps={[
         {
           title: 'Get a design consultation and quote',
-          body: 'We walk through your home\'s roofline, features, and goals. You\'ll get a clear picture of what the install looks like and what it costs — no surprises.',
+          body: 'We walk through your home\'s roofline, features, and goals. You\'ll get a clear picture of what the install looks like and what it costs - no surprises.',
           image: 'https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=800&q=80',
         },
         {
@@ -32,24 +32,24 @@ export default function Page() {
         },
         {
           title: 'Control everything from your phone, year-round',
-          body: 'Set schedules, change colors, and adjust brightness right from the app. Your home looks great every night — for holidays, events, and everyday.',
+          body: 'Set schedules, change colors, and adjust brightness right from the app. Your home looks great every night - for holidays, events, and everyday.',
           image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=800&q=80', alt: 'Permanent RGB lighting installed on home exterior — Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1545181936-ac4e9e3a2b6c?w=800&q=80', alt: 'Year-round exterior lighting — Triangle area home' },
-        { src: 'https://images.unsplash.com/photo-1544979259-f3cd394b7a48?w=800&q=80', alt: 'App-controlled permanent lighting — Cary NC' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Permanent lighting installation results — Wake County' },
+        { src: 'https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=800&q=80', alt: 'Permanent RGB lighting installed on home exterior - Raleigh NC' },
+        { src: 'https://images.unsplash.com/photo-1545181936-ac4e9e3a2b6c?w=800&q=80', alt: 'Year-round exterior lighting - Triangle area home' },
+        { src: 'https://images.unsplash.com/photo-1544979259-f3cd394b7a48?w=800&q=80', alt: 'App-controlled permanent lighting - Cary NC' },
+        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Permanent lighting installation results - Wake County' },
       ]}
       faqs={[
         {
           q: 'What is permanent exterior lighting?',
-          a: 'Permanent exterior lighting uses weatherproof RGB LED fixtures installed along your roofline and home features. Unlike holiday lights, they stay up year-round and can be changed to any color through a smartphone app — making them ideal for holidays, events, and everyday use.',
+          a: 'Permanent exterior lighting uses weatherproof RGB LED fixtures installed along your roofline and home features. Unlike holiday lights, they stay up year-round and can be changed to any color through a smartphone app - making them ideal for holidays, events, and everyday use.',
         },
         {
           q: 'How do I control the permanent lighting?',
-          a: 'Your lights are controlled through a smartphone app. You can change colors, set schedules, adjust brightness, and create custom scenes — all from your phone. Many homeowners set their lights to come on automatically at sunset and go off at a set time.',
+          a: 'Your lights are controlled through a smartphone app. You can change colors, set schedules, adjust brightness, and create custom scenes - all from your phone. Many homeowners set their lights to come on automatically at sunset and go off at a set time.',
         },
         {
           q: 'How long do permanent lighting fixtures last?',

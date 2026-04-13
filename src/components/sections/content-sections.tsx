@@ -7,7 +7,7 @@ export function ServiceHighlights() {
   const items = [
     {
       title: "House Washing",
-      body: "Soft-wash away pollen, mildew, algae, and grime so your home looks sharp from the curb. Safe on all siding types — vinyl, brick, stucco, and wood.",
+      body: "Soft-wash away pollen, mildew, algae, and grime so your home looks sharp from the curb. Safe on all siding types - vinyl, brick, stucco, and wood.",
       href: "/house-washing",
     },
     {
@@ -35,7 +35,7 @@ export function ServiceHighlights() {
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">What we do</p>
             <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Every service designed to make your property look better fast.</h2>
             <p className="mt-4 text-sm leading-7 text-white/70 sm:text-base">
-              One call covers the whole exterior. House washing, windows, gutters, concrete, lighting — handled by a team that shows up on time and gets it done right.
+              One call covers the whole exterior. House washing, windows, gutters, concrete, lighting - handled by a team that shows up on time and gets it done right.
             </p>
           </div>
         </Reveal>
@@ -88,7 +88,7 @@ export function CtaBand() {
       <div className="mx-auto max-w-7xl rounded-[2rem] border border-[#C81920]/20 bg-[linear-gradient(135deg,rgba(200,25,32,0.18),rgba(255,255,255,0.03))] px-6 py-10 text-center shadow-[0_28px_80px_rgba(0,0,0,0.18)] sm:px-8">
         <Reveal>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">Ready to get started?</p>
-          <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Get your free quote today — we'll follow up fast and get you scheduled.</h2>
+          <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Get your free quote today - we'll follow up fast and get you scheduled.</h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-white/75 sm:text-base">
             Fill out the quick form, pick your services, and we'll get back to you the same day with pricing and availability. No pressure, no runaround.
           </p>
@@ -124,8 +124,8 @@ export function ContactSection({ sourcePage = "/" }: { sourcePage?: string }) {
               Fill out the form and we'll reach out the same day with pricing and next steps. No waiting around, no confusing callbacks.
             </p>
             <div className="mt-6 grid gap-3 text-sm text-white/75">
-              <div className="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-4">Quick response — most quotes come back the same day</div>
-              <div className="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-4">Bundle services and save — we cover the whole exterior</div>
+              <div className="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-4">Quick response - most quotes come back the same day</div>
+              <div className="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-4">Bundle services and save - we cover the whole exterior</div>
               <div className="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-4">Flexible scheduling built around your timeline</div>
             </div>
           </div>

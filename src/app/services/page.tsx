@@ -14,10 +14,10 @@ export default function Page() {
       sourcePage="/services"
       image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
       bullets={[
-        'House washing and soft washing — the safe, effective way to remove pollen, algae, and grime from any siding type.',
-        'Window cleaning, gutter cleaning, and concrete pressure washing — bundle multiple services for the best value and complete results in one visit.',
-        'Deck, driveway, fence, and sidewalk pressure washing — every surface on the exterior, handled by one reliable team.',
-        'Holiday light installation and permanent RGB lighting — professional installs that make your home stand out year-round.',
+        'House washing and soft washing - the safe, effective way to remove pollen, algae, and grime from any siding type.',
+        'Window cleaning, gutter cleaning, and concrete pressure washing - bundle multiple services for the best value and complete results in one visit.',
+        'Deck, driveway, fence, and sidewalk pressure washing - every surface on the exterior, handled by one reliable team.',
+        'Holiday light installation and permanent RGB lighting - professional installs that make your home stand out year-round.',
       ]}
       steps={[
         {
@@ -27,7 +27,7 @@ export default function Page() {
         },
         {
           title: 'Get a same-day quote',
-          body: 'Fill out the quick form or call us directly. We respond the same day with clear pricing — no estimates that change at the door.',
+          body: 'Fill out the quick form or call us directly. We respond the same day with clear pricing - no estimates that change at the door.',
           image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
         },
         {
@@ -43,7 +43,7 @@ export default function Page() {
         },
         {
           q: 'Can I bundle multiple services in one visit?',
-          a: 'Yes — bundling is one of the best ways to save time and money. Popular combinations include house washing + window cleaning + gutter cleaning, or driveway + concrete + sidewalk washing. We\'ll sequence the work efficiently in one visit.',
+          a: 'Yes - bundling is one of the best ways to save time and money. Popular combinations include house washing + window cleaning + gutter cleaning, or driveway + concrete + sidewalk washing. We\'ll sequence the work efficiently in one visit.',
         },
         {
           q: 'How quickly do you respond to quote requests?',
@@ -51,7 +51,7 @@ export default function Page() {
         },
         {
           q: 'Do you offer recurring exterior care plans?',
-          a: 'Yes — our Exterior Care Plan puts your home on a recurring cleaning schedule with priority scheduling and member pricing. It\'s the best option for homeowners who want to stay ahead of buildup without chasing appointments every season.',
+          a: 'Yes - our Exterior Care Plan puts your home on a recurring cleaning schedule with priority scheduling and member pricing. It\'s the best option for homeowners who want to stay ahead of buildup without chasing appointments every season.',
         },
       ]}
     />
