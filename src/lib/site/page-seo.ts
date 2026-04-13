@@ -185,6 +185,29 @@ export const pageSeo = {
     path: '/reviews',
     keywords: ['Wolf Pack Wash reviews', 'pressure washing reviews Raleigh NC', 'exterior cleaning reviews Triangle'],
   }),
+  fenceDeck: buildMetadata({
+    title: 'Fence & Deck Cleaning in Raleigh NC | Wolf Pack Wash',
+    description:
+      'Professional fence and deck cleaning in Raleigh, Cary, Apex, and Holly Springs NC. Wolf Pack Wash removes mold, mildew, algae, and weathered buildup from fences and decks in a single visit — restoring your outdoor space without replacement cost.',
+    path: '/fence-deck-cleaning',
+    keywords: [
+      'fence and deck cleaning Raleigh NC', 'deck and fence washing Cary NC',
+      'fence deck pressure washing Apex NC', 'outdoor cleaning Raleigh NC',
+      'fence washing deck washing Triangle NC', 'wood fence deck restoration Raleigh',
+    ],
+  }),
+  roofWashing: buildMetadata({
+    title: 'Roof Washing in Raleigh NC | Soft Wash Roof Cleaning | Wolf Pack Wash',
+    description:
+      'Professional roof washing in Raleigh, Cary, Apex, and Holly Springs NC. Wolf Pack Wash uses soft washing to safely remove algae, black streaks, lichen, and staining from shingles — extending roof life without warranty damage.',
+    path: '/roof-washing',
+    keywords: [
+      'roof washing Raleigh NC', 'roof cleaning Raleigh NC', 'soft wash roof cleaning Raleigh',
+      'black streak removal roof Raleigh', 'algae removal roof NC',
+      'roof washing Cary NC', 'roof cleaning Apex NC', 'shingle cleaning Triangle NC',
+      'Gloeocapsa magma roof stain removal', 'roof soft wash near me Wake County',
+    ],
+  }),
   blog: buildMetadata({
     title: 'Exterior Cleaning Tips & Guides | Wolf Pack Wash Blog — Raleigh NC',
     description:

@@ -113,6 +113,18 @@ export const pageContent = {
     description:
       "Dirty, slippery sidewalks affect the entire first impression of a property. Pressure washing removes algae, mold, stains, and buildup so the walkways look maintained and safe — and pair naturally with a driveway or house wash.",
   },
+  fenceDeck: {
+    eyebrow: "Fence & Deck Cleaning",
+    title: "Restore your fence and deck so the whole backyard looks like it belongs together.",
+    description:
+      "Fences and decks take the most weather exposure of any surface on the property — and they show it fast. Wolf Pack Wash cleans both in a single visit, removing mold, mildew, algae, and weathered buildup so your outdoor space looks sharp again without replacement cost.",
+  },
+  roofWashing: {
+    eyebrow: "Roof Washing",
+    title: "Remove the black streaks, algae, and staining before your roof pays the price.",
+    description:
+      "Those dark streaks on your roof aren't just ugly — they're algae and bacteria actively shortening the life of your shingles. Wolf Pack Wash uses soft washing to safely remove roof staining without voiding your warranty or damaging your roofing materials.",
+  },
   blog: {
     eyebrow: "Wolf Pack Wash Blog",
     title: "Exterior cleaning tips and homeowner guides for the Triangle.",

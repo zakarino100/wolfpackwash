@@ -117,6 +117,8 @@ export function buildLocalBusinessJsonLd() {
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Holiday Light Installation", url: `${siteConfig.domain}/holiday-lights-installation` } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Permanent RGB Lighting", url: `${siteConfig.domain}/permanent-lighting` } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Exterior Care Plan", url: `${siteConfig.domain}/maintenance-plan` } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Fence & Deck Cleaning", url: `${siteConfig.domain}/fence-deck-cleaning` } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Roof Washing", url: `${siteConfig.domain}/roof-washing` } },
       ],
     },
     sameAs: [

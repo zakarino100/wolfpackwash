@@ -20,6 +20,8 @@ const routes: RouteConfig[] = [
   { path: "/deck-pressure-washing", priority: 0.85, changeFrequency: "monthly" },
   { path: "/fence-pressure-washing", priority: 0.85, changeFrequency: "monthly" },
   { path: "/sidewalk-pressure-washing", priority: 0.85, changeFrequency: "monthly" },
+  { path: "/fence-deck-cleaning", priority: 0.90, changeFrequency: "monthly" },
+  { path: "/roof-washing", priority: 0.92, changeFrequency: "monthly" },
   { path: "/holiday-lights-installation", priority: 0.88, changeFrequency: "monthly" },
   { path: "/permanent-lighting", priority: 0.88, changeFrequency: "monthly" },
   { path: "/maintenance-plan", priority: 0.88, changeFrequency: "monthly" },

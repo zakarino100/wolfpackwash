@@ -6,6 +6,10 @@ const cards: Record<string, { href: string; body: string }> = {
     href: "/house-washing",
     body: "Remove pollen, algae, mildew, and grime with a soft-wash process that's safe on siding and delivers immediate curb appeal.",
   },
+  "Roof Washing": {
+    href: "/roof-washing",
+    body: "Safely remove algae, black streaks, and lichen from your roof with soft washing — protecting your shingles and extending roof life.",
+  },
   "Window Cleaning": {
     href: "/window-cleaning",
     body: "Streak-free windows inside and out, more natural light, and a noticeably sharper look on every visit.",
@@ -13,6 +17,10 @@ const cards: Record<string, { href: string; body: string }> = {
   "Gutter Cleaning": {
     href: "/gutter-cleaning",
     body: "Keep water moving and protect your home from overflow damage, fascia rot, and foundation issues.",
+  },
+  "Fence & Deck Cleaning": {
+    href: "/fence-deck-cleaning",
+    body: "Restore both surfaces in a single visit — removing mold, mildew, and weathered buildup from fences and decks so your outdoor space looks sharp again.",
   },
   "Concrete Cleaning": {
     href: "/concrete-pressure-washing",
@@ -39,7 +47,7 @@ export function ServiceGrid() {
             Pick one service or bundle several. We keep the quote process fast and the scheduling flexible so you can get it done without the hassle.
           </p>
         </div>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {siteConfig.serviceCards.map((service) => (
             <Link
               key={service}
