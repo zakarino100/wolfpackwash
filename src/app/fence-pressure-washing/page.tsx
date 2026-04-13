@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.fence.title}
       description={pageContent.fence.description}
       sourcePage="/fence-pressure-washing"
-      image="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=1600&q=80"
+      image="/hero-images/fence-pressure-washing.png"
       bullets={[
         'Wood, vinyl, and composite fences collect mold, mildew, algae, and grime quickly - especially in shaded or humid areas of the Triangle.',
         'Professional pressure washing restores the appearance of your fence and extends its life, often delaying costly replacement by years.',

@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.deck.title}
       description={pageContent.deck.description}
       sourcePage="/deck-pressure-washing"
-      image="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&q=80"
+      image="/hero-images/deck-pressure-washing.png"
       bullets={[
         'Decks in the Triangle accumulate mold, mildew, algae, and weathered grime quickly - especially in shaded or humid areas.',
         'A proper pressure wash removes the buildup without splintering or damaging the wood, restoring the surface and extending the life of the deck.',

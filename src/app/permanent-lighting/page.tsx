@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.permanentLighting.title}
       description={pageContent.permanentLighting.description}
       sourcePage="/permanent-lighting"
-      image="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=1600&q=80"
+      image="/hero-images/permanent-lighting.png"
       bullets={[
         'Permanent RGB lighting is installed once and stays on your home year-round - no setup, no takedown, no seasonal hassle.',
         'Change colors and schedules directly from your phone: white for everyday, red and green for Christmas, blue and red for the Fourth of July, or any color for game days.',

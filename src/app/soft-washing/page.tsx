@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.softWashing.title}
       description={pageContent.softWashing.description}
       sourcePage="/soft-washing"
-      image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
+      image="/hero-images/soft-washing.png"
       bullets={[
         'Soft washing uses low-pressure water (comparable to a garden hose) combined with biodegradable cleaning solutions to safely treat mold, mildew, algae, pollen, and bacteria.',
         'Unlike high-pressure washing, soft washing won\'t damage vinyl siding, stucco, wood, painted surfaces, or older brick - making it the right approach for most homes.',

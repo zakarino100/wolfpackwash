@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.sidewalk.title}
       description={pageContent.sidewalk.description}
       sourcePage="/sidewalk-pressure-washing"
-      image="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=80"
+      image="/hero-images/sidewalk-pressure-washing.png"
       bullets={[
         'Sidewalks and walkways collect algae, mold, leaf stains, and dark buildup that create a slippery, neglected look at the front of your home.',
         'A professional pressure wash removes the buildup completely and instantly improves the first impression of your property.',

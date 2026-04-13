@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.houseWashing.title}
       description={pageContent.houseWashing.description}
       sourcePage="/house-washing"
-      image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
+      image="/hero-images/house-washing.png"
       bullets={[
         'Soft washing uses low-pressure water and biodegradable solutions to safely remove pollen, algae, mold, and mildew from vinyl, brick, stucco, and wood siding.',
         'Unlike high-pressure blasting, soft washing treats the root cause of staining - killing organic growth so results last longer.',

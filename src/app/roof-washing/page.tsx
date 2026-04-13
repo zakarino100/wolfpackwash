@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.roofWashing.title}
       description={pageContent.roofWashing.description}
       sourcePage="/roof-washing"
-      image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
+      image="/hero-images/roof-washing.png"
       bullets={[
         'Those dark streaks on your roof are caused by Gloeocapsa magma - an algae species that feeds on the limestone filler in asphalt shingles, accelerating granule loss and shortening roof life.',
         'Pressure washing a roof is too aggressive and can void shingle warranties. We use soft washing - low pressure with a professional-grade algaecide solution - to safely remove staining without damage.',

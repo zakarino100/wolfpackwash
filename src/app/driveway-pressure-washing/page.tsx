@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.driveway.title}
       description={pageContent.driveway.description}
       sourcePage="/driveway-pressure-washing"
-      image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80"
+      image="/hero-images/driveway-pressure-washing.png"
       bullets={[
         'Driveways accumulate oil stains, tire marks, pollen, algae, and dark traffic buildup that make the whole front of your home look neglected.',
         'A professional pressure wash lifts stubborn stains and buildup that household hoses and detergents simply can\'t reach.',

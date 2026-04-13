@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.concrete.title}
       description={pageContent.concrete.description}
       sourcePage="/concrete-pressure-washing"
-      image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80"
+      image="/hero-images/concrete-cleaning.png"
       bullets={[
         'Pressure washing removes oil stains, tire marks, algae, mold, and dark buildup from driveways, walkways, and patios that resist normal cleaning.',
         'Clean concrete makes an immediate, visible difference - it\'s one of the fastest ways to improve curb appeal and make the whole property feel maintained.',

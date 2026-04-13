@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.gutterCleaning.title}
       description={pageContent.gutterCleaning.description}
       sourcePage="/gutter-cleaning"
-      image="https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=1600&q=80"
+      image="/hero-images/gutter-cleaning.png"
       bullets={[
         'Clogged gutters cause overflow, fascia rot, water intrusion, and foundation erosion - all of which cost far more to fix than a cleaning.',
         'We clear leaves, twigs, shingle grit, and debris from gutters and flush downspouts to confirm proper water flow.',

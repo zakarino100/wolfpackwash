@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.fenceDeck.title}
       description={pageContent.fenceDeck.description}
       sourcePage="/fence-deck-cleaning"
-      image="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&q=80"
+      image="/hero-images/fence-deck-cleaning.png"
       bullets={[
         'Fences and decks are the most weather-exposed surfaces on the property - mold, mildew, algae, and UV graying happen fast, especially in the Triangle\'s humid climate.',
         'Cleaning both in a single visit is more efficient than separate appointments - we sequence the fence first, then the deck, for a thorough finish with no rework.',

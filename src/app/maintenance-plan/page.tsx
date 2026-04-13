@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.maintenancePlan.title}
       description={pageContent.maintenancePlan.description}
       sourcePage="/maintenance-plan"
-      image="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80"
+      image="/hero-images/maintenance-plan.png"
       bullets={[
         'Stop chasing appointments every spring - a recurring care plan keeps your home clean year-round on a schedule that works for you.',
         'Plan members get priority scheduling, member-only pricing, and are first in the queue when spots fill up seasonally.',

@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.windowCleaning.title}
       description={pageContent.windowCleaning.description}
       sourcePage="/window-cleaning"
-      image="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=1600&q=80"
+      image="/hero-images/window-cleaning.png"
       bullets={[
         'Streak-free glass inside and out - we clean panes, frames, tracks, and sills for a thorough finish.',
         'Clean windows dramatically increase natural light and improve the entire feel of your home from both inside and out.',

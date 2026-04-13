@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.services.title}
       description={pageContent.services.description}
       sourcePage="/services"
-      image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
+      image="/hero-images/house-washing.png"
       bullets={[
         'House washing and soft washing - the safe, effective way to remove pollen, algae, and grime from any siding type.',
         'Window cleaning, gutter cleaning, and concrete pressure washing - bundle multiple services for the best value and complete results in one visit.',

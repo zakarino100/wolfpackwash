@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.holidayLights.title}
       description={pageContent.holidayLights.description}
       sourcePage="/holiday-lights-installation"
-      image="https://images.unsplash.com/photo-1545181936-ac4e9e3a2b6c?w=1600&q=80"
+      image="/hero-images/holiday-lights.png"
       bullets={[
         'Professional holiday lighting installs that look polished and designed - not like they were thrown together in an afternoon.',
         'We handle the entire process: design consultation, installation, maintenance during the season, and full removal when it\'s over.',

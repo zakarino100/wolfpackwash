@@ -43,85 +43,85 @@ export const pageContent = {
   },
   softWashing: {
     eyebrow: "Soft Washing",
-    title: "A safer clean for siding, trim, painted surfaces, and delicate exterior areas.",
+    title: "Low-Pressure Clean. Zero Risk to Your Siding, Stucco, or Trim.",
     description:
       "Not everything should be hit with high pressure. Soft washing uses low-pressure water and biodegradable cleaning solutions to safely remove mold, mildew, algae, and grime from surfaces that would be damaged by a standard pressure wash - including vinyl siding, stucco, wood, and painted trim.",
   },
   permanentLighting: {
     eyebrow: "Permanent Lighting",
-    title: "Permanent RGB lighting that makes the house stand out year-round.",
+    title: "Always-On Curb Appeal. Every Color. Every Night of the Year.",
     description:
       "Permanent exterior lighting is a premium upgrade that adds instant curb appeal 365 days a year. Change colors and schedules from your phone - perfect for holidays, game days, or just keeping the property looking sharp every night.",
   },
   maintenancePlan: {
     eyebrow: "Exterior Care Plan",
-    title: "Turn one-time cleanings into long-term curb appeal.",
+    title: "Set It and Forget It. Your Exterior, Maintained All Year.",
     description:
       "Stop chasing appointments every spring. Our recurring exterior care plans keep your home clean year-round with priority scheduling, member pricing, and no grime buildup between visits. Pick the tier that fits your property and we'll handle the rest.",
   },
   holidayLights: {
     eyebrow: "Holiday Lights",
-    title: "Holiday lighting installs that make the house look dialed in, not slapped together.",
+    title: "Pro Holiday Lighting. No Ladder. No Tangles. No Stress.",
     description:
       "Professional holiday lighting installed safely and cleanly - no ladder time, no tangled strands, no guessing. We install, maintain, and remove everything at the end of the season so you can enjoy the holidays without the headache.",
   },
   houseWashing: {
     eyebrow: "House Washing",
-    title: "Wash off the grime and make the whole house look sharp again fast.",
+    title: "Stop Letting Pollen and Algae Own Your Home's Exterior.",
     description:
       "Pollen, algae, mildew, and dirt build up fast on siding - and soft washing is the safest, most effective way to get it off without risking damage. Wolf Pack Wash delivers a thorough house wash that improves curb appeal immediately and protects the exterior long-term.",
   },
   windowCleaning: {
     eyebrow: "Window Cleaning",
-    title: "Clean glass changes the way the whole property looks and feels.",
+    title: "Streak-Free Windows That Make the Whole Property Look Brand New.",
     description:
       "Streak-free windows inside and out let in more light and make the entire home look sharper. Window cleaning pairs naturally with a house wash and is one of the highest-impact exterior upgrades you can do in a single afternoon.",
   },
   gutterCleaning: {
     eyebrow: "Gutter Cleaning",
-    title: "Keep water flowing the way it should and prevent expensive problems later.",
+    title: "Clogged Gutters Are Quietly Damaging Your Home. We Fix That.",
     description:
       "Clogged gutters lead to overflow, fascia rot, foundation erosion, and water damage - all of which cost far more than a cleaning. Wolf Pack Wash clears out leaves, debris, and buildup so your gutters move water the way they're supposed to, every time it rains.",
   },
   concrete: {
     eyebrow: "Concrete Pressure Washing",
-    title: "Driveways, walkways, and concrete surfaces that actually look maintained.",
+    title: "Your Driveway Is the First Thing People See. Make It Count.",
     description:
       "Oil stains, tire marks, algae, and years of grime make concrete look worn out fast. A professional pressure wash lifts all of it and instantly changes how the whole property feels from the street. Bundle with a house wash for a complete exterior refresh.",
   },
   deck: {
     eyebrow: "Deck Pressure Washing",
-    title: "Get the deck cleaned up and ready to use again.",
+    title: "Weathered and Grimy? We'll Have Your Deck Clean and Ready for Season.",
     description:
       "Weathered decks collect dirt, mold, and mildew that make the surface look rough and feel unsafe. A thorough pressure wash strips the buildup, restores the appearance, and gets the space ready for spring and summer use - without sanding or refinishing.",
   },
   driveway: {
     eyebrow: "Driveway Pressure Washing",
-    title: "A cleaner driveway instantly makes the whole property feel sharper.",
+    title: "Oil Stains and Dark Buildup Don't Stand a Chance.",
     description:
       "The driveway is one of the first things people see when they pull up. Oil stains, tire tracks, and dark buildup are stubborn - but a professional pressure wash lifts all of it fast. Bundle it with a house wash for a complete curbside transformation.",
   },
   fence: {
     eyebrow: "Fence Pressure Washing",
-    title: "Make the fence look fresh again without replacing it.",
+    title: "Your Fence Doesn't Need Replacing - It Just Needs a Good Clean.",
     description:
       "Wood and vinyl fences collect mold, mildew, algae, and grime over time. A thorough pressure wash restores the appearance, lifts the buildup, and extends the life of the fence so you don't have to replace it ahead of schedule.",
   },
   sidewalk: {
     eyebrow: "Sidewalk Pressure Washing",
-    title: "Cleaner walkways make the property feel better before anyone gets to the door.",
+    title: "Cleaner Walkways. Better First Impressions. Done Fast.",
     description:
       "Dirty, slippery sidewalks affect the entire first impression of a property. Pressure washing removes algae, mold, stains, and buildup so the walkways look maintained and safe - and pair naturally with a driveway or house wash.",
   },
   fenceDeck: {
     eyebrow: "Fence & Deck Cleaning",
-    title: "Restore your fence and deck so the whole backyard looks like it belongs together.",
+    title: "Fence and Deck, Both Cleaned in One Visit. Backyard Fully Restored.",
     description:
       "Fences and decks take the most weather exposure of any surface on the property - and they show it fast. Wolf Pack Wash cleans both in a single visit, removing mold, mildew, algae, and weathered buildup so your outdoor space looks sharp again without replacement cost.",
   },
   roofWashing: {
     eyebrow: "Roof Washing",
-    title: "Remove the black streaks, algae, and staining before your roof pays the price.",
+    title: "Those Dark Streaks Are Destroying Your Shingles. We Stop That.",
     description:
       "Those dark streaks on your roof aren't just ugly - they're algae and bacteria actively shortening the life of your shingles. Wolf Pack Wash uses soft washing to safely remove roof staining without voiding your warranty or damaging your roofing materials.",
   },
