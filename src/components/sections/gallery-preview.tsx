@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/reveal";
 const cards = [
   {
     label: "House wash - pollen and grime gone",
-    img: "/gallery-images/house-wash.png",
+    img: "/gallery-images/house-wash-v2.png",
   },
   {
     label: "Window cleaning - streak-free finish",
