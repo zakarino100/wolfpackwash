@@ -8,20 +8,6 @@ export const metadata: Metadata = pageSeo.blog;
 
 export default function Page() {
   return (
-<<<<<<< HEAD
-    <PageBuilder
-      eyebrow={pageContent.blog.eyebrow}
-      title={pageContent.blog.title}
-      description={pageContent.blog.description}
-      sourcePage="/blog"
-      image="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1600&q=80"
-      bullets={[
-        'This route is ready to connect to the publishing system later.',
-        'Keep the public side fast and the editing side separate.',
-        'Use blog content to support local SEO and homeowner trust.',
-      ]}
-    />
-=======
     <section className="bg-[#07111b] py-20 text-white sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
@@ -49,6 +35,5 @@ export default function Page() {
         </div>
       </div>
     </section>
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
   );
 }

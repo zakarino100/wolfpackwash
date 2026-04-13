@@ -8,14 +8,6 @@ export function Footer() {
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1.3fr_1fr_1fr] lg:px-8">
         <div>
           <div className="flex items-center gap-3">
-<<<<<<< HEAD
-            <Image src="/logos/wolfpack_wash_shield_logo_transparent.svg" alt="Wolf Pack Wash logo" width={56} height={56} className="h-14 w-14 object-contain" />
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/80">Wolf Pack Wash</p>
-          </div>
-          <h2 className="mt-3 text-2xl font-semibold">Real results, fast response, clean systems.</h2>
-          <p className="mt-3 max-w-xl text-sm text-white/70">
-            Professional exterior cleaning across the Triangle — house washing, windows, gutters, concrete, lighting, and recurring care.
-=======
             <Image src="/logos/wolfpack_wash_shield_transparent.png" alt="Wolf Pack Wash logo" width={56} height={56} className="h-14 w-14 object-contain" />
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-white">Wolf Pack Wash</p>
@@ -25,7 +17,6 @@ export function Footer() {
           <h2 className="mt-3 text-2xl font-semibold">Fast quotes, real proof, and exterior cleaning that makes the property look better quickly.</h2>
           <p className="mt-3 max-w-xl text-sm text-white/74">
             Trusted exterior cleaning across the Triangle, with mobile-friendly quoting, clear communication, and services that are easy to book and easy to believe.
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
           </p>
         </div>
         <div>

@@ -8,13 +8,7 @@ export default function Page() {
       title={pageContent.concrete.title}
       description={pageContent.concrete.description}
       sourcePage="/concrete-pressure-washing"
-      image="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1600&q=80"
       bullets={[
-<<<<<<< HEAD
-        'Removes years of oil stains, dirt, and algae growth from concrete.',
-        'Dramatically improves curb appeal before a listing or just for pride.',
-        'Pairs perfectly with driveway and sidewalk cleaning for a complete reset.',
-=======
         'Focus on visual transformation, curb appeal, and how much cleaner concrete changes the feel of the whole property.',
         'Use driveway and walkway results to create contrast and urgency without overcomplicating the message.',
         'Make bundling obvious without cluttering the page or hiding the standalone value of the service.',
@@ -35,7 +29,6 @@ export default function Page() {
           body: 'When concrete looks better, the rest of the exterior usually feels more maintained too. That is the emotional payoff this page should sell.',
           image: '/generated/wpw-hero-home-clean-premium.jpg',
         },
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
       ]}
     />
   );

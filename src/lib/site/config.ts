@@ -19,12 +19,8 @@ export const siteConfig = {
   },
   heroVideo: {
     src: "https://wolfpackwashnc.com/wp-content/uploads/2025/05/Scene-4-Crew-at-Work-Shot-5.mp4",
-<<<<<<< HEAD
-    poster: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80",
-=======
     mobileSrc: "https://wolfpackwashnc.com/wp-content/uploads/2025/05/Scene-4-Crew-at-Work-Shot-5.mp4",
     poster: "/images/hero-poster.jpg",
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
   },
   nav: [
     { label: "Home", href: "/" },

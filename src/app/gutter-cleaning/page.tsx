@@ -12,13 +12,7 @@ export default function Page() {
       title={pageContent.gutterCleaning.title}
       description={pageContent.gutterCleaning.description}
       sourcePage="/gutter-cleaning"
-      image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80"
       bullets={[
-<<<<<<< HEAD
-        'Prevents water overflow, fascia damage, and foundation erosion.',
-        'Pairs naturally with house washing and the exterior care plan.',
-        'Fast, low-mess service that protects your home year-round.',
-=======
         'Lead with overflow prevention, water management, and protecting the home from avoidable damage.',
         'Make bundling with house washing or recurring care feel like the common-sense move.',
         'Keep the trust level high and the quote path simple so the visitor acts before the next storm cycle.',
@@ -39,7 +33,6 @@ export default function Page() {
           body: 'Position the result around prevention, cleaner rooflines, and fewer future headaches from backed-up gutters.',
           image: '/generated/wpw-hero-home-clean-premium.jpg',
         },
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
       ]}
     />
   );

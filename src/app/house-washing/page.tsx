@@ -12,13 +12,7 @@ export default function Page() {
       title={pageContent.houseWashing.title}
       description={pageContent.houseWashing.description}
       sourcePage="/house-washing"
-      image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
       bullets={[
-<<<<<<< HEAD
-        'Soft-wash process is safe for all siding types including vinyl, brick, and wood.',
-        'Removes pollen, mildew, algae, and grime — not just surface dirt.',
-        'Fast turnaround with clear before-and-after results every time.',
-=======
         'Safe soft washing helps remove grime, algae, and buildup without treating the siding like concrete.',
         'This page should support both SEO traffic and people ready to buy after seeing an ad or referral.',
         'Lead with the visual result, trust cues, and an easy quote path before the visitor gets distracted.',
@@ -39,7 +33,6 @@ export default function Page() {
           body: 'The finished result should feel like a visible curb-appeal upgrade, not just another contractor visit that blurred together.',
           image: '/generated/wpw-housewash-before-after.jpg',
         },
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
       ]}
     />
   );

@@ -65,7 +65,7 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
       }
 
       setStatus("success");
-      setMessage("Quote request sent. We'll follow up fast.");
+      setMessage("Quote request sent. We’ll follow up fast.");
       setForm(initialState);
     } catch {
       setStatus("error");
@@ -74,18 +74,12 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
   }
 
   return (
-<<<<<<< HEAD
-    <div className="rounded-[2rem] border border-white/10 bg-white/5 p-5 sm:p-6">
-      <div className="mb-5">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">Fast quote</p>
-=======
     <div className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.04))] p-5 shadow-[0_30px_80px_rgba(0,0,0,0.24)] sm:p-6">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.7),transparent)] opacity-70" />
       <div className="pointer-events-none absolute -left-20 top-0 h-40 w-40 rounded-full bg-sky-300/12 blur-3xl transition duration-700 group-hover:bg-sky-300/18" />
 
       <div className="relative mb-5">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-300">Fast quote</p>
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
         <h3 className="mt-2 text-2xl font-semibold text-white">{title}</h3>
         <p className="mt-2 text-sm leading-6 text-white/65">
           Mobile-first form, page attribution built in, and every lead routed into Healthy Home.
@@ -113,13 +107,8 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
                   className={[
                     "relative overflow-hidden rounded-2xl border px-4 py-3 text-left text-sm transition duration-200 active:scale-[0.985]",
                     active
-<<<<<<< HEAD
-                      ? "border-[#C81920] bg-[#C81920]/10 text-white"
-                      : "border-white/10 bg-black/30 text-white/70 hover:border-white/25",
-=======
                       ? "border-amber-300 bg-amber-300/12 text-white shadow-[0_0_0_1px_rgba(252,211,77,0.16)]"
                       : "border-white/10 bg-black/30 text-white/70 hover:border-white/25 hover:bg-white/[0.04]",
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
                   ].join(" ")}
                 >
                   <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.6),transparent)] opacity-60" />
@@ -135,11 +124,7 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
           <select
             value={form.frequency}
             onChange={(event) => setForm((c) => ({ ...c, frequency: event.target.value }))}
-<<<<<<< HEAD
-            className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-[#C81920]"
-=======
             className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-300 focus:bg-white/[0.04]"
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
           >
             <option value="">Select frequency</option>
             {frequencyOptions.map((option) => (
@@ -161,11 +146,7 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
             value={form.notes ?? ""}
             onChange={(event) => setForm((c) => ({ ...c, notes: event.target.value }))}
             rows={compact ? 3 : 4}
-<<<<<<< HEAD
-            className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-[#C81920]"
-=======
             className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-300 focus:bg-white/[0.04]"
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
             placeholder="Anything we should know about the property, urgency, or service needs?"
           />
         </div>
@@ -173,11 +154,7 @@ export function QuoteForm({ sourcePage, title = "Get your free quote", compact =
         <button
           type="submit"
           disabled={!canSubmit || status === "submitting"}
-<<<<<<< HEAD
-          className="inline-flex w-full items-center justify-center rounded-full bg-[#C81920] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#a8141a] disabled:cursor-not-allowed disabled:opacity-60"
-=======
           className="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-5 py-3 text-sm font-semibold text-black shadow-[0_16px_40px_rgba(245,158,11,0.22)] transition duration-200 hover:bg-amber-300 hover:shadow-[0_20px_48px_rgba(245,158,11,0.28)] active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-60"
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
         >
           {status === "submitting" ? "Submitting..." : "Get Free Quote"}
         </button>
@@ -201,11 +178,7 @@ function Input({ label, value, onChange }: InputProps) {
       <input
         value={value}
         onChange={(event) => onChange(event.target.value)}
-<<<<<<< HEAD
-        className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-[#C81920]"
-=======
         className="w-full rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition focus:border-amber-300 focus:bg-white/[0.04]"
->>>>>>> 50f7ab6 (Polish Wolf Pack Wash site, strengthen SEO, add blog and generated assets)
       />
     </div>
   );
