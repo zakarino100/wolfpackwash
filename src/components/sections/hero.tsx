@@ -1,8 +1,56 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 import { siteConfig } from "@/lib/site/config";
+
+const cities = [
+  "Raleigh",
+  "Cary",
+  "Apex",
+  "Holly Springs",
+  "Wake Forest",
+  "Garner",
+  "Fuquay-Varina",
+  "Durham",
+  "Morrisville",
+  "Wendell",
+  "Clayton",
+  "Angier",
+  "Triangle NC",
+];
+
+function CityTicker() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((i) => (i + 1) % cities.length);
+    }, 1800);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.32em] text-[#C81920] sm:text-sm">
+      <span className="opacity-60">Serving</span>
+      <span className="relative inline-flex h-[1.3em] min-w-[10ch] overflow-hidden align-bottom">
+        <AnimatePresence mode="wait">
+          <motion.span
+            key={index}
+            initial={{ opacity: 0, y: "60%" }}
+            animate={{ opacity: 1, y: "0%" }}
+            exit={{ opacity: 0, y: "-60%" }}
+            transition={{ duration: 0.32, ease: "easeInOut" }}
+            className="absolute inset-x-0 bottom-0 whitespace-nowrap"
+          >
+            {cities[index]}
+          </motion.span>
+        </AnimatePresence>
+      </span>
+    </div>
+  );
+}
 
 const badges = [
   {
@@ -118,9 +166,7 @@ export function Hero() {
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
           className="max-w-2xl"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#C81920] sm:text-sm">
-            Raleigh · Cary · Apex · Holly Springs · Triangle NC
-          </p>
+          <CityTicker />
           <h1 className="mt-4 text-5xl font-semibold leading-[1.1] text-white sm:text-6xl lg:text-7xl">
             The Triangle's Best Softwash Team.
           </h1>
