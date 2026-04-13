@@ -19,8 +19,31 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wolfpackwashnc.com"),
-  title: "Wolf Pack Wash | House Washing, Window Cleaning, Gutters, and Exterior Cleaning",
-  description: "Wolf Pack Wash helps homeowners with house washing, window cleaning, gutter cleaning, concrete cleaning, and exterior lighting with fast quotes and strong local service.",
+  title: {
+    default: "Wolf Pack Wash | #1 Softwash & Exterior Cleaning in Raleigh NC",
+    template: "%s | Wolf Pack Wash",
+  },
+  description:
+    "Wolf Pack Wash is the Triangle's trusted exterior cleaning company. House washing, soft washing, window cleaning, gutter cleaning, concrete, driveway, deck, fence, sidewalk pressure washing, holiday lights, and permanent lighting in Raleigh, Cary, Apex, Holly Springs, and Wake County NC. Same-day quotes.",
+  keywords: [
+    "Wolf Pack Wash",
+    "softwash Raleigh NC",
+    "house washing Raleigh NC",
+    "soft washing Raleigh",
+    "pressure washing Raleigh NC",
+    "exterior cleaning Raleigh",
+    "window cleaning Raleigh NC",
+    "gutter cleaning Raleigh NC",
+    "pressure washing Cary NC",
+    "pressure washing Apex NC",
+    "pressure washing Holly Springs NC",
+    "Wake County exterior cleaning",
+    "Triangle NC pressure washing",
+    "driveway pressure washing Raleigh",
+    "deck cleaning Raleigh NC",
+    "holiday light installation Raleigh NC",
+    "permanent lighting Raleigh NC",
+  ],
   icons: {
     icon: [
       { url: "/logos/wolfpack_wash_shield_logo_transparent.svg", type: "image/svg+xml" },
@@ -30,34 +53,46 @@ export const metadata: Metadata = {
     apple: [{ url: "/logos/wolfpack_wash_shield_transparent.png" }],
   },
   openGraph: {
-    title: "Wolf Pack Wash | Exterior Cleaning",
-    description: "Fast quotes, clean systems, and strong exterior results across the Triangle.",
+    title: "Wolf Pack Wash | The Triangle's Best Softwash & Exterior Cleaning",
+    description:
+      "House washing, windows, gutters, concrete, driveway, deck, and lighting in Raleigh, Cary, Apex, and Holly Springs NC. Fast quotes, same-day response, 100% satisfaction guaranteed.",
     url: "https://wolfpackwashnc.com",
     siteName: "Wolf Pack Wash",
     images: [
       {
         url: "/logos/wolfpack_wash_shield_transparent.png",
         width: 1200,
-        height: 1200,
-        alt: "Wolf Pack Wash shield logo",
+        height: 630,
+        alt: "Wolf Pack Wash — Raleigh NC Exterior Cleaning",
       },
     ],
     type: "website",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wolf Pack Wash | Exterior Cleaning",
-    description: "Fast quotes, clean systems, and strong exterior results across the Triangle.",
+    title: "Wolf Pack Wash | The Triangle's Best Softwash & Exterior Cleaning",
+    description:
+      "House washing, windows, gutters, concrete, driveway, deck, and lighting in Raleigh, Cary, Apex, and Holly Springs NC. Same-day quotes.",
     images: ["/logos/wolfpack_wash_shield_transparent.png"],
   },
-  keywords: [
-    "Wolf Pack Wash",
-    "house washing",
-    "window cleaning",
-    "gutter cleaning",
-    "pressure washing Raleigh NC",
-    "exterior cleaning Wake County",
-  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "",
+  },
+  alternates: {
+    canonical: "https://wolfpackwashnc.com",
+  },
 };
 
 export default function RootLayout({

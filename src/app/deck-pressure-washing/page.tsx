@@ -1,5 +1,9 @@
+import type { Metadata } from 'next';
 import { PageBuilder } from '@/components/ui/page-builder';
 import { pageContent } from '@/lib/site/page-content';
+import { pageSeo } from '@/lib/site/page-seo';
+
+export const metadata: Metadata = pageSeo.deck;
 
 export default function Page() {
   return (
@@ -10,22 +14,50 @@ export default function Page() {
       sourcePage="/deck-pressure-washing"
       image="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&q=80"
       bullets={[
-        'Sell deck cleaning as getting the outdoor living space back, not just cleaning boards.',
-        'Position it as timely, seasonal, and tied to how people actually use the space.',
-        'Use before-and-after proof and lifestyle framing once real assets are loaded.',
+        'Decks in the Triangle accumulate mold, mildew, algae, and weathered grime quickly — especially in shaded or humid areas.',
+        'A proper pressure wash removes the buildup without splintering or damaging the wood, restoring the surface and extending the life of the deck.',
+        'Most homeowners clean their deck once a year in spring to get the outdoor space ready before summer use.',
+        'We service wood, composite, and Trex decks across Raleigh, Cary, Apex, Holly Springs, and Wake County.',
       ]}
       steps={[
         {
-          title: 'Show us the deck condition',
-          body: 'This should help homeowners quickly decide whether it is time to clean up the space before heavy outdoor use.',
+          title: 'Get a fast, free quote',
+          body: 'Tell us the approximate size and material of your deck. We\'ll respond the same day with pricing and available scheduling.',
+          image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80',
         },
         {
-          title: 'Remove the weathered, dirty look',
-          body: 'The page should frame the service around making the space feel usable again, not just checking off maintenance.',
+          title: 'We wash and restore the surface',
+          body: 'Our crew uses the right pressure and technique for your deck type — removing mold, mildew, algae, and staining without damaging the wood or composite surface.',
+          image: 'https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800&q=80',
         },
         {
-          title: 'Enjoy the outdoor space again',
-          body: 'The payoff is emotional here. The deck looks better, feels cleaner, and is ready to use instead of being avoided.',
+          title: 'Your outdoor space is ready to use again',
+          body: 'The deck looks cleaner, feels safer, and is ready for spring and summer — no more avoiding the space because it looks rough.',
+          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+        },
+      ]}
+      gallery={[
+        { src: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80', alt: 'Deck pressure washing — restoring outdoor living space in Raleigh NC' },
+        { src: 'https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800&q=80', alt: 'Clean wood deck after professional pressure washing' },
+        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Outdoor deck cleaning results — Triangle area' },
+        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Before and after deck washing — Wake County NC' },
+      ]}
+      faqs={[
+        {
+          q: 'How often should I get my deck pressure washed?',
+          a: 'Most Triangle-area homeowners clean their deck once a year — typically in spring before outdoor season. Decks in shaded or humid areas may need cleaning twice a year due to faster mold and algae growth.',
+        },
+        {
+          q: 'Can you pressure wash a composite or Trex deck?',
+          a: 'Yes — we adjust our pressure settings and technique for composite decking. Composite requires lower pressure than wood to avoid surface damage while still removing mold, mildew, and buildup effectively.',
+        },
+        {
+          q: 'Will pressure washing damage my deck boards?',
+          a: 'Not when done correctly. We use the right pressure and wide fan tips to clean thoroughly without splintering wood or damaging composite. Incorrect DIY pressure washing can cause damage — professional technique makes the difference.',
+        },
+        {
+          q: 'Should I stain or seal my deck after pressure washing?',
+          a: 'If your deck needs staining or sealing, cleaning is the essential first step. We can let you know after the wash whether the surface looks ready for treatment. We recommend waiting 24-48 hours after washing before applying any stain or sealant.',
         },
       ]}
     />

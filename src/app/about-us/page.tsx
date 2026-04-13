@@ -14,22 +14,44 @@ export default function Page() {
       sourcePage="/about-us"
       image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80"
       bullets={[
-        'Lead with trust, local responsiveness, and a homeowner-friendly process that feels reliable.',
-        'Keep the tone direct and believable so the page builds confidence without sounding like a cheesy brand monologue.',
-        'Support both paid and organic traffic without bloating the page or burying the quote path.',
+        'Wolf Pack Wash is a locally owned exterior cleaning company serving the Triangle area of North Carolina — Raleigh, Cary, Apex, Holly Springs, and surrounding communities.',
+        'We built this company around a simple standard: show up on time, do the work right, and communicate clearly from the first quote to the finished job.',
+        'Our team handles house washing, soft washing, window cleaning, gutter cleaning, concrete and driveway pressure washing, deck and fence cleaning, holiday lighting, and permanent RGB lighting installs.',
+        'We\'re not a franchise or a call center — we\'re a real local crew that stands behind every job we do.',
       ]}
       steps={[
         {
           title: 'Reach out from your phone',
-          body: 'The first impression should be simple, fast, and low-friction, especially for people comparing multiple companies.',
+          body: 'Fill out the quick form or call us directly. We respond the same day with pricing and next available scheduling — no waiting, no runaround.',
+          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
         },
         {
-          title: 'Get clear communication and honest recommendations',
-          body: 'The brand should feel responsive and practical, not vague, flaky, or weirdly salesy.',
+          title: 'We recommend the right service and show up ready',
+          body: 'Our crew arrives on time with the right equipment for your home. We walk the property, confirm the scope, and get to work without dragging the process out.',
+          image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
         },
         {
-          title: 'See the difference in the finished result',
-          body: 'This page should reinforce that Wolf Pack Wash is about visible outcomes, not just checking a box on a to-do list.',
+          title: 'You see the difference immediately',
+          body: 'Clean siding, clear windows, open gutters, bright concrete — the results are visible as soon as we finish. That\'s what we show up to deliver every time.',
+          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+        },
+      ]}
+      faqs={[
+        {
+          q: 'Is Wolf Pack Wash a locally owned company?',
+          a: 'Yes — Wolf Pack Wash is locally owned and operated in the Triangle area of North Carolina. We\'re not a franchise or a national call center. When you call or submit a form, you\'re reaching our actual team.',
+        },
+        {
+          q: 'What areas does Wolf Pack Wash serve?',
+          a: 'We serve Raleigh, Cary, Apex, Holly Springs, Morrisville, Fuquay-Varina, Garner, and the surrounding Wake County and Triangle area.',
+        },
+        {
+          q: 'Are you insured?',
+          a: 'Yes — Wolf Pack Wash is fully insured. We carry liability coverage on all jobs to protect your property and give you peace of mind when we\'re on site.',
+        },
+        {
+          q: 'What services do you offer?',
+          a: 'We offer house washing, soft washing, window cleaning, gutter cleaning, concrete and driveway pressure washing, deck washing, fence washing, sidewalk cleaning, holiday light installation, and permanent RGB lighting for homes and businesses across the Triangle.',
         },
       ]}
     />

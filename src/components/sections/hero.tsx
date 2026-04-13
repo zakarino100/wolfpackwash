@@ -41,37 +41,37 @@ export function Hero() {
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
-          className="max-w-3xl"
+          className="max-w-2xl"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#C81920] sm:text-sm">
-            Raleigh, Cary, Apex & the Triangle
+            Raleigh · Cary · Apex · Holly Springs · Triangle NC
           </p>
-          <h1 className="mt-4 text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
-            Professional exterior cleaning that makes your home look sharp — fast, reliable, and done right.
+          <h1 className="mt-4 text-5xl font-semibold leading-[1.1] text-white sm:text-6xl lg:text-7xl">
+            The Triangle's Best Softwash Team.
           </h1>
-          <p className="mt-5 max-w-2xl text-base leading-7 text-white/88 sm:text-lg">
-            Wolf Pack Wash handles house washing, window cleaning, gutter cleaning, concrete, decks, driveways, and lighting installs. Get a fast quote and we'll follow up the same day.
+          <p className="mt-5 max-w-xl text-lg leading-7 text-white/85">
+            House washing, windows, gutters, concrete, and lighting — done right, every time. Fast quote, same-day response.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href={siteConfig.primaryCta.href}
-              className="relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#C81920] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(200,25,32,0.30)] transition duration-200 hover:bg-[#a8141a] hover:shadow-[0_20px_48px_rgba(200,25,32,0.38)] active:scale-[0.99]"
+              className="relative inline-flex items-center justify-center overflow-hidden rounded-full bg-[#C81920] px-7 py-3.5 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(200,25,32,0.30)] transition duration-200 hover:bg-[#a8141a] hover:shadow-[0_20px_48px_rgba(200,25,32,0.38)] active:scale-[0.99]"
             >
               <span className="pointer-events-none absolute inset-x-6 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.5),transparent)]" />
               {siteConfig.primaryCta.label}
             </Link>
             <Link
               href={siteConfig.secondaryCta.href}
-              className="relative inline-flex items-center justify-center overflow-hidden rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:border-white/30 hover:bg-white/5 active:scale-[0.99]"
+              className="relative inline-flex items-center justify-center overflow-hidden rounded-full border border-white/15 px-7 py-3.5 text-sm font-semibold text-white transition duration-200 hover:border-white/30 hover:bg-white/5 active:scale-[0.99]"
             >
               <span className="pointer-events-none absolute inset-x-6 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.45),transparent)] opacity-80" />
               {siteConfig.secondaryCta.label}
             </Link>
           </div>
-          <div className="mt-8 grid max-w-xl grid-cols-1 gap-3 text-sm text-white/80 sm:grid-cols-3">
+          <div className="mt-8 grid max-w-lg grid-cols-1 gap-2.5 text-sm text-white/80 sm:grid-cols-3">
             <div className="rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.08)] px-4 py-3">Same-day quote response</div>
             <div className="rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.08)] px-4 py-3">100% satisfaction guaranteed</div>
-            <div className="rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.08)] px-4 py-3">Serving the entire Triangle area</div>
+            <div className="rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.08)] px-4 py-3">Locally owned &amp; operated</div>
           </div>
         </motion.div>
       </div>
