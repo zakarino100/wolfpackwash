@@ -1,0 +1,50 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "XzDi6cwjj9850WXv6SODo"
+uri = "file://public/service-images/house-washing.png"
+type = "image"
+title = "house washing Raleigh NC"
+
+[[generated]]
+id = "-YOMTG7aVbff1hvkdya5s"
+uri = "file://public/service-images/roof-washing.png"
+type = "image"
+title = "roof washing soft wash shingles"
+
+[[generated]]
+id = "6XiV1OdwiUYBtBEQk0Kiy"
+uri = "file://public/service-images/window-cleaning.png"
+type = "image"
+title = "window cleaning residential home"
+
+[[generated]]
+id = "4YEwmnnLmKdPzUYb3JvmA"
+uri = "file://public/service-images/gutter-cleaning.png"
+type = "image"
+title = "gutter cleaning debris leaves"
+
+[[generated]]
+id = "R0H2rtf2MtlJXlH9wXI_c"
+uri = "file://public/service-images/fence-deck-cleaning.png"
+type = "image"
+title = "deck pressure washing wood cleaning"
+
+[[generated]]
+id = "BAsm5VMGA2b-zpEJJBPei"
+uri = "file://public/service-images/concrete-cleaning.png"
+type = "image"
+title = "driveway pressure washing concrete"
+
+[[generated]]
+id = "eFcpomJ_JNAiYKGFS_rTD"
+uri = "file://public/service-images/holiday-lights.png"
+type = "image"
+title = "holiday Christmas lights home exterior"
+
+[[generated]]
+id = "bLXN08ybR8x71FXNMy4uU"
+uri = "file://public/service-images/permanent-lighting.png"
+type = "image"
+title = "permanent RGB LED exterior lighting home"

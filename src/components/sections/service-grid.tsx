@@ -5,42 +5,42 @@ const cards: Record<string, { href: string; body: string; image: string }> = {
   "House Washing": {
     href: "/house-washing",
     body: "Remove pollen, algae, mildew, and grime with a soft-wash process that's safe on siding and delivers immediate curb appeal.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75",
+    image: "/service-images/house-washing.png",
   },
   "Roof Washing": {
     href: "/roof-washing",
     body: "Safely remove algae, black streaks, and lichen from your roof with soft washing - protecting your shingles and extending roof life.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=75",
+    image: "/service-images/roof-washing.png",
   },
   "Window Cleaning": {
     href: "/window-cleaning",
     body: "Streak-free windows inside and out, more natural light, and a noticeably sharper look on every visit.",
-    image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=75",
+    image: "/service-images/window-cleaning.png",
   },
   "Gutter Cleaning": {
     href: "/gutter-cleaning",
     body: "Keep water moving and protect your home from overflow damage, fascia rot, and foundation issues.",
-    image: "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=800&q=75",
+    image: "/service-images/gutter-cleaning.png",
   },
   "Fence & Deck Cleaning": {
     href: "/fence-deck-cleaning",
     body: "Restore both surfaces in a single visit - removing mold, mildew, and weathered buildup so your outdoor space looks sharp again.",
-    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=75",
+    image: "/service-images/fence-deck-cleaning.png",
   },
   "Concrete Cleaning": {
     href: "/concrete-pressure-washing",
     body: "Pressure wash driveways, walkways, and patios clean so the whole property feels maintained and sharp.",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=75",
+    image: "/service-images/concrete-cleaning.png",
   },
   "Holiday Lights": {
     href: "/holiday-lights-installation",
     body: "Professional holiday lighting installs that look polished, save you hours on a ladder, and come down cleanly when the season ends.",
-    image: "https://images.unsplash.com/photo-1545181936-ac4e9e3a2b6c?w=800&q=75",
+    image: "/service-images/holiday-lights.png",
   },
   "Permanent Lighting": {
     href: "/permanent-lighting",
     body: "Permanent RGB exterior lighting that keeps your home looking dialed in 365 days a year - any color, any occasion.",
-    image: "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=800&q=75",
+    image: "/service-images/permanent-lighting.png",
   },
 };
 
