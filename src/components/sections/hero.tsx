@@ -34,7 +34,7 @@ function CityTicker() {
   return (
     <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.32em] text-[#C81920] sm:text-sm">
       <span className="opacity-60">Serving</span>
-      <span className="relative inline-flex h-[1.3em] min-w-[16ch] overflow-hidden align-bottom">
+      <span className="relative inline-flex h-[1.3em] w-[200px] overflow-hidden align-bottom">
         <AnimatePresence mode="wait">
           <motion.span
             key={index}
