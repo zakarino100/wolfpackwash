@@ -4,6 +4,81 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { siteConfig } from "@/lib/site/config";
 
+const badges = [
+  {
+    label: "Same-day quote response on most requests",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5 shrink-0" aria-hidden="true">
+        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.6" />
+        <path d="M12 7v5l3 3" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+    animate: {
+      initial: { rotate: -15, scale: 0.7, opacity: 0 },
+      animate: { rotate: 0, scale: 1, opacity: 1 },
+      transition: { type: "spring", stiffness: 280, damping: 18, delay: 0.55 },
+    },
+  },
+  {
+    label: "Serving Raleigh, Cary, Apex, Holly Springs & the Triangle",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5 shrink-0" aria-hidden="true">
+        <path
+          d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6z"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinejoin="round"
+        />
+        <circle cx="12" cy="8" r="2" stroke="currentColor" strokeWidth="1.5" />
+      </svg>
+    ),
+    animate: {
+      initial: { y: -8, opacity: 0 },
+      animate: { y: 0, opacity: 1 },
+      transition: { type: "spring", stiffness: 260, damping: 16, delay: 0.65 },
+    },
+  },
+  {
+    label: "House washing, windows, gutters, concrete & lighting",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5 shrink-0" aria-hidden="true">
+        <path
+          d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1H5a1 1 0 01-1-1v-9.5z"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinejoin="round"
+        />
+        <path d="M9 21V12h6v9" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+        <path d="M12 7.5v.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    ),
+    animate: {
+      initial: { scale: 0.6, opacity: 0 },
+      animate: { scale: 1, opacity: 1 },
+      transition: { type: "spring", stiffness: 300, damping: 20, delay: 0.75 },
+    },
+  },
+  {
+    label: "100% satisfaction guaranteed on every job",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5 shrink-0" aria-hidden="true">
+        <path
+          d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4l-4.8 2.5.9-5.4L4.2 7.7l5.4-.8L12 2z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinejoin="round"
+        />
+        <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+    animate: {
+      initial: { scale: 0.5, rotate: 20, opacity: 0 },
+      animate: { scale: 1, rotate: 0, opacity: 1 },
+      transition: { type: "spring", stiffness: 260, damping: 16, delay: 0.85 },
+    },
+  },
+];
+
 export function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-[#07111b] text-white">
@@ -52,6 +127,7 @@ export function Hero() {
           <p className="mt-5 max-w-xl text-lg leading-7 text-white/85">
             House washing, windows, gutters, concrete, and lighting — done right, every time. Fast quote, same-day response.
           </p>
+
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href={siteConfig.primaryCta.href}
@@ -68,10 +144,27 @@ export function Hero() {
               {siteConfig.secondaryCta.label}
             </Link>
           </div>
-          <div className="mt-8 grid max-w-lg grid-cols-1 gap-2.5 text-sm text-white/80 sm:grid-cols-3">
-            <div className="rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.08)] px-4 py-3">Same-day quote response</div>
-            <div className="rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.08)] px-4 py-3">100% satisfaction guaranteed</div>
-            <div className="rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.08)] px-4 py-3">Locally owned &amp; operated</div>
+
+          <div className="mt-8 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+            {badges.map((badge, i) => (
+              <motion.div
+                key={badge.label}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, ease: "easeOut", delay: 0.5 + i * 0.1 }}
+                className="group flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.07] px-4 py-3 backdrop-blur-sm transition duration-200 hover:border-[#C81920]/30 hover:bg-white/[0.11]"
+              >
+                <motion.span
+                  className="text-[#C81920]"
+                  {...badge.animate}
+                  whileHover={{ scale: 1.2, rotate: 8 }}
+                  transition={{ type: "spring", stiffness: 380, damping: 14 }}
+                >
+                  {badge.icon}
+                </motion.span>
+                <span className="text-xs leading-snug text-white/82 sm:text-[13px]">{badge.label}</span>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </div>
