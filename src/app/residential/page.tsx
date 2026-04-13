@@ -23,17 +23,17 @@ export default function Page() {
         {
           title: 'Tell us what needs attention',
           body: 'Fill out the quick form or call us. Whether you need one service or want to tackle the whole exterior, we\'ll put together the right scope.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/choose-service.png',
         },
         {
           title: 'Get a clear quote the same day',
           body: 'We respond with clear pricing and availability - no estimates that change at the door, no pressure to add services you don\'t need.',
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'Enjoy the curb-appeal improvement',
           body: 'The results are visible immediately - cleaner siding, streak-free windows, open gutters, bright concrete. One visit, complete exterior.',
-          image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+          image: '/step-images/house-wash.png',
         },
       ]}
       faqs={[

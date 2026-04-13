@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Get a fast, free quote',
           body: 'Tell us the fence length and material. We\'ll respond with same-day pricing and scheduling.',
-          image: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80',
+          image: '/step-images/fence.png',
         },
         {
           title: 'We lift the buildup and weathered look',
           body: 'Our crew uses the right pressure and technique for your fence material - removing mold, algae, and grime without damaging wood grain or vinyl surfaces.',
-          image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80',
+          image: '/step-images/concrete.png',
         },
         {
           title: 'The fence looks fresh without replacement cost',
           body: 'In most cases, a professional wash restores the look of the fence better than homeowners expect - and at a fraction of the replacement cost.',
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+          image: '/step-images/get-quote.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80', alt: 'Fence pressure washing - restoring wood and vinyl fences in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80', alt: 'Before and after fence washing - mold and algae removal' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Clean fence and home exterior after service - Triangle area' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Fence cleaning results - Wake County NC' },
+        { src: '/step-images/fence.png', alt: 'Fence pressure washing - restoring wood and vinyl fences in Raleigh NC' },
+        { src: '/step-images/concrete.png', alt: 'Before and after fence washing - mold and algae removal' },
+        { src: '/step-images/get-quote.png', alt: 'Clean fence and home exterior after service - Triangle area' },
+        { src: '/step-images/clean-result.png', alt: 'Fence cleaning results - Wake County NC' },
       ]}
       faqs={[
         {

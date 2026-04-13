@@ -23,17 +23,17 @@ export default function Page() {
         {
           title: 'Tell us about the property',
           body: 'Submit the quick form with your property details and cleaning needs. We work with property managers, storefront owners, and commercial operators.',
-          image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
+          image: '/step-images/crew-arrives.png',
         },
         {
           title: 'We scope the work and schedule efficiently',
           body: 'We\'ll coordinate timing to minimize disruption to your business or tenants. Early morning, evening, and weekend scheduling is available for most commercial clients.',
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'Your property looks professional and maintained',
           body: 'Clean exteriors are a direct reflection of how a business operates. We deliver consistent results so your property always makes the right impression.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       faqs={[

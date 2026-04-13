@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Request a same-day roof cleaning quote',
           body: 'Tell us your roof size, pitch, and material (asphalt shingles, tile, metal). We respond the same day with clear pricing and available scheduling.',
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'We soft wash the roof from the ground up',
           body: 'Our crew applies a professional-grade soft wash solution to the roof surface - safely killing algae, mold, lichen, and bacteria without walking on the shingles or using damaging pressure.',
-          image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+          image: '/step-images/house-wash.png',
         },
         {
           title: 'The roof looks clean and the shingles are protected',
           body: 'Streaks, dark patches, and green growth are gone. The roof looks newer, the home\'s curb appeal improves immediately, and the shingles are protected from further algae damage.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'Roof washing - removing algae and black streaks from shingles in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Clean home exterior after roof soft wash - Triangle area' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Roof cleaning results - before and after soft washing in Wake County' },
-        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Professional roof washing service - Cary NC' },
+        { src: '/step-images/house-wash.png', alt: 'Roof washing - removing algae and black streaks from shingles in Raleigh NC' },
+        { src: '/step-images/get-quote.png', alt: 'Clean home exterior after roof soft wash - Triangle area' },
+        { src: '/step-images/clean-result.png', alt: 'Roof cleaning results - before and after soft washing in Wake County' },
+        { src: '/step-images/clean-result.png', alt: 'Professional roof washing service - Cary NC' },
       ]}
       faqs={[
         {

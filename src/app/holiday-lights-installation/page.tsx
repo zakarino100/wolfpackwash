@@ -23,23 +23,23 @@ export default function Page() {
         {
           title: 'Request your holiday lighting quote',
           body: 'Book early to lock in your install date. We\'ll discuss your home, the look you want, and the full scope of the installation.',
-          image: 'https://images.unsplash.com/photo-1545181936-ac4e9e3a2b6c?w=800&q=80',
+          image: '/step-images/holiday-lights.png',
         },
         {
           title: 'We design and install everything professionally',
           body: 'Our crew installs your holiday lighting cleanly and safely - rooflines, trees, bushes, and any other features you want highlighted.',
-          image: 'https://images.unsplash.com/photo-1544979259-f3cd394b7a48?w=800&q=80',
+          image: '/step-images/holiday-lights.png',
         },
         {
           title: 'Enjoy the season without the hassle',
           body: 'Your home looks great all season long. When the holidays are over, we come back and remove everything cleanly - no leftover hardware, no storage headaches.',
-          image: 'https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=800&q=80',
+          image: '/step-images/perm-lighting.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1545181936-ac4e9e3a2b6c?w=800&q=80', alt: 'Professional holiday light installation on home in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1544979259-f3cd394b7a48?w=800&q=80', alt: 'Christmas lighting installation - Triangle area home' },
-        { src: 'https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=800&q=80', alt: 'Holiday lighting on roofline - Cary NC' },
+        { src: '/step-images/holiday-lights.png', alt: 'Professional holiday light installation on home in Raleigh NC' },
+        { src: '/step-images/holiday-lights.png', alt: 'Christmas lighting installation - Triangle area home' },
+        { src: '/step-images/perm-lighting.png', alt: 'Holiday lighting on roofline - Cary NC' },
         { src: 'https://images.unsplash.com/photo-1513031300226-c8fb12de9ade?w=800&q=80', alt: 'Professional holiday lighting install - Wake County NC' },
       ]}
       faqs={[

@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Request your quote',
           body: 'Tell us which surfaces need cleaning - driveway, walkways, patio, or all three. We\'ll get back to you the same day with pricing.',
-          image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+          image: '/step-images/concrete.png',
         },
         {
           title: 'We treat and pressure wash the surface',
           body: 'Our crew applies the right pre-treatment and pressure to your specific concrete type - lifting stains, algae, and buildup without damaging the surface.',
-          image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80',
+          image: '/step-images/concrete.png',
         },
         {
           title: 'The whole property feels sharper',
           body: 'Clean concrete changes the way a property looks and feels from the street. It\'s one of the highest-impact exterior improvements you can make.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80', alt: 'Concrete pressure washing - driveway cleaning in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80', alt: 'Removing oil stains and algae from concrete surfaces' },
-        { src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80', alt: 'Clean walkway and patio after pressure washing - Triangle NC' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Exterior concrete cleaning results - Wake County' },
+        { src: '/step-images/concrete.png', alt: 'Concrete pressure washing - driveway cleaning in Raleigh NC' },
+        { src: '/step-images/concrete.png', alt: 'Removing oil stains and algae from concrete surfaces' },
+        { src: '/step-images/sidewalk.png', alt: 'Clean walkway and patio after pressure washing - Triangle NC' },
+        { src: '/step-images/clean-result.png', alt: 'Exterior concrete cleaning results - Wake County' },
       ]}
       faqs={[
         {

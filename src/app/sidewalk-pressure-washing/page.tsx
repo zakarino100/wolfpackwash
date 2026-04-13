@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Get a fast quote',
           body: 'Tell us the approximate sidewalk and walkway footage. We respond the same day with pricing and available scheduling.',
-          image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
+          image: '/step-images/sidewalk.png',
         },
         {
           title: 'We clean the entire approach to your home',
           body: 'Our crew removes algae, mold, stains, and built-up grime from sidewalks and walkways - leaving clean, bright concrete from curb to doorstep.',
-          image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+          image: '/step-images/concrete.png',
         },
         {
           title: 'A cleaner, safer approach to the front door',
           body: 'Clean walkways change the first impression of your home before a visitor ever reaches the door - and reduce slip hazards from algae and mold buildup.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80', alt: 'Sidewalk pressure washing - cleaning walkways in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80', alt: 'Clean concrete sidewalk after pressure washing - Triangle area' },
-        { src: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80', alt: 'Removing algae and stains from walkways in Wake County' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Sidewalk and walkway cleaning results - Cary NC' },
+        { src: '/step-images/sidewalk.png', alt: 'Sidewalk pressure washing - cleaning walkways in Raleigh NC' },
+        { src: '/step-images/concrete.png', alt: 'Clean concrete sidewalk after pressure washing - Triangle area' },
+        { src: '/step-images/concrete.png', alt: 'Removing algae and stains from walkways in Wake County' },
+        { src: '/step-images/clean-result.png', alt: 'Sidewalk and walkway cleaning results - Cary NC' },
       ]}
       faqs={[
         {

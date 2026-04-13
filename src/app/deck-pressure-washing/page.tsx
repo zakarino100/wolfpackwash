@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Get a fast, free quote',
           body: 'Tell us the approximate size and material of your deck. We\'ll respond the same day with pricing and available scheduling.',
-          image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80',
+          image: '/step-images/deck.png',
         },
         {
           title: 'We wash and restore the surface',
           body: 'Our crew uses the right pressure and technique for your deck type - removing mold, mildew, algae, and staining without damaging the wood or composite surface.',
-          image: 'https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800&q=80',
+          image: '/step-images/deck.png',
         },
         {
           title: 'Your outdoor space is ready to use again',
           body: 'The deck looks cleaner, feels safer, and is ready for spring and summer - no more avoiding the space because it looks rough.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80', alt: 'Deck pressure washing - restoring outdoor living space in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800&q=80', alt: 'Clean wood deck after professional pressure washing' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Outdoor deck cleaning results - Triangle area' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Before and after deck washing - Wake County NC' },
+        { src: '/step-images/deck.png', alt: 'Deck pressure washing - restoring outdoor living space in Raleigh NC' },
+        { src: '/step-images/deck.png', alt: 'Clean wood deck after professional pressure washing' },
+        { src: '/step-images/get-quote.png', alt: 'Outdoor deck cleaning results - Triangle area' },
+        { src: '/step-images/clean-result.png', alt: 'Before and after deck washing - Wake County NC' },
       ]}
       faqs={[
         {

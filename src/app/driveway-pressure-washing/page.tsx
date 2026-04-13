@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Request a fast quote',
           body: 'Give us details about your driveway size and any specific staining concerns. We respond the same day with pricing and scheduling.',
-          image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+          image: '/step-images/concrete.png',
         },
         {
           title: 'We treat and pressure wash the surface',
           body: 'Our crew pre-treats stained areas and applies the right pressure for your driveway material - removing oil, algae, and buildup without surface damage.',
-          image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80',
+          image: '/step-images/concrete.png',
         },
         {
           title: 'Pull into a cleaner-looking property',
           body: 'The difference is noticeable from the street. A clean driveway makes the entire front of your home look more maintained and well cared for.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80', alt: 'Driveway pressure washing - removing oil stains and buildup in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80', alt: 'Before and after driveway cleaning - Triangle area' },
-        { src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80', alt: 'Clean concrete driveway after professional pressure washing' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Driveway cleaning results - Wake County NC' },
+        { src: '/step-images/concrete.png', alt: 'Driveway pressure washing - removing oil stains and buildup in Raleigh NC' },
+        { src: '/step-images/concrete.png', alt: 'Before and after driveway cleaning - Triangle area' },
+        { src: '/step-images/sidewalk.png', alt: 'Clean concrete driveway after professional pressure washing' },
+        { src: '/step-images/clean-result.png', alt: 'Driveway cleaning results - Wake County NC' },
       ]}
       faqs={[
         {

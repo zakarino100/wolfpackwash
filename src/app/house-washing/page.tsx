@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Get a fast, free quote',
           body: 'Fill out our quick form or call us directly. We respond the same day with pricing and availability - no waiting, no runaround.',
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'We soft-wash your home safely',
           body: 'Our crew arrives on time, walks the property, and applies the right mix of low-pressure water and cleaning solution for your siding type. No damage, no guessing.',
-          image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+          image: '/step-images/house-wash.png',
         },
         {
           title: 'Your home looks sharp again',
           body: 'Pollen, algae, and grime are gone. The curb appeal improvement is immediate - most homeowners say it looks like a completely different house.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'House washing - removing pollen and algae from siding' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Clean home exterior after soft wash treatment' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Before and after house washing in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Professional exterior cleaning results - Triangle NC' },
+        { src: '/step-images/house-wash.png', alt: 'House washing - removing pollen and algae from siding' },
+        { src: '/step-images/get-quote.png', alt: 'Clean home exterior after soft wash treatment' },
+        { src: '/step-images/clean-result.png', alt: 'Before and after house washing in Raleigh NC' },
+        { src: '/step-images/clean-result.png', alt: 'Professional exterior cleaning results - Triangle NC' },
       ]}
       faqs={[
         {

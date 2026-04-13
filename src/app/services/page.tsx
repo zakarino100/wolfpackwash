@@ -23,17 +23,17 @@ export default function Page() {
         {
           title: 'Pick the service your home needs',
           body: 'Browse the full list of exterior cleaning and lighting services, or tell us what you\'re dealing with and we\'ll recommend the right approach.',
-          image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+          image: '/step-images/choose-service.png',
         },
         {
           title: 'Get a same-day quote',
           body: 'Fill out the quick form or call us directly. We respond the same day with clear pricing - no estimates that change at the door.',
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'We show up, do the work, and do it right',
           body: 'On schedule, thorough, and with results you can see immediately. That\'s the Wolf Pack Wash standard on every job.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       faqs={[

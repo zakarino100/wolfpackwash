@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Get a design consultation and quote',
           body: 'We walk through your home\'s roofline, features, and goals. You\'ll get a clear picture of what the install looks like and what it costs - no surprises.',
-          image: 'https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=800&q=80',
+          image: '/step-images/perm-lighting.png',
         },
         {
           title: 'We install your permanent lighting system',
           body: 'Our crew installs commercial-grade RGB fixtures along your roofline and any other features you want illuminated. Clean, concealed wiring and a weatherproof installation built to last.',
-          image: 'https://images.unsplash.com/photo-1545181936-ac4e9e3a2b6c?w=800&q=80',
+          image: '/step-images/holiday-lights.png',
         },
         {
           title: 'Control everything from your phone, year-round',
           body: 'Set schedules, change colors, and adjust brightness right from the app. Your home looks great every night - for holidays, events, and everyday.',
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+          image: '/step-images/get-quote.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=800&q=80', alt: 'Permanent RGB lighting installed on home exterior - Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1545181936-ac4e9e3a2b6c?w=800&q=80', alt: 'Year-round exterior lighting - Triangle area home' },
-        { src: 'https://images.unsplash.com/photo-1544979259-f3cd394b7a48?w=800&q=80', alt: 'App-controlled permanent lighting - Cary NC' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Permanent lighting installation results - Wake County' },
+        { src: '/step-images/perm-lighting.png', alt: 'Permanent RGB lighting installed on home exterior - Raleigh NC' },
+        { src: '/step-images/holiday-lights.png', alt: 'Year-round exterior lighting - Triangle area home' },
+        { src: '/step-images/holiday-lights.png', alt: 'App-controlled permanent lighting - Cary NC' },
+        { src: '/step-images/get-quote.png', alt: 'Permanent lighting installation results - Wake County' },
       ]}
       faqs={[
         {

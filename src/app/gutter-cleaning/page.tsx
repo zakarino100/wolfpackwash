@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Get a same-day quote',
           body: 'Fill out the quick form or call us directly. We\'ll respond with pricing and next available dates - no waiting, no back-and-forth.',
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'We clear and flush the entire system',
           body: 'Our crew removes all debris from gutters and flushes every downspout to confirm water is moving correctly away from your foundation.',
-          image: 'https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=800&q=80',
+          image: '/step-images/gutter.png',
         },
         {
           title: 'You stay ahead of the next problem',
           body: 'Clean gutters protect your roofline, fascia boards, siding, and foundation. It\'s one of the most preventive things you can do for your home each year.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=800&q=80', alt: 'Gutter cleaning - removing debris and leaves in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Home exterior after gutter cleaning service' },
-        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'Full exterior cleaning including gutters - Triangle NC' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Clean home exterior after gutter and house washing' },
+        { src: '/step-images/gutter.png', alt: 'Gutter cleaning - removing debris and leaves in Raleigh NC' },
+        { src: '/step-images/get-quote.png', alt: 'Home exterior after gutter cleaning service' },
+        { src: '/step-images/house-wash.png', alt: 'Full exterior cleaning including gutters - Triangle NC' },
+        { src: '/step-images/clean-result.png', alt: 'Clean home exterior after gutter and house washing' },
       ]}
       faqs={[
         {

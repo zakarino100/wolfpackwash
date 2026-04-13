@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Get a fast quote for both surfaces',
           body: 'Tell us your fence length, fence material, deck size, and deck material. We\'ll respond the same day with pricing and scheduling for a combined visit.',
-          image: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80',
+          image: '/step-images/fence.png',
         },
         {
           title: 'We clean the fence and deck in the right order',
           body: 'Our crew tackles the fence first, then moves to the deck - using the correct pressure and technique for each material type to get a clean result without surface damage.',
-          image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80',
+          image: '/step-images/deck.png',
         },
         {
           title: 'Your entire outdoor space looks like it belongs together',
           body: 'Clean fence, clean deck - the whole backyard feels restored and usable again. No more avoiding the space because it looks rough or feels slippery.',
-          image: 'https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800&q=80',
+          image: '/step-images/deck.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80', alt: 'Deck cleaning - restored outdoor living space in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80', alt: 'Fence washing - removing mold and algae from wood fence' },
-        { src: 'https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800&q=80', alt: 'Clean wood deck after professional pressure washing - Triangle area' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Fence and deck cleaning results - Wake County NC' },
+        { src: '/step-images/deck.png', alt: 'Deck cleaning - restored outdoor living space in Raleigh NC' },
+        { src: '/step-images/fence.png', alt: 'Fence washing - removing mold and algae from wood fence' },
+        { src: '/step-images/deck.png', alt: 'Clean wood deck after professional pressure washing - Triangle area' },
+        { src: '/step-images/clean-result.png', alt: 'Fence and deck cleaning results - Wake County NC' },
       ]}
       faqs={[
         {

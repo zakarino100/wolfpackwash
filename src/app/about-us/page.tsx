@@ -23,17 +23,17 @@ export default function Page() {
         {
           title: 'Reach out from your phone',
           body: 'Fill out the quick form or call us directly. We respond the same day with pricing and next available scheduling - no waiting, no runaround.',
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'We recommend the right service and show up ready',
           body: 'Our crew arrives on time with the right equipment for your home. We walk the property, confirm the scope, and get to work without dragging the process out.',
-          image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+          image: '/step-images/house-wash.png',
         },
         {
           title: 'You see the difference immediately',
           body: 'Clean siding, clear windows, open gutters, bright concrete - the results are visible as soon as we finish. That\'s what we show up to deliver every time.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       faqs={[

@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Get a fast quote',
           body: 'Tell us your home size and approximate number of windows. We respond the same day with pricing and available dates.',
-          image: 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80',
+          image: '/step-images/window.png',
         },
         {
           title: 'We clean every pane thoroughly',
           body: 'Our crew works methodically through every window - cleaning glass, wiping frames, and removing buildup from tracks and sills for a proper finish.',
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'Enjoy cleaner glass and better light',
           body: 'The difference is immediately noticeable - more natural light, better views from inside, and a noticeably sharper exterior from the street.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80', alt: 'Professional window cleaning - streak-free glass in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Clean windows and home exterior after service' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Window cleaning results on Triangle area home' },
-        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Exterior window washing - Cary NC' },
+        { src: '/step-images/window.png', alt: 'Professional window cleaning - streak-free glass in Raleigh NC' },
+        { src: '/step-images/get-quote.png', alt: 'Clean windows and home exterior after service' },
+        { src: '/step-images/clean-result.png', alt: 'Window cleaning results on Triangle area home' },
+        { src: '/step-images/clean-result.png', alt: 'Exterior window washing - Cary NC' },
       ]}
       faqs={[
         {

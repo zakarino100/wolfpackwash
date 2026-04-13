@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Get a fast quote',
           body: 'Fill out the form with your home details. We\'ll respond the same day with pricing and next available scheduling.',
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'We apply soft wash solution at low pressure',
           body: 'Our crew pre-wets landscaping, applies biodegradable cleaning solution to your siding, and allows it to dwell before rinsing - safely removing organic growth without surface damage.',
-          image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+          image: '/step-images/house-wash.png',
         },
         {
           title: 'Your home looks and stays cleaner longer',
           body: 'Soft washing kills algae and mold at the source, so results last 4-6 times longer than high-pressure washing alone.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'Soft washing - safe low-pressure house cleaning in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Home exterior after soft wash treatment - Triangle area' },
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Soft washing results on vinyl siding - Wake County' },
-        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Clean home exterior after soft wash - Cary NC' },
+        { src: '/step-images/house-wash.png', alt: 'Soft washing - safe low-pressure house cleaning in Raleigh NC' },
+        { src: '/step-images/get-quote.png', alt: 'Home exterior after soft wash treatment - Triangle area' },
+        { src: '/step-images/clean-result.png', alt: 'Soft washing results on vinyl siding - Wake County' },
+        { src: '/step-images/clean-result.png', alt: 'Clean home exterior after soft wash - Cary NC' },
       ]}
       faqs={[
         {

@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Choose the plan that fits your home',
           body: 'We\'ll walk through your property\'s needs and recommend the right tier - whether you want basic annual maintenance or full-coverage recurring care.',
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
         {
           title: 'We schedule and handle everything',
           body: 'As a plan member, you\'re automatically prioritized for scheduling. You don\'t have to call every season - we\'ll reach out to confirm your next visit.',
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+          image: '/step-images/get-quote.png',
         },
         {
           title: 'Your home stays cleaner all year long',
           body: 'No more scrambling to book in spring when everyone else is calling. Your property stays maintained, your curb appeal stays strong, and you don\'t have to think about it.',
-          image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80',
+          image: '/step-images/clean-result.png',
         },
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', alt: 'Well-maintained home exterior - Raleigh NC exterior care plan' },
-        { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', alt: 'Clean home year-round with recurring exterior service' },
-        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'House washing as part of annual exterior care plan - Triangle NC' },
-        { src: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80', alt: 'Exterior care plan results - Wake County home maintenance' },
+        { src: '/step-images/clean-result.png', alt: 'Well-maintained home exterior - Raleigh NC exterior care plan' },
+        { src: '/step-images/get-quote.png', alt: 'Clean home year-round with recurring exterior service' },
+        { src: '/step-images/house-wash.png', alt: 'House washing as part of annual exterior care plan - Triangle NC' },
+        { src: '/step-images/clean-result.png', alt: 'Exterior care plan results - Wake County home maintenance' },
       ]}
       faqs={[
         {
