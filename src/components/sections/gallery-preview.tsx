@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/reveal";
 const cards = [
   {
     label: "House wash - pollen and grime gone",
-    img: "/gallery-images/house-wash-v2.png",
+    img: "/gallery-images/house-wash-v3.png",
   },
   {
     label: "Window cleaning - streak-free finish",
@@ -13,7 +13,7 @@ const cards = [
   },
   {
     label: "Driveway pressure wash - stains lifted",
-    img: "/gallery-images/driveway-wash.png",
+    img: "/gallery-images/driveway-wash-v2.png",
   },
   {
     label: "Permanent lighting - year-round curb appeal",
