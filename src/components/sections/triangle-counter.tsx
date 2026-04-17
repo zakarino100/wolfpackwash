@@ -1,69 +1,149 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
-const bars = [
-  { label: "Customer Satisfaction", pct: 98 },
-  { label: "5-Star Reviews", pct: 94 },
-  { label: "On-Time Arrivals", pct: 96 },
-  { label: "Repeat & Referral Customers", pct: 87 },
-  { label: "Same-Day Quote Response", pct: 91 },
+const SLICES = [
+  { label: "Customer Satisfaction", value: 98, color: "#C81920" },
+  { label: "5-Star Reviews",        value: 94, color: "#e8404a" },
+  { label: "On-Time Arrivals",      value: 96, color: "#8a1018" },
+  { label: "Repeat & Referral",     value: 87, color: "#f07078" },
+  { label: "Same-Day Response",     value: 91, color: "#5c090e" },
 ];
 
 const stats = [
   { value: "1,200+", label: "Homes Cleaned" },
-  { value: "13", label: "Cities Served" },
-  { value: "4.9", label: "Avg. Star Rating" },
-  { value: "100%", label: "Satisfaction Guarantee" },
+  { value: "13",     label: "Cities Served" },
+  { value: "4.9",    label: "Avg. Star Rating" },
+  { value: "100%",   label: "Satisfaction Guarantee" },
 ];
 
-function Bar({ label, pct, index }: { label: string; pct: number; index: number }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
+const total = SLICES.reduce((s, sl) => s + sl.value, 0);
+
+function buildConicGradient(slices: typeof SLICES) {
+  let cum = 0;
+  const stops = slices.map((sl) => {
+    const start = (cum / total) * 100;
+    cum += sl.value;
+    const end = (cum / total) * 100;
+    const gapStart = start + 0.6;
+    const gapEnd   = end   - 0.6;
+    return `transparent ${start.toFixed(2)}% ${gapStart.toFixed(2)}%, ${sl.color} ${gapStart.toFixed(2)}% ${gapEnd.toFixed(2)}%, transparent ${gapEnd.toFixed(2)}% ${end.toFixed(2)}%`;
+  });
+  return `conic-gradient(from -90deg, ${stops.join(", ")})`;
+}
+
+const conicGradient = buildConicGradient(SLICES);
+
+function getSweepPath(p: number) {
+  const cx = 120, cy = 120, r = 122;
+  if (p <= 0) return `M${cx},${cy}Z`;
+  if (p >= 1) return `M0,0H240V240H0Z`;
+  const angle = p * 360 - 90;
+  const rad = (angle * Math.PI) / 180;
+  const ex = (cx + r * Math.cos(rad)).toFixed(3);
+  const ey = (cy + r * Math.sin(rad)).toFixed(3);
+  const large = p > 0.5 ? 1 : 0;
+  return `M${cx},${cy}L${cx},${cy - r}A${r},${r} 0 ${large},1 ${ex},${ey}Z`;
+}
+
+const DEPTH_LAYERS = 20;
+
+function PieChart3D({ inView }: { inView: boolean }) {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    if (!inView) return;
+    const startTime = Date.now();
+    const duration = 1500;
+    let raf: number;
+    const tick = () => {
+      const elapsed = Date.now() - startTime;
+      const raw = Math.min(elapsed / duration, 1);
+      const eased = raw < 1 ? 1 - Math.pow(1 - raw, 3) : 1;
+      setProgress(eased);
+      if (raw < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [inView]);
+
+  const sweepPath = getSweepPath(progress);
 
   return (
-    <div ref={ref} className="group">
-      <div className="mb-1.5 flex items-baseline justify-between gap-2">
-        <span className="text-sm font-medium text-white/80">{label}</span>
-        <motion.span
-          className="text-sm font-semibold tabular-nums text-white"
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.3, delay: 0.15 + index * 0.12 }}
-        >
-          {pct}%
-        </motion.span>
-      </div>
-      <div className="relative h-2.5 w-full overflow-hidden rounded-full bg-white/[0.08]">
-        <motion.div
-          className="absolute inset-y-0 left-0 rounded-full bg-[linear-gradient(90deg,#a8141a,#C81920,#e8232c)]"
-          initial={{ width: "0%" }}
-          animate={inView ? { width: `${pct}%` } : {}}
-          transition={{
-            duration: 1.1,
-            delay: 0.1 + index * 0.12,
-            ease: [0.25, 0.46, 0.45, 0.94],
-          }}
-        />
-        <motion.div
-          className="absolute inset-y-0 left-0 rounded-full bg-[linear-gradient(90deg,transparent_60%,rgba(255,255,255,0.18))]"
-          initial={{ width: "0%" }}
-          animate={inView ? { width: `${pct}%` } : {}}
-          transition={{
-            duration: 1.1,
-            delay: 0.1 + index * 0.12,
-            ease: [0.25, 0.46, 0.45, 0.94],
-          }}
-        />
-      </div>
+    <div style={{ perspective: "700px", perspectiveOrigin: "50% 60%" }}>
+      <motion.div
+        style={{ transformStyle: "preserve-3d" }}
+        initial={{ rotateX: 75, scale: 0.6, opacity: 0 }}
+        animate={inView ? { rotateX: 46, scale: 1, opacity: 1 } : {}}
+        transition={{ duration: 1.1, ease: [0.34, 1.1, 0.64, 1], delay: 0.1 }}
+      >
+        <div style={{ position: "relative", width: 240, height: 240 }}>
+          {Array.from({ length: DEPTH_LAYERS }).map((_, i) => {
+            const offset = DEPTH_LAYERS - i;
+            const brightness = 0.2 + (i / DEPTH_LAYERS) * 0.5;
+            return (
+              <div
+                key={i}
+                style={{
+                  position: "absolute",
+                  top: offset,
+                  left: 0,
+                  width: 240,
+                  height: 240,
+                  borderRadius: "50%",
+                  background: conicGradient,
+                  filter: `brightness(${brightness})`,
+                  clipPath: `path("${sweepPath}")`,
+                }}
+              />
+            );
+          })}
+          <div
+            style={{
+              position: "relative",
+              width: 240,
+              height: 240,
+              borderRadius: "50%",
+              background: conicGradient,
+              boxShadow: "0 0 48px rgba(200,25,32,0.35), 0 0 80px rgba(200,25,32,0.12)",
+              clipPath: `path("${sweepPath}")`,
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: 88,
+              height: 88,
+              borderRadius: "50%",
+              background: "radial-gradient(circle, #0d1c28 60%, #07111b)",
+              border: "1px solid rgba(255,255,255,0.08)",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              zIndex: 10,
+            }}
+          >
+            <span style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", letterSpacing: "0.08em", textTransform: "uppercase" }}>Avg.</span>
+            <span style={{ fontSize: 22, fontWeight: 700, color: "#C81920", lineHeight: 1.1 }}>
+              {(progress * 93.2).toFixed(0)}%
+            </span>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 }
 
 export function TriangleCounter() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const chartRef   = useRef<HTMLDivElement>(null);
   const statsInView = useInView(sectionRef, { once: true, margin: "-60px" });
+  const chartInView = useInView(chartRef,   { once: true, margin: "-60px" });
 
   return (
     <section className="bg-[#07111b] py-16 text-white sm:py-20">
@@ -96,13 +176,32 @@ export function TriangleCounter() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center gap-5">
-              {bars.map((bar, i) => (
-                <Bar key={bar.label} label={bar.label} pct={bar.pct} index={i} />
-              ))}
-              <p className="mt-1 text-xs text-white/35">
-                Based on completed jobs and verified Google reviews across the Triangle.
-              </p>
+            <div ref={chartRef} className="flex flex-col items-center justify-center gap-7">
+              <PieChart3D inView={chartInView} />
+
+              <div className="w-full max-w-xs space-y-2.5">
+                {SLICES.map((sl, i) => (
+                  <motion.div
+                    key={sl.label}
+                    initial={{ opacity: 0, x: -12 }}
+                    animate={chartInView ? { opacity: 1, x: 0 } : {}}
+                    transition={{ duration: 0.4, delay: 0.7 + i * 0.1, ease: "easeOut" }}
+                    className="flex items-center justify-between gap-3"
+                  >
+                    <div className="flex items-center gap-2">
+                      <span
+                        className="h-2.5 w-2.5 flex-shrink-0 rounded-full"
+                        style={{ background: sl.color }}
+                      />
+                      <span className="text-sm text-white/70">{sl.label}</span>
+                    </div>
+                    <span className="text-sm font-semibold tabular-nums text-white">{sl.value}%</span>
+                  </motion.div>
+                ))}
+                <p className="pt-1 text-xs text-white/30">
+                  Based on completed jobs and verified Google reviews.
+                </p>
+              </div>
             </div>
           </div>
 
