@@ -3,7 +3,9 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-const HH_API = "https://healthy-home-backend.replit.app/api/booking";
+const HH_API = process.env.NEXT_PUBLIC_API_URL
+  ? `${process.env.NEXT_PUBLIC_API_URL}/api/booking`
+  : "https://healthy-home-backend-production.up.railway.app/api/booking";
 
 interface BookingData {
   name: string;
