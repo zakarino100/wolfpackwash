@@ -40,7 +40,7 @@ export default function ConfirmPage() {
         setData(d as BookingData);
         setStep((d as BookingData).alreadyBooked ? "done" : "confirm");
       })
-      .catch(() => { setError("Couldn't load your booking. Try again or call us at (919) 899-7856."); setStep("error"); });
+      .catch(() => { setError("Couldn't load your booking. Try again or call us at (984) 600-7038."); setStep("error"); });
   }, []);
 
   const handleStartForm = () => {
@@ -62,9 +62,9 @@ export default function ConfirmPage() {
       });
       const result = await r.json();
       if (result.ok) setStep("done");
-      else setError("Something went wrong. Please call us at (919) 899-7856.");
+      else setError("Something went wrong. Please call us at (984) 600-7038.");
     } catch {
-      setError("Couldn't submit. Please call us at (919) 899-7856.");
+      setError("Couldn't submit. Please call us at (984) 600-7038.");
     }
     setSubmitting(false);
   };
@@ -92,7 +92,7 @@ export default function ConfirmPage() {
           <div className="bg-red-950/40 border border-red-800/40 rounded-2xl p-6 text-center">
             <div className="text-2xl mb-2">⚠️</div>
             <p className="text-white/80">{error}</p>
-            <a href="tel:+19198997856" className="mt-4 block text-[#C81920] font-semibold">(919) 899-7856</a>
+            <a href="tel:+19846007038" className="mt-4 block text-[#C81920] font-semibold">(984) 600-7038</a>
           </div>
         )}
 
@@ -119,10 +119,10 @@ export default function ConfirmPage() {
               Yes, book my spot →
             </button>
             <a
-              href="tel:+19198997856"
+              href="tel:+19846007038"
               className="block mt-3 text-white/40 text-sm hover:text-white/60 transition"
             >
-              Or call us: (919) 899-7856
+              Or call us: (984) 600-7038
             </a>
           </div>
         )}
@@ -174,7 +174,7 @@ export default function ConfirmPage() {
               Matthew will text you to confirm your exact date and time.
               Looking forward to seeing you.
             </p>
-            <p className="mt-4 text-white/30 text-xs">Wolf Pack Wash · (919) 899-7856</p>
+            <p className="mt-4 text-white/30 text-xs">Wolf Pack Wash · (984) 600-7038</p>
           </div>
         )}
       </div>

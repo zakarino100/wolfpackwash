@@ -7,15 +7,15 @@ export type NavItem = {
 export const siteConfig = {
   name: "Wolf Pack Wash",
   domain: "https://wolfpackwashnc.com",
-  phoneDisplay: "(919) 738-5394",
-  phoneHref: "tel:+19197385394",
+  phoneDisplay: "(984) 600-7038",
+  phoneHref: "tel:+19846007038",
   primaryCta: {
     label: "Get Free Quote",
     href: "/contact",
   },
   secondaryCta: {
     label: "Call Now",
-    href: "tel:+19197385394",
+    href: "tel:+19846007038",
   },
   heroVideo: {
     src: "https://wolfpackwashnc.com/wp-content/uploads/2025/05/Scene-4-Crew-at-Work-Shot-5.mp4",
