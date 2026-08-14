@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1.3fr_1fr_1fr] lg:px-8">
         <div>
           <div className="flex items-center gap-3">
-            <Image src="/logos/wolfpack_wash_shield_transparent.png" alt="Wolf Pack Wash logo" width={56} height={56} className="h-14 w-14 object-contain" />
+            <Image src="/logos/wolfpack_wash_shield_transparent.webp" alt="Wolf Pack Wash logo" width={56} height={56} className="h-14 w-14 object-contain" />
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-white">Wolf Pack Wash</p>
               <p className="mt-1 text-[10px] uppercase tracking-[0.28em] text-sky-200/75">Exterior Cleaning</p>
@@ -42,6 +42,13 @@ export function Footer() {
               Explore Exterior Care Plan
             </Link>
           </div>
+        </div>
+      </div>
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 border-t border-white/[0.06] px-4 py-5 sm:px-6 lg:px-8">
+        <p className="text-xs text-white/30">&copy; {new Date().getFullYear()} Wolf Pack Wash. All rights reserved.</p>
+        <div className="flex gap-5 text-xs text-white/30">
+          <Link href="/privacy-policy" className="transition hover:text-white/60">Privacy Policy</Link>
+          <Link href="/terms-of-service" className="transition hover:text-white/60">Terms of Service</Link>
         </div>
       </div>
     </footer>

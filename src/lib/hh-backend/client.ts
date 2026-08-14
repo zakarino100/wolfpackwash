@@ -14,9 +14,13 @@ function buildHealthyHomePayload(payload: QuoteRequest) {
     utm_medium: payload.utmMedium || null,
     utm_campaign: payload.utmCampaign || null,
     utm_content: payload.utmContent || null,
+    utm_term: payload.utmTerm || null,
     page_path: payload.pagePath || null,
+    landing_page: payload.landingPage || null,
     referrer: payload.referrer || null,
     frequency: payload.frequency || null,
+    session_id: payload.sessionId || null,
+    source_brand: "wolf_pack_wash",
   };
 }
 

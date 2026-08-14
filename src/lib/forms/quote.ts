@@ -14,6 +14,9 @@ export type QuoteRequest = {
   utmMedium?: string;
   utmCampaign?: string;
   utmContent?: string;
+  utmTerm?: string;
+  landingPage?: string;
+  sessionId?: string;
 };
 
 export const quoteDefaults = {

@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.gallery.title}
       description={pageContent.gallery.description}
       sourcePage="/gallery"
-      image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
+      image="/gallery-images/house-wash-v3.png"
       bullets={[
         'House washing before-and-afters showing the difference soft washing makes on siding, brick, and stucco.',
         'Window cleaning results with streak-free glass and noticeably better light from both inside and out.',
@@ -20,14 +20,13 @@ export default function Page() {
         'Lighting installs - both seasonal holiday lighting and permanent RGB systems across Triangle-area homes.',
       ]}
       gallery={[
-        { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', alt: 'House washing - removing pollen, algae, and grime from siding' },
-        { src: 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80', alt: 'Window cleaning - streak-free glass on Triangle area home' },
-        { src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80', alt: 'Driveway pressure washing - before and after results' },
-        { src: 'https://images.unsplash.com/photo-1545181936-ac4e9e3a2b6c?w=800&q=80', alt: 'Holiday light installation - professional install in Raleigh NC' },
-        { src: 'https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=800&q=80', alt: 'Gutter cleaning - removing debris and restoring water flow' },
-        { src: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80', alt: 'Deck pressure washing - restored outdoor living space' },
-        { src: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80', alt: 'Fence pressure washing - wood and vinyl fence restoration' },
-        { src: 'https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=800&q=80', alt: 'Permanent RGB lighting installation - year-round exterior lighting' },
+        { src: '/gallery-images/house-wash-v3.png', alt: 'House washing - removing pollen, algae, and grime from siding' },
+        { src: '/gallery-images/window-cleaning.png', alt: 'Window cleaning - streak-free glass on Triangle area home' },
+        { src: '/gallery-images/driveway-wash-v2.png', alt: 'Driveway pressure washing - before and after results' },
+        { src: '/gallery-images/house-wash-v2.png', alt: 'House wash - vinyl siding restoration in Cary NC' },
+        { src: '/gallery-images/driveway-wash.png', alt: 'Driveway and concrete cleaning - years of buildup lifted' },
+        { src: '/gallery-images/house-wash.png', alt: 'House washing - soft wash results on Triangle area home' },
+        { src: '/gallery-images/permanent-lighting.png', alt: 'Permanent RGB lighting installation - year-round exterior lighting' },
       ]}
     />
   );
