@@ -10,6 +10,8 @@ function buildHealthyHomePayload(payload: QuoteRequest) {
     service_interest: payload.services,
     notes: payload.notes || null,
     preferred_contact: payload.phone ? "sms" : null,
+    stories: payload.stories || null,
+    approx_sqft: payload.approxSqft || null,
     utm_source: payload.utmSource || payload.source || "wolf_pack_wash_website",
     utm_medium: payload.utmMedium || null,
     utm_campaign: payload.utmCampaign || null,

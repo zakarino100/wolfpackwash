@@ -6,6 +6,8 @@ import { Footer } from "@/components/layout/footer";
 import { ScrollToTop } from "@/components/ui/scroll-to-top";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildLocalBusinessJsonLd } from "@/lib/site/seo";
+import { ThemeProvider, ThemeNoFlashScript } from "@/components/theme/theme-provider";
+import { FunnelProvider } from "@/components/funnel/funnel-context";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -101,15 +103,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full bg-[#07111b] text-white">
+    <html lang="en" suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+      <head>
+        <ThemeNoFlashScript />
+      </head>
+      <body className="min-h-full">
+        <ThemeProvider />
         <JsonLd data={buildLocalBusinessJsonLd()} />
         <ScrollToTop />
-        <div className="flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
+        <FunnelProvider>
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </FunnelProvider>
       </body>
     </html>
   );

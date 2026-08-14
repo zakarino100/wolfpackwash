@@ -4,6 +4,8 @@ export type QuoteRequest = {
   address: string;
   services: string[];
   frequency?: string;
+  stories?: string;
+  approxSqft?: string;
   phone: string;
   email?: string;
   notes?: string;

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { submitQuoteToHealthyHome } from "@/lib/hh-backend/client";
 import { notifyScoutOfLead } from "@/lib/scout/client";
+import { notifyDiscordOfLead } from "@/lib/notify/discord";
 import { quoteDefaults, type QuoteRequest } from "@/lib/forms/quote";
 
 export async function POST(request: Request) {
@@ -10,14 +11,16 @@ export async function POST(request: Request) {
     ...body,
   };
 
-  const [hhResult, scoutResult] = await Promise.all([
+  const [hhResult, scoutResult, discordResult] = await Promise.all([
     submitQuoteToHealthyHome(payload),
     notifyScoutOfLead(payload),
+    notifyDiscordOfLead(payload),
   ]);
 
   return NextResponse.json({
     ok: true,
     hhResult,
     scoutResult,
+    discordResult,
   });
 }

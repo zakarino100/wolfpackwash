@@ -11,6 +11,8 @@ function buildScoutPayload(payload: QuoteRequest) {
     notes: payload.notes || null,
     pagePath: payload.pagePath || null,
     frequency: payload.frequency || null,
+    stories: payload.stories || null,
+    approxSqft: payload.approxSqft || null,
   };
 }
 
