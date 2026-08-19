@@ -3,7 +3,7 @@ import { PageBuilder } from '@/components/ui/page-builder';
 import { buildMetadata } from '@/lib/site/seo';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'WolfPack Training Academy | Exterior Cleaning Training and Education',
+  title: 'WolfPack Training Academy | Home Services Training and Education',
   description:
     'Explore WolfPack Training Academy content for training, learning, and future education resources tied to the Wolf Pack Wash brand.',
   path: '/wolfpack-training-academy',

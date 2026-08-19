@@ -125,6 +125,12 @@ export const pageContent = {
     description:
       "Those dark streaks on your roof aren't just ugly - they're algae and bacteria actively shortening the life of your shingles. Wolf Pack Wash uses soft washing to safely remove roof staining without voiding your warranty or damaging your roofing materials.",
   },
+  exteriorPainting: {
+    eyebrow: "Exterior Painting",
+    title: "A Fresh, Durable Exterior That Makes Your Home Look New Again.",
+    description:
+      "Faded, peeling, or dated exterior paint drags down your whole home. Wolf Pack Wash delivers a clean, durable exterior paint job - siding, trim, fascia, doors, and shutters - with proper prep, premium coatings, and a finish built to hold up to Carolina sun, humidity, and storms.",
+  },
   blog: {
     eyebrow: "Wolf Pack Wash Blog",
     title: "Exterior cleaning tips and homeowner guides for the Triangle.",

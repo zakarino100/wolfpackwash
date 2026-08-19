@@ -1,0 +1,201 @@
+{
+  "buckets": {
+    "edges": []
+  },
+  "deletedAt": null,
+  "environments": {
+    "edges": [
+      {
+        "node": {
+          "canAccess": true,
+          "deletedAt": null,
+          "id": "4351d7ff-ead0-4981-940e-2824ff212ce9",
+          "name": "production",
+          "serviceInstances": {
+            "edges": [
+              {
+                "node": {
+                  "activeDeployments": [
+                    {
+                      "createdAt": "2026-08-07T00:47:20.463Z",
+                      "deploymentStopped": false,
+                      "id": "61efe9ed-976c-4bcd-adb9-1fbd88a27dc2",
+                      "instances": [
+                        {
+                          "id": "728d73a8-f366-4a85-9885-d58679c968a1",
+                          "status": "RUNNING"
+                        }
+                      ],
+                      "meta": {
+                        "buildOnly": false,
+                        "fileServiceManifest": {},
+                        "imageDigest": "sha256:423ad964b55243b7d82196645f77320603a24bcc715567916e8f41ccd4423c93",
+                        "logsV2": true,
+                        "nixpacksProviders": [],
+                        "propertyFileMapping": {},
+                        "reason": "deploy",
+                        "rootDirectory": null,
+                        "runtime": "V2",
+                        "serviceManifest": {
+                          "build": {
+                            "buildCommand": null,
+                            "buildEnvironment": "V3",
+                            "builder": "RAILPACK",
+                            "dockerfilePath": null,
+                            "nixpacksConfigPath": null,
+                            "nixpacksPlan": null,
+                            "watchPatterns": []
+                          },
+                          "deploy": {
+                            "cronSchedule": null,
+                            "drainingSeconds": null,
+                            "healthcheckPath": null,
+                            "healthcheckTimeout": null,
+                            "ipv6EgressEnabled": false,
+                            "limitOverride": null,
+                            "multiRegionConfig": {
+                              "iad": {
+                                "numReplicas": 1
+                              }
+                            },
+                            "numReplicas": 1,
+                            "overlapSeconds": null,
+                            "preDeployCommand": null,
+                            "region": null,
+                            "registryCredentials": null,
+                            "requiredMountPath": null,
+                            "restartPolicyMaxRetries": 10,
+                            "restartPolicyType": "ON_FAILURE",
+                            "runtime": "V2",
+                            "sleepApplication": false,
+                            "startCommand": null,
+                            "useLegacyStacker": false
+                          }
+                        },
+                        "volumeMounts": []
+                      },
+                      "status": "SUCCESS"
+                    }
+                  ],
+                  "cronSchedule": null,
+                  "domains": {
+                    "customDomains": [
+                      {
+                        "domain": "wolfpackwashnc.com",
+                        "id": "f4e1ec0b-251d-40e5-853a-c446a505ccdc",
+                        "targetPort": null
+                      },
+                      {
+                        "domain": "www.wolfpackwashnc.com",
+                        "id": "7ad64b58-0160-409a-9505-e817b002120d",
+                        "targetPort": null
+                      }
+                    ],
+                    "serviceDomains": [
+                      {
+                        "domain": "web-production-595d5.up.railway.app",
+                        "id": "a52a067e-0a5f-47dd-8990-9588997a33a5",
+                        "targetPort": null
+                      }
+                    ]
+                  },
+                  "environmentId": "4351d7ff-ead0-4981-940e-2824ff212ce9",
+                  "id": "06e63c6d-04fc-4668-bb4d-046b08fc6a10",
+                  "latestDeployment": {
+                    "canRedeploy": true,
+                    "createdAt": "2026-08-07T00:47:20.463Z",
+                    "deploymentStopped": false,
+                    "id": "61efe9ed-976c-4bcd-adb9-1fbd88a27dc2",
+                    "instances": [
+                      {
+                        "id": "728d73a8-f366-4a85-9885-d58679c968a1",
+                        "status": "RUNNING"
+                      }
+                    ],
+                    "meta": {
+                      "buildOnly": false,
+                      "fileServiceManifest": {},
+                      "imageDigest": "sha256:423ad964b55243b7d82196645f77320603a24bcc715567916e8f41ccd4423c93",
+                      "logsV2": true,
+                      "nixpacksProviders": [],
+                      "propertyFileMapping": {},
+                      "reason": "deploy",
+                      "rootDirectory": null,
+                      "runtime": "V2",
+                      "serviceManifest": {
+                        "build": {
+                          "buildCommand": null,
+                          "buildEnvironment": "V3",
+                          "builder": "RAILPACK",
+                          "dockerfilePath": null,
+                          "nixpacksConfigPath": null,
+                          "nixpacksPlan": null,
+                          "watchPatterns": []
+                        },
+                        "deploy": {
+                          "cronSchedule": null,
+                          "drainingSeconds": null,
+                          "healthcheckPath": null,
+                          "healthcheckTimeout": null,
+                          "ipv6EgressEnabled": false,
+                          "limitOverride": null,
+                          "multiRegionConfig": {
+                            "iad": {
+                              "numReplicas": 1
+                            }
+                          },
+                          "numReplicas": 1,
+                          "overlapSeconds": null,
+                          "preDeployCommand": null,
+                          "region": null,
+                          "registryCredentials": null,
+                          "requiredMountPath": null,
+                          "restartPolicyMaxRetries": 10,
+                          "restartPolicyType": "ON_FAILURE",
+                          "runtime": "V2",
+                          "sleepApplication": false,
+                          "startCommand": null,
+                          "useLegacyStacker": false
+                        }
+                      },
+                      "volumeMounts": []
+                    },
+                    "status": "SUCCESS"
+                  },
+                  "nextCronRunAt": null,
+                  "numReplicas": null,
+                  "serviceId": "051c0df3-fc64-4ece-9ac0-0fc55287c618",
+                  "serviceName": "web",
+                  "source": {
+                    "image": null,
+                    "repo": null
+                  },
+                  "startCommand": null
+                }
+              }
+            ]
+          },
+          "unmergedChangesCount": null,
+          "volumeInstances": {
+            "edges": []
+          }
+        }
+      }
+    ]
+  },
+  "id": "fb119744-3668-4244-aeb8-d41a4ca192b1",
+  "name": "wolfpackwash-site",
+  "services": {
+    "edges": [
+      {
+        "node": {
+          "id": "051c0df3-fc64-4ece-9ac0-0fc55287c618",
+          "name": "web"
+        }
+      }
+    ]
+  },
+  "workspace": {
+    "name": "zakarino100's Projects"
+  }
+}

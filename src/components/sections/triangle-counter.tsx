@@ -57,7 +57,7 @@ function PieChart3D({ inView }: { inView: boolean }) {
             <div key={`bg-${i}`} style={{
               position: "absolute", top: DEPTH_LAYERS - i, left: 0,
               width: 240, height: 240, borderRadius: "50%",
-              background: "rgba(255,255,255,0.04)",
+              background: "var(--pie-track)",
               clipPath: `path("${sweepAll}")`,
               filter: `brightness(${0.3 + (i / DEPTH_LAYERS) * 0.5})`,
             }} />
@@ -65,7 +65,7 @@ function PieChart3D({ inView }: { inView: boolean }) {
           <div style={{
             position: "absolute", top: 0, left: 0,
             width: 240, height: 240, borderRadius: "50%",
-            background: "rgba(255,255,255,0.05)",
+            background: "var(--pie-track)",
             clipPath: `path("${sweepAll}")`,
           }} />
 
@@ -92,13 +92,13 @@ function PieChart3D({ inView }: { inView: boolean }) {
             position: "absolute", top: "50%", left: "50%",
             transform: "translate(-50%, -50%)",
             width: 96, height: 96, borderRadius: "50%",
-            background: "radial-gradient(circle, #0d1e2d 60%, #07111b)",
-            border: "1px solid rgba(255,255,255,0.1)",
+            background: "var(--pie-center)",
+            border: "1px solid var(--hairline)",
             display: "flex", flexDirection: "column",
             alignItems: "center", justifyContent: "center",
             zIndex: 10,
           }}>
-            <span style={{ fontSize: 10, color: "rgba(255,255,255,0.4)", letterSpacing: "0.08em", textTransform: "uppercase" }}>Avg.</span>
+            <span style={{ fontSize: 10, color: "var(--ink-faint)", letterSpacing: "0.08em", textTransform: "uppercase" }}>Avg.</span>
             <span style={{ fontSize: 21, fontWeight: 700, color: "#C81920", lineHeight: 1.15 }}>
               {(SATISFACTION * progress).toFixed(1)}%
             </span>
@@ -126,9 +126,9 @@ export function TriangleCounter() {
   const chartInView = useInView(chartRef,  { once: true, margin: "-60px" });
 
   return (
-    <section className="bg-[#07111b] py-16 text-white sm:py-20">
+    <section className="bg-[var(--surface-0)] py-16 text-[var(--ink)] sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-[2rem] border border-white/10 bg-[radial-gradient(ellipse_at_top_left,rgba(200,25,32,0.12),transparent_50%),rgba(255,255,255,0.025)] overflow-hidden">
+        <div className="rounded-[2rem] border border-[var(--hairline)] bg-[radial-gradient(ellipse_at_top_left,rgba(200,25,32,0.12),transparent_50%),var(--card)] overflow-hidden">
 
           {/* ── Main stat row ── */}
           <div ref={sectionRef} className="grid gap-10 p-6 sm:p-10 lg:grid-cols-2 lg:gap-16 lg:p-12">
@@ -138,17 +138,17 @@ export function TriangleCounter() {
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C81920]">Triangle Proof</p>
-              <h2 className="mt-3 text-3xl font-semibold leading-tight sm:text-4xl">
+              <h2 className="mt-3 text-3xl font-semibold leading-tight text-[var(--ink-strong)] sm:text-4xl">
                 The numbers behind every driveway, roof, and window we touch.
               </h2>
-              <p className="mt-4 text-sm leading-7 text-white/65 sm:text-base">
+              <p className="mt-4 text-sm leading-7 text-[var(--ink-muted)] sm:text-base">
                 We track every job, every review, and every callback so we can keep these numbers honest. This is what showing up consistently looks like.
               </p>
 
-              <div className="mt-8 inline-flex flex-col rounded-2xl border border-white/10 bg-white/[0.04] px-8 py-6 text-center">
+              <div className="mt-8 inline-flex flex-col rounded-2xl border border-[var(--hairline)] bg-[var(--card)] px-8 py-6 text-center themed-card">
                 <p className="text-5xl font-bold text-[#C81920] sm:text-6xl">{SATISFACTION}%</p>
-                <p className="mt-2 text-sm font-medium text-white/60">Customer Satisfaction Rate</p>
-                <p className="mt-1 text-xs text-white/35">Based on verified Google reviews across the Triangle</p>
+                <p className="mt-2 text-sm font-medium text-[var(--ink-muted)]">Customer Satisfaction Rate</p>
+                <p className="mt-1 text-xs text-[var(--ink-faint)]">Based on verified Google reviews across the Triangle</p>
               </div>
             </motion.div>
 
@@ -158,7 +158,7 @@ export function TriangleCounter() {
           </div>
 
           {/* ── Scrolling reviews banner ── */}
-          <div className="border-t border-white/[0.07] bg-white/[0.02] py-5 overflow-hidden">
+          <div className="border-t border-[var(--hairline)] bg-[var(--surface-1)] py-5 overflow-hidden">
             <style>{`
               @keyframes scroll-left {
                 0%   { transform: translateX(0); }
@@ -178,13 +178,13 @@ export function TriangleCounter() {
               {doubled.map((r, i) => (
                 <div
                   key={i}
-                  className="mx-3 flex w-72 flex-shrink-0 flex-col gap-2 rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-3"
+                  className="mx-3 flex w-72 flex-shrink-0 flex-col gap-2 rounded-xl border border-[var(--hairline)] bg-[var(--card)] px-4 py-3 themed-card"
                 >
                   <div className="flex items-center gap-0.5">
                     {Array.from({ length: 5 }).map((_, s) => <StarIcon key={s} />)}
                   </div>
-                  <p className="line-clamp-2 text-xs leading-relaxed text-white/70">{r.text}</p>
-                  <p className="text-xs font-medium text-white/50">{r.author} &middot; {r.location}</p>
+                  <p className="line-clamp-2 text-xs leading-relaxed text-[var(--ink-muted)]">{r.text}</p>
+                  <p className="text-xs font-medium text-[var(--ink-faint)]">{r.author} &middot; {r.location}</p>
                 </div>
               ))}
             </div>

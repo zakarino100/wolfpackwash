@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.windowCleaning.title}
       description={pageContent.windowCleaning.description}
       sourcePage="/window-cleaning"
-      image="/hero-images/window-cleaning.png"
+      image="/hero-images/window-cleaning.webp"
       bullets={[
         'Streak-free glass inside and out - we clean panes, frames, tracks, and sills for a thorough finish.',
         'Clean windows dramatically increase natural light and improve the entire feel of your home from both inside and out.',
@@ -21,26 +21,26 @@ export default function Page() {
       ]}
       steps={[
         {
-          title: 'Get a fast quote',
-          body: 'Tell us your home size and approximate number of windows. We respond the same day with pricing and available dates.',
-          image: '/step-images/window.png',
+          title: 'See the haze before it dulls the whole house',
+          body: 'Hard-water spotting, pollen film, and dirty tracks make even a nice home look tired. We start by identifying the glass, frames, and problem buildup that is killing the shine.',
+          image: '/gallery-images/window-cleaning.webp',
         },
         {
-          title: 'We clean every pane thoroughly',
-          body: 'Our crew works methodically through every window - cleaning glass, wiping frames, and removing buildup from tracks and sills for a proper finish.',
-          image: '/step-images/get-quote.png',
+          title: 'We detail the glass, frames, and tracks',
+          body: 'Our crew works pane by pane, scrubbing the glass, wiping frames, and clearing tracks and sills so the finish looks clean up close, not just from the driveway.',
+          image: '/step-images/window.webp',
         },
         {
-          title: 'Enjoy cleaner glass and better light',
-          body: 'The difference is immediately noticeable - more natural light, better views from inside, and a noticeably sharper exterior from the street.',
-          image: '/step-images/clean-result.png',
+          title: 'The home feels brighter immediately',
+          body: 'Once the glass is clean, more light comes in, the views sharpen up, and the entire exterior reads cleaner from the street.',
+          image: '/gallery-images/real-siding-side.jpg',
         },
       ]}
       gallery={[
-        { src: '/step-images/window.png', alt: 'Professional window cleaning - streak-free glass in Raleigh NC' },
-        { src: '/step-images/get-quote.png', alt: 'Clean windows and home exterior after service' },
-        { src: '/step-images/clean-result.png', alt: 'Window cleaning results on Triangle area home' },
-        { src: '/step-images/clean-result.png', alt: 'Exterior window washing - Cary NC' },
+        { src: '/gallery-images/window-cleaning.webp', alt: 'Professional window cleaning - streak-free glass in Raleigh NC' },
+        { src: '/step-images/window.webp', alt: 'Window cleaning in progress on a Triangle-area home' },
+        { src: '/gallery-images/real-siding-side.jpg', alt: 'Clean exterior windows and siding on a Raleigh area home' },
+        { src: '/gallery-images/real-house-wash.webp', alt: 'Brightened home exterior after a wash and window cleaning visit in Cary NC' },
       ]}
       faqs={[
         {

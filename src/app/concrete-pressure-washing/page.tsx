@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.concrete.title}
       description={pageContent.concrete.description}
       sourcePage="/concrete-pressure-washing"
-      image="/hero-images/concrete-cleaning.png"
+      image="/hero-images/concrete-cleaning.webp"
       bullets={[
         'Pressure washing removes oil stains, tire marks, algae, mold, and dark buildup from driveways, walkways, and patios that resist normal cleaning.',
         'Clean concrete makes an immediate, visible difference - it\'s one of the fastest ways to improve curb appeal and make the whole property feel maintained.',
@@ -21,26 +21,26 @@ export default function Page() {
       ]}
       steps={[
         {
-          title: 'Request your quote',
-          body: 'Tell us which surfaces need cleaning - driveway, walkways, patio, or all three. We\'ll get back to you the same day with pricing.',
-          image: '/step-images/get-quote.png',
+          title: 'See the staining before guests do',
+          body: 'Dark traffic lanes, algae, and oil marks are usually the first thing people notice when they pull up. We help you decide which concrete surfaces need the biggest reset first.',
+          image: '/gallery-images/real-driveway.jpg',
         },
         {
-          title: 'We treat and pressure wash the surface',
-          body: 'Our crew applies the right pre-treatment and pressure to your specific concrete type - lifting stains, algae, and buildup without damaging the surface.',
-          image: '/step-images/concrete.png',
+          title: 'We pre-treat and surface clean the slab',
+          body: 'Our crew uses the right detergent, dwell time, and pressure for the concrete in front of us so we lift grime and organic growth without chewing up the surface.',
+          image: '/step-images/concrete.webp',
         },
         {
-          title: 'The whole property feels sharper',
-          body: 'Clean concrete changes the way a property looks and feels from the street. It\'s one of the highest-impact exterior improvements you can make.',
-          image: '/step-images/clean-result.png',
+          title: 'The front of the property snaps back',
+          body: 'Once the concrete is bright again, the garage, walkway, and landscaping all read cleaner. It is one of the fastest visual wins on the entire property.',
+          image: '/step-images/sidewalk.webp',
         },
       ]}
       gallery={[
-        { src: '/step-images/concrete.png', alt: 'Concrete pressure washing - driveway cleaning in Raleigh NC' },
-        { src: '/step-images/concrete.png', alt: 'Removing oil stains and algae from concrete surfaces' },
-        { src: '/step-images/sidewalk.png', alt: 'Clean walkway and patio after pressure washing - Triangle NC' },
-        { src: '/step-images/clean-result.png', alt: 'Exterior concrete cleaning results - Wake County' },
+        { src: '/gallery-images/real-driveway.jpg', alt: 'Concrete pressure washing - driveway cleaning in Raleigh NC' },
+        { src: '/gallery-images/driveway-wash-v2.webp', alt: 'Concrete cleaning before and after on a driveway in the Triangle area' },
+        { src: '/step-images/concrete.webp', alt: 'Clean concrete after professional pressure washing - Cary NC' },
+        { src: '/step-images/sidewalk.webp', alt: 'Clean walkway and patio results - Wake County NC' },
       ]}
       faqs={[
         {

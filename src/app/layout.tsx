@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { ScrollToTop } from "@/components/ui/scroll-to-top";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildLocalBusinessJsonLd } from "@/lib/site/seo";
@@ -22,7 +23,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://wolfpackwashnc.com"),
   title: {
-    default: "Wolf Pack Wash | #1 Softwash & Exterior Cleaning in Raleigh NC",
+    default: "Wolf Pack Wash | #1 Softwash & Home Services in Raleigh NC",
     template: "%s | Wolf Pack Wash",
   },
   description:
@@ -47,25 +48,22 @@ export const metadata: Metadata = {
     "permanent lighting Raleigh NC",
   ],
   icons: {
-    icon: [
-      { url: "/logos/wolfpack_wash_shield_logo_transparent.svg", type: "image/svg+xml" },
-      { url: "/logos/wolfpack_wash_shield_transparent.png", type: "image/png" },
-    ],
-    shortcut: ["/logos/wolfpack_wash_shield_transparent.png"],
-    apple: [{ url: "/logos/wolfpack_wash_shield_transparent.png" }],
+    icon: [{ url: "/logos/wpw-emblem.png", type: "image/png" }],
+    shortcut: ["/logos/wpw-emblem.png"],
+    apple: [{ url: "/logos/wpw-emblem.png" }],
   },
   openGraph: {
-    title: "Wolf Pack Wash | The Triangle's Best Softwash & Exterior Cleaning",
+    title: "Wolf Pack Wash | The Triangle's Best Softwash & Home Services",
     description:
       "House washing, windows, gutters, concrete, driveway, deck, and lighting in Raleigh, Cary, Apex, and Holly Springs NC. Fast quotes, same-day response, 100% satisfaction guaranteed.",
     url: "https://wolfpackwashnc.com",
     siteName: "Wolf Pack Wash",
     images: [
       {
-        url: "/logos/wolfpack_wash_shield_transparent.png",
+        url: "/logos/wpw-og.png",
         width: 1200,
         height: 630,
-        alt: "Wolf Pack Wash - Raleigh NC Exterior Cleaning",
+        alt: "Wolf Pack Wash - Raleigh NC Home Services",
       },
     ],
     type: "website",
@@ -73,10 +71,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wolf Pack Wash | The Triangle's Best Softwash & Exterior Cleaning",
+    title: "Wolf Pack Wash | The Triangle's Best Softwash & Home Services",
     description:
       "House washing, windows, gutters, concrete, driveway, deck, and lighting in Raleigh, Cary, Apex, and Holly Springs NC. Same-day quotes.",
-    images: ["/logos/wolfpack_wash_shield_transparent.png"],
+    images: ["/logos/wpw-og.png"],
   },
   robots: {
     index: true,
@@ -117,6 +115,7 @@ export default function RootLayout({
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
+          <MobileBottomNav />
         </FunnelProvider>
       </body>
     </html>

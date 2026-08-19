@@ -28,7 +28,7 @@ function CityTicker() {
   }, []);
   return (
     <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.32em] sm:text-sm">
-      <span className="text-[var(--ink-faint)]">Serving</span>
+      <span className="text-white/70">Serving</span>
       <span className="relative inline-flex h-[1.3em] w-[190px] overflow-hidden align-bottom">
         <AnimatePresence mode="wait">
           <motion.span
@@ -95,12 +95,20 @@ function ServicePicker() {
 
 export function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-[var(--surface-0)] text-[var(--ink)]">
-      {/* Ambient accent glows */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-[var(--accent)]/12 blur-3xl" />
-        <div className="absolute right-0 top-1/3 h-80 w-80 rounded-full bg-[var(--accent)]/10 blur-3xl" />
-      </div>
+    <section className="relative isolate overflow-hidden bg-[#07111b] text-white">
+      {/* Hero background video (pulled from the original Replit build) */}
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        poster="/gallery-images/real-house-wash.webp"
+      >
+        <source src="/hero-video.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#07111b]/78 via-[#07111b]/55 to-[#07111b]/35" />
 
       <div className="relative mx-auto grid w-full max-w-7xl items-center gap-8 px-4 pb-14 pt-24 sm:px-6 lg:grid-cols-[1.05fr_1fr] lg:gap-6 lg:px-8 lg:pb-20 lg:pt-28">
         {/* Left: copy + funnel */}
@@ -111,10 +119,10 @@ export function Hero() {
           className="max-w-2xl"
         >
           <CityTicker />
-          <h1 className="mt-4 text-5xl font-semibold leading-[1.05] text-[var(--ink-strong)] sm:text-6xl lg:text-[4.25rem]">
-            The Triangle&apos;s Most Trusted Exterior Cleaning.
+          <h1 className="mt-4 text-5xl font-semibold leading-[1.05] text-white sm:text-6xl lg:text-[4.25rem]">
+            The Triangle&apos;s Most Trusted Home Services.
           </h1>
-          <p className="mt-5 max-w-xl text-lg leading-7 text-[var(--ink-muted)]">
+          <p className="mt-5 max-w-xl text-lg leading-7 text-white/85">
             House washing, windows, gutters, concrete, and lighting — done right, every time.
             Pick your service and get a same-day quote.
           </p>
@@ -126,7 +134,7 @@ export function Hero() {
           <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2">
             <a
               href={siteConfig.phoneHref}
-              className="text-sm font-semibold text-[var(--ink)] underline-offset-4 hover:underline"
+              className="text-sm font-semibold text-white underline-offset-4 hover:underline"
             >
               Or call {siteConfig.phoneDisplay}
             </a>

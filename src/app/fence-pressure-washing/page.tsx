@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.fence.title}
       description={pageContent.fence.description}
       sourcePage="/fence-pressure-washing"
-      image="/hero-images/fence-pressure-washing.png"
+      image="/hero-images/fence-pressure-washing.webp"
       bullets={[
         'Wood, vinyl, and composite fences collect mold, mildew, algae, and grime quickly - especially in shaded or humid areas of the Triangle.',
         'Professional pressure washing restores the appearance of your fence and extends its life, often delaying costly replacement by years.',
@@ -21,26 +21,26 @@ export default function Page() {
       ]}
       steps={[
         {
-          title: 'Get a fast, free quote',
-          body: 'Tell us the fence length and material. We\'ll respond with same-day pricing and scheduling.',
-          image: '/step-images/fence.png',
+          title: 'Spot the fence before the green buildup takes over',
+          body: 'Most fence washes start the same way: green streaks, black spotting, and a fence that makes the whole yard feel older than it is. We look at the material, the condition, and the sections that need the most attention first.',
+          image: '/step-images/fence.webp',
         },
         {
-          title: 'We lift the buildup and weathered look',
-          body: 'Our crew uses the right pressure and technique for your fence material - removing mold, algae, and grime without damaging wood grain or vinyl surfaces.',
-          image: '/step-images/concrete.png',
+          title: 'We clean it with the right pressure for the material',
+          body: 'Our crew uses the proper wash method for wood, vinyl, or composite so we strip off the algae, dirt, and mildew without chewing up the surface or raising the grain.',
+          image: '/step-images/crew-arrives.webp',
         },
         {
-          title: 'The fence looks fresh without replacement cost',
-          body: 'In most cases, a professional wash restores the look of the fence better than homeowners expect - and at a fraction of the replacement cost.',
-          image: '/step-images/get-quote.png',
+          title: 'The yard looks sharper without the cost of replacement',
+          body: 'Once the staining is gone, the fence line looks cleaner, brighter, and far more cared for. It is one of the fastest ways to make the whole property feel maintained again.',
+          image: '/step-images/clean-result.webp',
         },
       ]}
       gallery={[
-        { src: '/step-images/fence.png', alt: 'Fence pressure washing - restoring wood and vinyl fences in Raleigh NC' },
-        { src: '/step-images/concrete.png', alt: 'Before and after fence washing - mold and algae removal' },
-        { src: '/step-images/get-quote.png', alt: 'Clean fence and home exterior after service - Triangle area' },
-        { src: '/step-images/clean-result.png', alt: 'Fence cleaning results - Wake County NC' },
+        { src: '/step-images/fence.webp', alt: 'Fence pressure washing - restoring wood and vinyl fences in Raleigh NC' },
+        { src: '/step-images/crew-arrives.webp', alt: 'Fence cleaning crew arriving for an exterior wash visit in the Triangle' },
+        { src: '/step-images/clean-result.webp', alt: 'Clean fence line and brighter backyard after pressure washing service' },
+        { src: '/step-images/clean-result.webp', alt: 'Fence cleaning results - Wake County NC' },
       ]}
       faqs={[
         {

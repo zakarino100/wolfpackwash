@@ -34,18 +34,18 @@ const nextConfig: NextConfig = {
       // Old navigation page
       { source: "/navigation", destination: "/", permanent: true },
       // WP media/attachment sub-paths under known pages → parent page
-      { source: "/house-washing/:path*", destination: "/house-washing", permanent: true },
-      { source: "/services/:path*", destination: "/services", permanent: true },
-      { source: "/commercial/:path*", destination: "/commercial", permanent: true },
-      { source: "/residential/:path*", destination: "/residential", permanent: true },
-      { source: "/contact/:path*", destination: "/contact", permanent: true },
-      { source: "/sidewalk-pressure-washing/:path*", destination: "/sidewalk-pressure-washing", permanent: true },
-      { source: "/wolfpack-training-academy/:path*", destination: "/wolfpack-training-academy", permanent: true },
-      { source: "/about-us/:path*", destination: "/about-us", permanent: true },
+      { source: "/house-washing/:path+", destination: "/house-washing", permanent: true },
+      { source: "/services/:path+", destination: "/services", permanent: true },
+      { source: "/commercial/:path+", destination: "/commercial", permanent: true },
+      { source: "/residential/:path+", destination: "/residential", permanent: true },
+      { source: "/contact/:path+", destination: "/contact", permanent: true },
+      { source: "/sidewalk-pressure-washing/:path+", destination: "/sidewalk-pressure-washing", permanent: true },
+      { source: "/wolfpack-training-academy/:path+", destination: "/wolfpack-training-academy", permanent: true },
+      { source: "/about-us/:path+", destination: "/about-us", permanent: true },
       // Misc orphan WP slugs → relevant pages
       { source: "/scene-4-crew-at-work-shot-4", destination: "/gallery", permanent: true },
       { source: "/scene-4-crew-at-work-shot-5", destination: "/gallery", permanent: true },
-      { source: "/astra/:path*", destination: "/", permanent: true },
+      { source: "/astra/:path+", destination: "/", permanent: true },
     ];
   },
   async headers() {

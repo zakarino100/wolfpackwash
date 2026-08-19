@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.maintenancePlan.title}
       description={pageContent.maintenancePlan.description}
       sourcePage="/maintenance-plan"
-      image="/hero-images/maintenance-plan.png"
+      image="/hero-images/maintenance-plan.webp"
       bullets={[
         'Stop chasing appointments every spring - a recurring care plan keeps your home clean year-round on a schedule that works for you.',
         'Plan members get priority scheduling, member-only pricing, and are first in the queue when spots fill up seasonally.',
@@ -21,26 +21,26 @@ export default function Page() {
       ]}
       steps={[
         {
-          title: 'Choose the plan that fits your home',
-          body: 'We\'ll walk through your property\'s needs and recommend the right tier - whether you want basic annual maintenance or full-coverage recurring care.',
-          image: '/step-images/choose-service.png',
+          title: 'Pick the cadence before the buildup gets ahead of you',
+          body: 'We look at the siding, gutters, concrete, and tree cover around the property and match you with a plan that keeps the outside under control without over-servicing the home.',
+          image: '/gallery-images/real-house-wash.webp',
         },
         {
-          title: 'We schedule and handle everything',
-          body: 'As a plan member, you\'re automatically prioritized for scheduling. You don\'t have to call every season - we\'ll reach out to confirm your next visit.',
-          image: '/step-images/get-quote.png',
+          title: 'We stay ahead of the schedule for you',
+          body: 'Plan members get priority scheduling and proactive reminders. Instead of remembering when the house, gutters, or concrete are due again, you get a system that keeps the property on track.',
+          image: '/gallery-images/real-gutter.webp',
         },
         {
           title: 'Your home stays cleaner all year long',
           body: 'No more scrambling to book in spring when everyone else is calling. Your property stays maintained, your curb appeal stays strong, and you don\'t have to think about it.',
-          image: '/step-images/clean-result.png',
+          image: '/gallery-images/real-driveway.jpg',
         },
       ]}
       gallery={[
-        { src: '/step-images/clean-result.png', alt: 'Well-maintained home exterior - Raleigh NC exterior care plan' },
-        { src: '/step-images/get-quote.png', alt: 'Clean home year-round with recurring exterior service' },
-        { src: '/step-images/house-wash.png', alt: 'House washing as part of annual exterior care plan - Triangle NC' },
-        { src: '/step-images/clean-result.png', alt: 'Exterior care plan results - Wake County home maintenance' },
+        { src: '/gallery-images/real-house-wash.webp', alt: 'Well-maintained home exterior after recurring house washing in Raleigh NC' },
+        { src: '/gallery-images/real-gutter.webp', alt: 'Recurring gutter maintenance keeping a roofline clear in the Triangle' },
+        { src: '/gallery-images/real-driveway.jpg', alt: 'Driveway maintenance visit as part of a recurring exterior care plan' },
+        { src: '/step-images/clean-result.webp', alt: 'Exterior care plan results - Wake County home maintenance' },
       ]}
       faqs={[
         {

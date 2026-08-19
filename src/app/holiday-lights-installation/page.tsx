@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.holidayLights.title}
       description={pageContent.holidayLights.description}
       sourcePage="/holiday-lights-installation"
-      image="/hero-images/holiday-lights.png"
+      image="/hero-images/holiday-lights.webp"
       bullets={[
         'Professional holiday lighting installs that look polished and designed - not like they were thrown together in an afternoon.',
         'We handle the entire process: design consultation, installation, maintenance during the season, and full removal when it\'s over.',
@@ -21,26 +21,26 @@ export default function Page() {
       ]}
       steps={[
         {
-          title: 'Request your holiday lighting quote',
-          body: 'Book early to lock in your install date. We\'ll discuss your home, the look you want, and the full scope of the installation.',
-          image: '/step-images/get-quote.png',
+          title: 'Choose the look before the season gets crowded',
+          body: 'We talk through the roofline, trees, garland, and the style you want so the install feels intentional, not like a last-minute string of lights tossed up on the house.',
+          image: '/step-images/holiday-lights.webp',
         },
         {
           title: 'We design and install everything professionally',
           body: 'Our crew installs your holiday lighting cleanly and safely - rooflines, trees, bushes, and any other features you want highlighted.',
-          image: '/step-images/holiday-lights.png',
+          image: '/step-images/crew-arrives.webp',
         },
         {
           title: 'Enjoy the season without the hassle',
           body: 'Your home looks great all season long. When the holidays are over, we come back and remove everything cleanly - no leftover hardware, no storage headaches.',
-          image: '/step-images/perm-lighting.png',
+          image: '/step-images/perm-lighting.webp',
         },
       ]}
       gallery={[
-        { src: '/step-images/holiday-lights.png', alt: 'Professional holiday light installation on home in Raleigh NC' },
-        { src: '/step-images/holiday-lights.png', alt: 'Christmas lighting installation - Triangle area home' },
-        { src: '/step-images/perm-lighting.png', alt: 'Holiday lighting on roofline - Cary NC' },
-        { src: '/step-images/get-quote.png', alt: 'Professional holiday lighting install - Wake County NC' },
+        { src: '/step-images/holiday-lights.webp', alt: 'Professional holiday light installation on home in Raleigh NC' },
+        { src: '/step-images/crew-arrives.webp', alt: 'Holiday lighting crew on site for a Triangle-area install' },
+        { src: '/step-images/perm-lighting.webp', alt: 'Holiday lighting on roofline - Cary NC' },
+        { src: '/hero-images/holiday-lights.webp', alt: 'Finished holiday lighting display on a Wake County home exterior' },
       ]}
       faqs={[
         {

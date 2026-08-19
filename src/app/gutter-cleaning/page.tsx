@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.gutterCleaning.title}
       description={pageContent.gutterCleaning.description}
       sourcePage="/gutter-cleaning"
-      image="/hero-images/gutter-cleaning.png"
+      image="/hero-images/gutter-cleaning.webp"
       bullets={[
         'Clogged gutters cause overflow, fascia rot, water intrusion, and foundation erosion - all of which cost far more to fix than a cleaning.',
         'We clear leaves, twigs, shingle grit, and debris from gutters and flush downspouts to confirm proper water flow.',
@@ -21,26 +21,26 @@ export default function Page() {
       ]}
       steps={[
         {
-          title: 'Get a same-day quote',
-          body: 'Fill out the quick form or call us directly. We\'ll respond with pricing and next available dates - no waiting, no back-and-forth.',
-          image: '/step-images/get-quote.png',
+          title: 'Catch the overflow before it stains and rots',
+          body: 'When gutters clog, water rolls over the edge and starts attacking fascia, siding, mulch beds, and foundations. We help you fix it before the next heavy rain turns it into a bigger repair.',
+          image: '/gallery-images/real-gutter.webp',
         },
         {
-          title: 'We clear and flush the entire system',
-          body: 'Our crew removes all debris from gutters and flushes every downspout to confirm water is moving correctly away from your foundation.',
-          image: '/step-images/gutter.png',
+          title: 'We clear, flush, and verify the full run',
+          body: 'Our crew removes leaves and debris by hand, clears the trouble spots, and flushes every downspout so you know the whole system is moving water the way it should.',
+          image: '/gallery-images/real-gutter-guard.jpg',
         },
         {
-          title: 'You stay ahead of the next problem',
-          body: 'Clean gutters protect your roofline, fascia boards, siding, and foundation. It\'s one of the most preventive things you can do for your home each year.',
-          image: '/step-images/clean-result.png',
+          title: 'Your roofline drains clean again',
+          body: 'The result is simple: cleaner gutters, proper flow, and a home that is better protected the next time Raleigh gets one of those hard afternoon storms.',
+          image: '/step-images/gutter.webp',
         },
       ]}
       gallery={[
-        { src: '/step-images/gutter.png', alt: 'Gutter cleaning - removing debris and leaves in Raleigh NC' },
-        { src: '/step-images/get-quote.png', alt: 'Home exterior after gutter cleaning service' },
-        { src: '/step-images/house-wash.png', alt: 'Full exterior cleaning including gutters - Triangle NC' },
-        { src: '/step-images/clean-result.png', alt: 'Clean home exterior after gutter and house washing' },
+        { src: '/gallery-images/real-gutter.webp', alt: 'Gutter cleaning - removing debris and leaves in Raleigh NC' },
+        { src: '/gallery-images/real-gutter-guard.jpg', alt: 'Gutter line inspected and cleaned along the roof edge in the Triangle area' },
+        { src: '/step-images/gutter.webp', alt: 'Clearing and flushing gutters and downspouts - Triangle NC' },
+        { src: '/gallery-images/real-house-wash.webp', alt: 'Clean home exterior after gutter and house washing - Wake County NC' },
       ]}
       faqs={[
         {

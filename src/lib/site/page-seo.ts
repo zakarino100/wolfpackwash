@@ -2,7 +2,7 @@ import { buildMetadata } from '@/lib/site/seo';
 
 export const pageSeo = {
   home: buildMetadata({
-    title: 'Wolf Pack Wash | #1 Softwash & Exterior Cleaning in Raleigh, NC',
+    title: 'Wolf Pack Wash | #1 Softwash & Home Services in Raleigh, NC',
     description:
       'Wolf Pack Wash - the Triangle\'s trusted softwash and exterior cleaning team. House washing, window cleaning, gutter cleaning, concrete, driveway, deck, and lighting services in Raleigh, Cary, Apex, and Holly Springs NC. Same-day quotes.',
     path: '/',
@@ -14,21 +14,21 @@ export const pageSeo = {
     ],
   }),
   about: buildMetadata({
-    title: 'About Wolf Pack Wash | Locally Owned Exterior Cleaning in Raleigh NC',
+    title: 'About Wolf Pack Wash | Locally Owned Home Services in Raleigh NC',
     description:
       'Wolf Pack Wash is a locally owned exterior cleaning company serving Raleigh, Cary, Apex, and Holly Springs NC. Fast quotes, strong results, and clear communication from a team that actually shows up.',
     path: '/about-us',
     keywords: ['about Wolf Pack Wash', 'exterior cleaning company Raleigh', 'locally owned pressure washing Raleigh'],
   }),
   services: buildMetadata({
-    title: 'Exterior Cleaning Services in Raleigh NC | Wolf Pack Wash',
+    title: 'Home Services in Raleigh NC | Wolf Pack Wash',
     description:
       'House washing, soft washing, window cleaning, gutter cleaning, concrete, driveway, deck, fence, sidewalk pressure washing, holiday lighting, and permanent lighting - all from Wolf Pack Wash in Raleigh NC.',
     path: '/services',
     keywords: ['exterior cleaning services Raleigh', 'pressure washing services Raleigh NC', 'Wolf Pack Wash services'],
   }),
   contact: buildMetadata({
-    title: 'Get a Free Quote | Wolf Pack Wash - Raleigh NC Exterior Cleaning',
+    title: 'Get a Free Quote | Wolf Pack Wash - Raleigh NC Home Services',
     description:
       'Request a free exterior cleaning quote from Wolf Pack Wash. We serve Raleigh, Cary, Apex, and Holly Springs NC with same-day quote response. House washing, gutters, windows, concrete, and more.',
     path: '/contact',
@@ -43,6 +43,17 @@ export const pageSeo = {
       'house washing Raleigh NC', 'soft washing Raleigh', 'softwash near me',
       'house washing Cary NC', 'house washing Apex NC', 'house washing Holly Springs NC',
       'pollen removal Raleigh NC', 'algae removal house washing',
+    ],
+  }),
+  exteriorPainting: buildMetadata({
+    title: 'Exterior House Painting in Raleigh, Cary & Apex NC',
+    description:
+      'Professional exterior house painting in Raleigh, Cary, Apex, and Holly Springs NC. Wolf Pack Wash delivers durable, clean exterior paint jobs - siding, trim, doors, and shutters - with proper prep and premium coatings. Free same-day quotes.',
+    path: '/exterior-painting',
+    keywords: [
+      'exterior painting Raleigh NC', 'house painting Raleigh NC', 'exterior house painters Cary NC',
+      'exterior painting Apex NC', 'exterior painting Holly Springs NC', 'siding painting Raleigh',
+      'trim and door painting Triangle NC', 'exterior painters near me',
     ],
   }),
   windowCleaning: buildMetadata({
@@ -66,14 +77,14 @@ export const pageSeo = {
     ],
   }),
   residential: buildMetadata({
-    title: 'Residential Exterior Cleaning Raleigh NC | Wolf Pack Wash',
+    title: 'Residential Home Services Raleigh NC | Wolf Pack Wash',
     description:
       'Residential exterior cleaning for homeowners across the Triangle. Wolf Pack Wash handles house washing, windows, gutters, concrete, driveway, deck, fence, and lighting in Raleigh, Cary, Apex, and Holly Springs NC.',
     path: '/residential',
     keywords: ['residential exterior cleaning Raleigh', 'home exterior cleaning Triangle NC'],
   }),
   commercial: buildMetadata({
-    title: 'Commercial Exterior Cleaning Raleigh NC | Wolf Pack Wash',
+    title: 'Commercial Home Services Raleigh NC | Wolf Pack Wash',
     description:
       'Commercial pressure washing and exterior cleaning in Raleigh NC. Wolf Pack Wash keeps storefronts, parking areas, and building exteriors clean and presentation-ready across Wake County.',
     path: '/commercial',
@@ -179,7 +190,7 @@ export const pageSeo = {
     keywords: ['pressure washing before after Raleigh', 'exterior cleaning results Raleigh NC'],
   }),
   reviews: buildMetadata({
-    title: 'Customer Reviews | Wolf Pack Wash Raleigh NC Exterior Cleaning',
+    title: 'Customer Reviews | Wolf Pack Wash Raleigh NC Home Services',
     description:
       'Read reviews from homeowners across Raleigh, Cary, Apex, and Holly Springs NC who trust Wolf Pack Wash for house washing, gutter cleaning, window cleaning, and exterior care.',
     path: '/reviews',
@@ -209,7 +220,7 @@ export const pageSeo = {
     ],
   }),
   blog: buildMetadata({
-    title: 'Exterior Cleaning Tips & Guides | Wolf Pack Wash Blog - Raleigh NC',
+    title: 'Home Services Tips & Guides | Wolf Pack Wash Blog - Raleigh NC',
     description:
       'Exterior cleaning tips and homeowner guides from Wolf Pack Wash in Raleigh NC. Articles on house washing, gutter cleaning, soft washing, pressure washing, and home exterior care across the Triangle.',
     path: '/blog',

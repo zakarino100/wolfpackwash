@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.softWashing.title}
       description={pageContent.softWashing.description}
       sourcePage="/soft-washing"
-      image="/hero-images/soft-washing.png"
+      image="/hero-images/soft-washing.webp"
       bullets={[
         'Soft washing uses low-pressure water (comparable to a garden hose) combined with biodegradable cleaning solutions to safely treat mold, mildew, algae, pollen, and bacteria.',
         'Unlike high-pressure washing, soft washing won\'t damage vinyl siding, stucco, wood, painted surfaces, or older brick - making it the right approach for most homes.',
@@ -21,26 +21,26 @@ export default function Page() {
       ]}
       steps={[
         {
-          title: 'Get a fast quote',
-          body: 'Fill out the form with your home details. We\'ll respond the same day with pricing and next available scheduling.',
-          image: '/step-images/get-quote.png',
+          title: 'Notice the organic buildup before it spreads',
+          body: 'Soft washing is for the homes where mildew, algae, and pollen are creeping across siding, trim, soffits, and painted surfaces that should never be hit with brute-force pressure.',
+          image: '/step-images/house-wash-before.webp',
         },
         {
-          title: 'We apply soft wash solution at low pressure',
-          body: 'Our crew pre-wets landscaping, applies biodegradable cleaning solution to your siding, and allows it to dwell before rinsing - safely removing organic growth without surface damage.',
-          image: '/step-images/house-wash.png',
+          title: 'We treat the surface with low pressure and dwell time',
+          body: 'Our crew protects landscaping, applies the proper solution, lets it do the work, and then rinses everything down gently so the grime is removed without beating up the finish.',
+          image: '/step-images/house-wash.webp',
         },
         {
-          title: 'Your home looks and stays cleaner longer',
-          body: 'Soft washing kills algae and mold at the source, so results last 4-6 times longer than high-pressure washing alone.',
-          image: '/step-images/clean-result.png',
+          title: 'The home stays cleaner longer',
+          body: 'Because soft washing attacks the biological growth instead of just skimming the surface, the result usually holds far longer than straight pressure washing alone.',
+          image: '/gallery-images/real-house-wash.webp',
         },
       ]}
       gallery={[
-        { src: '/step-images/house-wash.png', alt: 'Soft washing - safe low-pressure house cleaning in Raleigh NC' },
-        { src: '/step-images/get-quote.png', alt: 'Home exterior after soft wash treatment - Triangle area' },
-        { src: '/step-images/clean-result.png', alt: 'Soft washing results on vinyl siding - Wake County' },
-        { src: '/step-images/clean-result.png', alt: 'Clean home exterior after soft wash - Cary NC' },
+        { src: '/step-images/house-wash-before.webp', alt: 'Before soft washing - siding buildup on a Triangle-area home' },
+        { src: '/step-images/house-wash.webp', alt: 'Soft washing - safe low-pressure house cleaning in Raleigh NC' },
+        { src: '/gallery-images/real-house-wash.webp', alt: 'Clean home exterior after soft wash treatment in Wake County' },
+        { src: '/gallery-images/real-siding-side.jpg', alt: 'Fresh exterior siding after a soft washing visit in Cary NC' },
       ]}
       faqs={[
         {

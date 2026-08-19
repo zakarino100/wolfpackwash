@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.driveway.title}
       description={pageContent.driveway.description}
       sourcePage="/driveway-pressure-washing"
-      image="/hero-images/driveway-pressure-washing.png"
+      image="/hero-images/driveway-pressure-washing.webp"
       bullets={[
         'Driveways accumulate oil stains, tire marks, pollen, algae, and dark traffic buildup that make the whole front of your home look neglected.',
         'A professional pressure wash lifts stubborn stains and buildup that household hoses and detergents simply can\'t reach.',
@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Request a fast quote',
           body: 'Give us details about your driveway size and any specific staining concerns. We respond the same day with pricing and scheduling.',
-          image: '/step-images/get-quote.png',
+          image: '/step-images/driveway-before.webp',
         },
         {
           title: 'We treat and pressure wash the surface',
           body: 'Our crew pre-treats stained areas and applies the right pressure for your driveway material - removing oil, algae, and buildup without surface damage.',
-          image: '/step-images/concrete.png',
+          image: '/step-images/concrete.webp',
         },
         {
           title: 'Pull into a cleaner-looking property',
           body: 'The difference is noticeable from the street. A clean driveway makes the entire front of your home look more maintained and well cared for.',
-          image: '/step-images/clean-result.png',
+          image: '/step-images/clean-result.webp',
         },
       ]}
       gallery={[
-        { src: '/step-images/concrete.png', alt: 'Driveway pressure washing - removing oil stains and buildup in Raleigh NC' },
-        { src: '/step-images/concrete.png', alt: 'Before and after driveway cleaning - Triangle area' },
-        { src: '/step-images/sidewalk.png', alt: 'Clean concrete driveway after professional pressure washing' },
-        { src: '/step-images/clean-result.png', alt: 'Driveway cleaning results - Wake County NC' },
+        { src: '/gallery-images/real-driveway.jpg', alt: 'Driveway pressure washing - removing oil stains and buildup in Raleigh NC' },
+        { src: '/gallery-images/driveway-wash-v2.webp', alt: 'Before and after driveway cleaning - Triangle area' },
+        { src: '/gallery-images/driveway-wash.webp', alt: 'Clean concrete driveway after professional pressure washing - Cary NC' },
+        { src: '/step-images/sidewalk.webp', alt: 'Clean walkway and concrete results - Wake County NC' },
       ]}
       faqs={[
         {

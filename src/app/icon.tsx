@@ -10,7 +10,7 @@ export const size = {
 export const contentType = 'image/png';
 
 export default function Icon() {
-  const imagePath = join(process.cwd(), 'public', 'logos', 'wolfpack_wash_shield_transparent.png');
+  const imagePath = join(process.cwd(), 'public', 'logos', 'wpw-emblem.png');
   const imageBuffer = readFileSync(imagePath);
   const imageBase64 = imageBuffer.toString('base64');
   const imageSrc = `data:image/png;base64,${imageBase64}`;

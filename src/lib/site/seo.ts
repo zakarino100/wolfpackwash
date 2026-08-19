@@ -28,7 +28,7 @@ const defaultKeywords = [
 export function buildMetadata({ title, description, path, keywords = [], ogImage }: SEOInput): Metadata {
   const url = new URL(path, siteConfig.domain).toString();
   const mergedKeywords = [...new Set([...defaultKeywords, ...keywords])];
-  const image = ogImage ?? "/logos/wolfpack_wash_shield_transparent.png";
+  const image = ogImage ?? "/logos/wpw-og.png";
 
   return {
     title,
@@ -82,8 +82,8 @@ export function buildLocalBusinessJsonLd() {
     alternateName: "Wolf Pack Wash NC",
     description:
       "Wolf Pack Wash is the Triangle's trusted exterior cleaning company offering house washing, soft washing, window cleaning, gutter cleaning, concrete pressure washing, driveway cleaning, deck washing, fence washing, sidewalk cleaning, holiday light installation, and permanent RGB lighting for homes across Raleigh, Cary, Apex, Holly Springs, and Wake County NC.",
-    image: `${siteConfig.domain}/logos/wolfpack_wash_shield_transparent.png`,
-    logo: `${siteConfig.domain}/logos/wolfpack_wash_shield_transparent.png`,
+    image: `${siteConfig.domain}/logos/wpw-og.png`,
+    logo: `${siteConfig.domain}/logos/wpw-emblem.png`,
     url: siteConfig.domain,
     telephone: siteConfig.phoneDisplay,
     priceRange: "$$",
@@ -103,7 +103,7 @@ export function buildLocalBusinessJsonLd() {
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Exterior Cleaning Services",
+      name: "Home Services",
       itemListElement: [
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "House Washing", url: `${siteConfig.domain}/house-washing` } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Soft Washing", url: `${siteConfig.domain}/soft-washing` } },
@@ -150,7 +150,7 @@ export function buildServiceJsonLd({
       telephone: siteConfig.phoneDisplay,
     },
     areaServed: "Raleigh, Cary, Apex, Holly Springs, and Wake County NC",
-    serviceType: "Exterior Cleaning",
+    serviceType: "Home Services",
   };
 }
 

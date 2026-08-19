@@ -3,7 +3,7 @@ import { PageBuilder } from '@/components/ui/page-builder';
 import { buildMetadata } from '@/lib/site/seo';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Wolf Pack Wash Podcast | Exterior Cleaning Conversations and Homeowner Insights',
+  title: 'Wolf Pack Wash Podcast | Home Services Conversations and Homeowner Insights',
   description:
     'Explore Wolf Pack Wash podcast-style content, homeowner insights, and exterior cleaning conversations built to support trust and search visibility.',
   path: '/podcast',

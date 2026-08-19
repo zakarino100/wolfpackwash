@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.roofWashing.title}
       description={pageContent.roofWashing.description}
       sourcePage="/roof-washing"
-      image="/hero-images/roof-washing.png"
+      image="/hero-images/roof-washing.webp"
       bullets={[
         'Those dark streaks on your roof are caused by Gloeocapsa magma - an algae species that feeds on the limestone filler in asphalt shingles, accelerating granule loss and shortening roof life.',
         'Pressure washing a roof is too aggressive and can void shingle warranties. We use soft washing - low pressure with a professional-grade algaecide solution - to safely remove staining without damage.',
@@ -21,26 +21,26 @@ export default function Page() {
       ]}
       steps={[
         {
-          title: 'Request a same-day roof cleaning quote',
-          body: 'Tell us your roof size, pitch, and material (asphalt shingles, tile, metal). We respond the same day with clear pricing and available scheduling.',
-          image: '/step-images/get-quote.png',
+          title: 'Catch the streaking before it ages the roof',
+          body: 'Those black streaks are not just cosmetic. They are algae growth working against the shingles, and the longer they sit, the older the whole home looks from the street.',
+          image: '/gallery-images/real-roof.webp',
         },
         {
-          title: 'We soft wash the roof from the ground up',
-          body: 'Our crew applies a professional-grade soft wash solution to the roof surface - safely killing algae, mold, lichen, and bacteria without walking on the shingles or using damaging pressure.',
-          image: '/step-images/house-wash.png',
+          title: 'We soft wash it the safe way',
+          body: 'We apply a professional roof-safe treatment that kills algae and organic growth without blasting granules off the shingles or voiding the roof warranty with high pressure.',
+          image: '/step-images/roof-wash.webp',
         },
         {
-          title: 'The roof looks clean and the shingles are protected',
-          body: 'Streaks, dark patches, and green growth are gone. The roof looks newer, the home\'s curb appeal improves immediately, and the shingles are protected from further algae damage.',
-          image: '/step-images/clean-result.png',
+          title: 'The roof looks newer and lasts longer',
+          body: 'The finished roof looks cleaner immediately, and more importantly, you stop the biological growth that was chewing away at the shingles underneath.',
+          image: '/gallery-images/real-house-wash.webp',
         },
       ]}
       gallery={[
-        { src: '/step-images/house-wash.png', alt: 'Roof washing - removing algae and black streaks from shingles in Raleigh NC' },
-        { src: '/step-images/get-quote.png', alt: 'Clean home exterior after roof soft wash - Triangle area' },
-        { src: '/step-images/clean-result.png', alt: 'Roof cleaning results - before and after soft washing in Wake County' },
-        { src: '/step-images/clean-result.png', alt: 'Professional roof washing service - Cary NC' },
+        { src: '/gallery-images/real-roof.webp', alt: 'Roof washing - removing algae and black streaks from shingles in Raleigh NC' },
+        { src: '/step-images/roof-wash.webp', alt: 'Soft washing a roof to kill algae and lichen - Triangle NC' },
+        { src: '/gallery-images/real-house-wash.webp', alt: 'Clean home exterior after roof soft wash - Wake County NC' },
+        { src: '/gallery-images/house-wash-v2.webp', alt: 'Professional roof and exterior soft washing - Cary NC' },
       ]}
       faqs={[
         {

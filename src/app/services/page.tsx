@@ -2,17 +2,20 @@ import type { Metadata } from 'next';
 import { PageBuilder } from '@/components/ui/page-builder';
 import { pageContent } from '@/lib/site/page-content';
 import { pageSeo } from '@/lib/site/page-seo';
+import { ServiceGrid } from '@/components/sections/service-grid';
 
 export const metadata: Metadata = pageSeo.services;
 
 export default function Page() {
   return (
+    <>
+    <ServiceGrid />
     <PageBuilder
       eyebrow={pageContent.services.eyebrow}
       title={pageContent.services.title}
       description={pageContent.services.description}
       sourcePage="/services"
-      image="/hero-images/house-washing.png"
+      image="/hero-images/house-washing.webp"
       bullets={[
         'House washing and soft washing - the safe, effective way to remove pollen, algae, and grime from any siding type.',
         'Window cleaning, gutter cleaning, and concrete pressure washing - bundle multiple services for the best value and complete results in one visit.',
@@ -23,17 +26,17 @@ export default function Page() {
         {
           title: 'Pick the service your home needs',
           body: 'Browse the full list of exterior cleaning and lighting services, or tell us what you\'re dealing with and we\'ll recommend the right approach.',
-          image: '/step-images/choose-service.png',
+          image: '/step-images/choose-service.webp',
         },
         {
           title: 'Get a same-day quote',
           body: 'Fill out the quick form or call us directly. We respond the same day with clear pricing - no estimates that change at the door.',
-          image: '/step-images/get-quote.png',
+          image: '/step-images/get-quote.webp',
         },
         {
           title: 'We show up, do the work, and do it right',
           body: 'On schedule, thorough, and with results you can see immediately. That\'s the Wolf Pack Wash standard on every job.',
-          image: '/step-images/clean-result.png',
+          image: '/step-images/clean-result.webp',
         },
       ]}
       faqs={[
@@ -55,5 +58,6 @@ export default function Page() {
         },
       ]}
     />
+    </>
   );
 }

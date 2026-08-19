@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.houseWashing.title}
       description={pageContent.houseWashing.description}
       sourcePage="/house-washing"
-      image="/hero-images/house-washing.png"
+      image="/hero-images/house-washing.webp"
       bullets={[
         'Soft washing uses low-pressure water and biodegradable solutions to safely remove pollen, algae, mold, and mildew from vinyl, brick, stucco, and wood siding.',
         'Unlike high-pressure blasting, soft washing treats the root cause of staining - killing organic growth so results last longer.',
@@ -23,24 +23,24 @@ export default function Page() {
         {
           title: 'Get a fast, free quote',
           body: 'Fill out our quick form or call us directly. We respond the same day with pricing and availability - no waiting, no runaround.',
-          image: '/step-images/get-quote.png',
+          image: '/step-images/house-wash-before.webp',
         },
         {
           title: 'We soft-wash your home safely',
           body: 'Our crew arrives on time, walks the property, and applies the right mix of low-pressure water and cleaning solution for your siding type. No damage, no guessing.',
-          image: '/step-images/house-wash.png',
+          image: '/step-images/house-wash.webp',
         },
         {
           title: 'Your home looks sharp again',
           body: 'Pollen, algae, and grime are gone. The curb appeal improvement is immediate - most homeowners say it looks like a completely different house.',
-          image: '/step-images/clean-result.png',
+          image: '/step-images/clean-result.webp',
         },
       ]}
       gallery={[
-        { src: '/step-images/house-wash.png', alt: 'House washing - removing pollen and algae from siding' },
-        { src: '/step-images/get-quote.png', alt: 'Clean home exterior after soft wash treatment' },
-        { src: '/step-images/clean-result.png', alt: 'Before and after house washing in Raleigh NC' },
-        { src: '/step-images/clean-result.png', alt: 'Professional exterior cleaning results - Triangle NC' },
+        { src: '/gallery-images/real-house-wash.webp', alt: 'House washing - removing pollen and algae from siding in Raleigh NC' },
+        { src: '/gallery-images/house-wash-v2.webp', alt: 'Soft wash results on a clean home exterior - Triangle NC' },
+        { src: '/gallery-images/house-wash-v3.webp', alt: 'Before and after house washing in Cary NC' },
+        { src: '/step-images/house-wash.webp', alt: 'Professional exterior soft washing results - Wake County NC' },
       ]}
       faqs={[
         {

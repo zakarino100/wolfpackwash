@@ -21,7 +21,7 @@ export function Header() {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/logos/wolfpack_wash_shield_transparent.png"
+            src="/logos/wpw-emblem.png"
             alt="Wolf Pack Wash logo"
             width={64}
             height={64}
@@ -33,7 +33,7 @@ export function Header() {
               Wolf Pack Wash
             </span>
             <span className="block text-[9px] uppercase tracking-[0.28em] text-[var(--accent)] sm:text-[10px]">
-              Exterior Cleaning
+              Home Services
             </span>
           </span>
         </Link>

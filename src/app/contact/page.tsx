@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.contact.title}
       description={pageContent.contact.description}
       sourcePage="/contact"
-      image="/hero-images/contact.png"
+      image="/hero-images/contact.webp"
       bullets={[
         'Fill out the quick form below and we\'ll get back to you the same day with pricing and availability - no waiting, no runaround.',
         'Prefer to talk it through? Call us directly and we can scope the job, answer questions, and lock in a date on the spot.',
@@ -22,17 +22,17 @@ export default function Page() {
         {
           title: 'Tell us what you need',
           body: 'Fill out the quick form with your service, address, and any details about the job. Takes less than two minutes.',
-          image: '/step-images/choose-service.png',
+          image: '/step-images/choose-service.webp',
         },
         {
           title: 'We follow up fast',
           body: 'Most requests get a same-day response with clear pricing and available scheduling - no waiting, no callbacks that go nowhere.',
-          image: '/step-images/get-quote.png',
+          image: '/step-images/get-quote.webp',
         },
         {
           title: 'Lock in the date',
           body: 'Approve the quote, pick a date, and we handle the rest. Show up day-of to a crew that\'s on time and ready to work.',
-          image: '/step-images/crew-arrives.png',
+          image: '/step-images/crew-arrives.webp',
         },
       ]}
     />

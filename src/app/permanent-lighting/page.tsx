@@ -12,7 +12,7 @@ export default function Page() {
       title={pageContent.permanentLighting.title}
       description={pageContent.permanentLighting.description}
       sourcePage="/permanent-lighting"
-      image="/hero-images/permanent-lighting.png"
+      image="/hero-images/permanent-lighting.webp"
       bullets={[
         'Permanent RGB lighting is installed once and stays on your home year-round - no setup, no takedown, no seasonal hassle.',
         'Change colors and schedules directly from your phone: white for everyday, red and green for Christmas, blue and red for the Fourth of July, or any color for game days.',
@@ -21,26 +21,26 @@ export default function Page() {
       ]}
       steps={[
         {
-          title: 'Get a design consultation and quote',
-          body: 'We walk through your home\'s roofline, features, and goals. You\'ll get a clear picture of what the install looks like and what it costs - no surprises.',
-          image: '/step-images/perm-lighting.png',
+          title: 'Plan the roofline and the look you actually want',
+          body: 'We walk the front elevation, note the roofline, peaks, and accent areas, and map out a clean permanent-lighting layout that looks built into the house instead of clipped on as an afterthought.',
+          image: '/step-images/perm-lighting.webp',
         },
         {
-          title: 'We install your permanent lighting system',
-          body: 'Our crew installs commercial-grade RGB fixtures along your roofline and any other features you want illuminated. Clean, concealed wiring and a weatherproof installation built to last.',
-          image: '/step-images/holiday-lights.png',
+          title: 'We install the system cleanly and discreetly',
+          body: 'Our crew mounts commercial-grade RGB fixtures with concealed wiring and weatherproof components so the home looks sharp in the daytime and even better once the lights come on at night.',
+          image: '/step-images/holiday-lights.webp',
         },
         {
-          title: 'Control everything from your phone, year-round',
-          body: 'Set schedules, change colors, and adjust brightness right from the app. Your home looks great every night - for holidays, events, and everyday.',
-          image: '/step-images/get-quote.png',
+          title: 'Run every color and schedule from your phone',
+          body: 'After install, you can swap scenes, set timers, and change colors for holidays, events, game days, or everyday curb appeal without climbing a ladder ever again.',
+          image: '/gallery-images/permanent-lighting.webp',
         },
       ]}
       gallery={[
-        { src: '/step-images/perm-lighting.png', alt: 'Permanent RGB lighting installed on home exterior - Raleigh NC' },
-        { src: '/step-images/holiday-lights.png', alt: 'Year-round exterior lighting - Triangle area home' },
-        { src: '/step-images/holiday-lights.png', alt: 'App-controlled permanent lighting - Cary NC' },
-        { src: '/step-images/get-quote.png', alt: 'Permanent lighting installation results - Wake County' },
+        { src: '/step-images/perm-lighting.webp', alt: 'Permanent RGB lighting installed on home exterior - Raleigh NC' },
+        { src: '/step-images/holiday-lights.webp', alt: 'Year-round exterior lighting - Triangle area home' },
+        { src: '/gallery-images/permanent-lighting.webp', alt: 'Permanent lighting glowing along a home roofline at dusk in Cary NC' },
+        { src: '/hero-images/permanent-lighting.webp', alt: 'Permanent exterior lighting installation results on a Wake County home' },
       ]}
       faqs={[
         {
