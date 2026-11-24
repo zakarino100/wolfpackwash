@@ -29,27 +29,34 @@ jobs:
 
       # No engines field and no .nvmrc. .replit selects the nodejs-20 module,
       # and Next.js 16.2.3 accepts Node 20.
+      # No packageManager field. pnpm-lock.yaml is lockfileVersion 9.0, and the
+      # Railway fix on this repo names pnpm v9. 9.15.9 is the last v9 release.
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.9
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: npm
+          cache: pnpm
 
       - name: Install
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
-      # npx tsc --noEmit passes on main. npm run lint does not (existing errors
-      # in files this workflow does not change), so lint is not a gate.
+      # pnpm exec tsc --noEmit passes on main. pnpm run lint does not (existing
+      # errors in files this workflow does not change), so lint is not a gate.
       - name: Typecheck
-        run: npx tsc --noEmit
+        run: pnpm exec tsc --noEmit
 
       - name: Build
-        run: npm run build
+        run: pnpm run build
 
       - name: Deploy to Railway
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        run: npx -y @railway/cli@5.75.0 up --ci --service web --environment production --project fb119744-3668-4244-aeb8-d41a4ca192b1 --message "main ${GITHUB_SHA}"
+        run: pnpm dlx @railway/cli@5.75.0 up --ci --service web --environment production --project fb119744-3668-4244-aeb8-d41a4ca192b1 --message "main ${GITHUB_SHA}"
 
   smoke:
     name: Smoke test
@@ -62,6 +69,7 @@ jobs:
         uses: actions/checkout@v4
 
       # railway up --ci returns when the build finishes. Retry so the new
-      # container can pass /api/health and start serving.
+      # container can pass /api/health and start serving. Python only: this
+      # job does not install Node, npm, or pnpm.
       - name: Check production URLs
         run: python3 scripts/smoke-production.py

@@ -3,8 +3,8 @@
 A push or merge to `main` runs [`.github/workflows/deploy-production.yml`](.github/workflows/deploy-production.yml). The same workflow can be started by hand with **workflow_dispatch**, and only when that run’s ref is `main`. This pull request does not deploy anything.
 
 1. GitHub Actions checks out the commit in the `production` environment.
-2. It installs with `npm ci` on Node 20 (the `nodejs-20` module in `.replit`; the repo has no `engines` field and no `.nvmrc`), runs `npx tsc --noEmit`, then `npm run build`.
-3. It deploys with Railway CLI **5.75.0**: `railway up --ci --service web --environment production --project fb119744-3668-4244-aeb8-d41a4ca192b1 --message "main $GITHUB_SHA"`. The project id is passed with `--project`, which that CLI version supports. Auth is `RAILWAY_TOKEN` from the `production` environment.
+2. It installs with pnpm **9.15.9** (`pnpm install --frozen-lockfile`) on Node 20 (the `nodejs-20` module in `.replit`; the repo has no `engines` field and no `.nvmrc`). There is no `packageManager` field. `pnpm-lock.yaml` is lockfileVersion 9.0, which is pnpm 9, and 9.15.9 is the last v9 release. It then runs `pnpm exec tsc --noEmit` and `pnpm run build`.
+3. It deploys with Railway CLI **5.75.0** via `pnpm dlx @railway/cli@5.75.0 up --ci --service web --environment production --project fb119744-3668-4244-aeb8-d41a4ca192b1 --message "main $GITHUB_SHA"`. The project id is passed with `--project`, which that CLI version supports. Auth is `RAILWAY_TOKEN` from the `production` environment. This does not depend on an npm install.
 4. After `railway up --ci` exits, the smoke job checks `https://www.wolfpackwashnc.com`.
 
 `railway up --ci` streams the build log and exits when the **build** finishes. It does not wait until the new container is serving. The smoke job waits 20 seconds, then retries every 10 seconds for up to about four minutes. These URLs must return HTTP 200:
@@ -17,9 +17,9 @@ A push or merge to `main` runs [`.github/workflows/deploy-production.yml`](.gith
 
 The newest post is read from `/feed.xml` when that feed returns 200 (first `<item>` link). The feed is not on `main` today. It is added as `/feed.xml` in unmerged [PR #3](https://github.com/zakarino100/wolfpackwash/pull/3), and a **404** is allowed until then. Any other non-200 fails the job. Once `/`, `/blog`, `/sitemap.xml`, `/api/health`, and a blog post are all 200, three straight 404s on `/feed.xml` end the wait early. If the feed is missing, the post URL comes from `/sitemap.xml` when that file lists a `/blog/<slug>` URL, and otherwise from the first `/blog/<slug>` link on `/blog`.
 
-`npm run lint` is not a gate. It fails on `main` in existing files this workflow does not change (`src/app/confirm/page.tsx`, `src/app/reviews/page.tsx`, `src/components/funnel/funnel-context.tsx`, `src/components/sections/content-sections.tsx`, `src/components/sections/service-gallery.tsx`, `src/components/sections/service-grid.tsx`, `src/components/ui/page-builder.tsx`, `src/components/ui/page-template.tsx`). `npx tsc --noEmit` passes, so typecheck stays in the workflow.
+`pnpm run lint` is not a gate. It fails on `main` in existing files this workflow does not change (`src/app/confirm/page.tsx`, `src/app/reviews/page.tsx`, `src/components/funnel/funnel-context.tsx`, `src/components/sections/content-sections.tsx`, `src/components/sections/service-gallery.tsx`, `src/components/sections/service-grid.tsx`, `src/components/ui/page-builder.tsx`, `src/components/ui/page-template.tsx`). `pnpm exec tsc --noEmit` passes, so typecheck stays in the workflow.
 
-`npm run build` in Actions is the CI gate. `railway up` still uploads the repo, and Railway builds that upload with the service’s existing Railpack settings. `.railwayignore` is unchanged.
+`pnpm run build` in Actions is the CI gate. `railway up` still uploads the repo, and Railway builds that upload with the service’s existing Railpack settings, which use this pnpm lockfile. `.railwayignore` is unchanged. The smoke job runs `python3 scripts/smoke-production.py` and does not install Node, npm, or pnpm.
 
 ## One-time setup
 
@@ -32,8 +32,7 @@ Do these steps once. This pull request does not create the token, the GitHub env
 2. On GitHub, open **Settings → Environments** for this repo and create an environment named `production`.
 3. Add a secret named `RAILWAY_TOKEN` **on that environment**. The deploy job sets `environment: production`, so a repository secret with the same name is not what the job reads.
 4. Optional: add [required reviewers](https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments#required-reviewers) on the `production` environment if someone should approve each deploy before the job starts.
-5. On the Railway **web** service, turn off GitHub autodeploy so a push to `main` is not deployed twice (once by Railway’s GitHub connection, and once by this workflow). In the service settings, click **Disable** under automatic deployments. Leave the repo connection in place if you still want it for manual deploys. This file only documents that click. Do not enable **Wait for CI** as a substitute: that still deploys from Railway after Actions succeeds, which stacks on top of `railway up`.
-   - [Disable automatic deployments](https://docs.railway.com/deployments/github-autodeploys#disable-automatic-deployments)
+5. The **web** service is deployed by the CLI (`railway up`) and is not linked to GitHub, so there is no Railway GitHub auto-deploy to turn off. That check is a no-op today. If the service is ever linked to GitHub, confirm automatic deployments are off so a push to `main` is not deployed twice. [Disable automatic deployments](https://docs.railway.com/deployments/github-autodeploys#disable-automatic-deployments)
 
 ## CDN
 
