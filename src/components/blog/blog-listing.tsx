@@ -90,7 +90,7 @@ export function BlogListing({
             {featured ? (
               <article className="mt-8 overflow-hidden rounded-[1.75rem] border border-[var(--hairline)] bg-[var(--card)] themed-card">
                 <Link href={`/blog/${featured.slug}`} className="blog-card grid lg:grid-cols-[1.15fr_0.85fr]">
-                  <CoverImage src={featured.cover} alt={featured.coverAlt} sizes="(max-width: 767px) 280px, (max-width: 1279px) 40vw, 36rem" preload frame="bleed" />
+                  <CoverImage src={featured.cover} alt={featured.coverAlt} sizes="(max-width: 767px) 280px, (max-width: 1279px) 40vw, 36rem" frame="bleed" />
                   <div className="flex flex-col justify-center p-6 sm:p-8">
                     <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#C81920]">Latest · {featured.category}</p>
                     <h2 className="mt-3 text-3xl font-semibold leading-tight text-[var(--ink-strong)]">{featured.title}</h2>

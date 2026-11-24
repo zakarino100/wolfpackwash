@@ -172,6 +172,103 @@ export function buildServiceJsonLd({
   };
 }
 
+const cityJsonLdBlockedKeys = new Set([
+  "aggregateRating",
+  "currenciesAccepted",
+  "hasOfferCatalog",
+  "highPrice",
+  "lowPrice",
+  "offerCount",
+  "offers",
+  "paymentAccepted",
+  "price",
+  "priceRange",
+  "priceSpecification",
+  "ratingCount",
+  "ratingValue",
+  "review",
+  "reviews",
+  "reviewCount",
+]);
+
+function assertCityJsonLdHasNoPriceOrRating(value: unknown): void {
+  if (Array.isArray(value)) {
+    for (const item of value) assertCityJsonLdHasNoPriceOrRating(item);
+    return;
+  }
+  if (!value || typeof value !== "object") return;
+  for (const [key, child] of Object.entries(value)) {
+    if (cityJsonLdBlockedKeys.has(key)) {
+      throw new Error(`City JSON-LD must not include "${key}"`);
+    }
+    assertCityJsonLdHasNoPriceOrRating(child);
+  }
+}
+
+export function buildCityJsonLd({
+  name,
+  description,
+  path,
+  cityName,
+  serviceType,
+}: {
+  name: string;
+  description: string;
+  path: string;
+  cityName: string;
+  serviceType: string;
+}) {
+  const url = new URL(path, siteConfig.domain).toString();
+  const businessId = `${url}#business`;
+  const data = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+        "@id": businessId,
+        name: siteConfig.name,
+        url: siteConfig.domain,
+        telephone: siteConfig.phoneDisplay,
+        image: `${siteConfig.domain}/logos/wpw-og.png`,
+        logo: `${siteConfig.domain}/logos/wpw-emblem.png`,
+        description,
+        areaServed: {
+          "@type": "City",
+          name: cityName,
+          containedInPlace: {
+            "@type": "State",
+            name: "North Carolina",
+          },
+        },
+        sameAs: [
+          "https://www.facebook.com/wolfpackwashnc",
+          "https://www.instagram.com/wolfpackwashnc",
+        ],
+      },
+      {
+        "@type": "Service",
+        name,
+        serviceType,
+        description,
+        url,
+        areaServed: {
+          "@type": "City",
+          name: `${cityName}, NC`,
+        },
+        provider: {
+          "@type": "LocalBusiness",
+          "@id": businessId,
+          name: siteConfig.name,
+          url: siteConfig.domain,
+          telephone: siteConfig.phoneDisplay,
+        },
+      },
+    ],
+  };
+  assertCityJsonLdHasNoPriceOrRating(data);
+  return data;
+}
+
 export function buildFaqJsonLd(faqs: { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",

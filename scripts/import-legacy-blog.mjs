@@ -8,12 +8,7 @@ import ts from "typescript";
 const args = process.argv.slice(2);
 const updateBody = args.includes("--update-body");
 const dryRun = args.includes("--dry-run");
-const sourcePath = args.find((arg) => !arg.startsWith("--"));
-
-if (!sourcePath) {
-  console.error("Usage: node scripts/import-legacy-blog.mjs <path-to-blog.ts> [--update-body] [--dry-run]");
-  process.exit(1);
-}
+const sourcePath = args.find((arg) => !arg.startsWith("--")) ?? "src/lib/site/blog.ts";
 
 const covers = {
   "House Washing": {

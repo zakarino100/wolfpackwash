@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { blogDateToUtc } from "@/lib/blog/dates";
 import { POSTS_PER_PAGE, blogPageHref, categoryPageHref, tagPageHref } from "@/lib/blog/paths";
 import { getPublishedPosts, listCategories, listTags } from "@/lib/blog/posts";
+import { getPublishedCities } from "@/lib/site/cities";
 import { siteConfig } from "@/lib/site/config";
 
 type RouteConfig = {
@@ -15,6 +16,11 @@ const routes: RouteConfig[] = [
   { path: "/contact", priority: 0.95, changeFrequency: "monthly" },
   { path: "/services", priority: 0.95, changeFrequency: "monthly" },
   { path: "/house-washing", priority: 0.9, changeFrequency: "monthly" },
+  ...getPublishedCities().map((city) => ({
+    path: city.path,
+    priority: 0.9,
+    changeFrequency: "monthly" as const,
+  })),
   { path: "/soft-washing", priority: 0.9, changeFrequency: "monthly" },
   { path: "/window-cleaning", priority: 0.9, changeFrequency: "monthly" },
   { path: "/gutter-cleaning", priority: 0.9, changeFrequency: "monthly" },

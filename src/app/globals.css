@@ -84,6 +84,20 @@ a {
   text-decoration: none;
 }
 
+/* Blog bodies sit on a fixed dark article. The site-wide anchor reset is
+   unlayered, so it beats Tailwind utilities. This rule is more specific. */
+article a {
+  color: #c81920;
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(200 25 32 / 0.55);
+  text-underline-offset: 4px;
+}
+
+article a:hover {
+  color: #ffffff;
+}
+
 @keyframes wpw-marquee {
   from {
     transform: translateX(0);

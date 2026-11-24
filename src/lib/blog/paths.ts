@@ -1,4 +1,4 @@
-export const POSTS_PER_PAGE = 9;
+export const POSTS_PER_PAGE = 3;
 
 export function blogPageHref(page: number): string {
   return page <= 1 ? "/blog" : `/blog/page/${page}`;

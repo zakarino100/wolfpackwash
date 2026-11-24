@@ -43,7 +43,7 @@ export function CoverImage({
         sizes={sizes}
         quality={quality}
         preload={preload}
-        fetchPriority={fetchPriority}
+        fetchPriority={preload ? fetchPriority : "auto"}
         decoding={fetchPriority === "high" ? "sync" : "async"}
         className="object-cover"
       />
