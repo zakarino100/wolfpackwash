@@ -1,0 +1,67 @@
+name: Deploy production
+
+# Push to main, or a manual run of this workflow on main.
+# The jobs refuse every other ref so a workflow_dispatch from a feature branch
+# cannot deploy that branch.
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build and deploy
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # No engines field and no .nvmrc. .replit selects the nodejs-20 module,
+      # and Next.js 16.2.3 accepts Node 20.
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      # npx tsc --noEmit passes on main. npm run lint does not (existing errors
+      # in files this workflow does not change), so lint is not a gate.
+      - name: Typecheck
+        run: npx tsc --noEmit
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Railway
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        run: npx -y @railway/cli@5.75.0 up --ci --service web --environment production --project fb119744-3668-4244-aeb8-d41a4ca192b1 --message "main ${GITHUB_SHA}"
+
+  smoke:
+    name: Smoke test
+    needs: deploy
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # railway up --ci returns when the build finishes. Retry so the new
+      # container can pass /api/health and start serving.
+      - name: Check production URLs
+        run: python3 scripts/smoke-production.py
