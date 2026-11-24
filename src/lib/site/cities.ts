@@ -136,7 +136,7 @@ const cityPages: Partial<Record<CitySlug, CityPageContent>> = {
       {
         heading: "Driveways, concrete, decks, and fences",
         paragraphs: [
-          "Driveways, sidewalks, patios, decks, and fences are pressure-washing jobs. We lift oil stains, tire marks, algae, and weathered buildup. Book them with a house wash when you want the whole exterior handled in one visit. Bundle services and save.",
+          "Driveways, sidewalks, patios, decks, and fences are pressure-washing jobs. We lift oil stains, tire marks, algae, and weathered buildup. Book them with a house wash when you want the whole exterior handled in one visit.",
         ],
         links: [
           { href: "/driveway-pressure-washing", label: "Driveway pressure washing" },
@@ -151,7 +151,7 @@ const cityPages: Partial<Record<CitySlug, CityPageContent>> = {
         heading: "Holiday lighting, permanent lighting, and the Exterior Care Plan",
         paragraphs: [
           "Holiday light installation is quoted on its own. Tell us what you want lit and we'll price the install. Permanent RGB lighting is a separate project if you want color on the house year-round.",
-          "The Exterior Care Plan is how you stop chasing appointments every spring. Starter, Preferred, and Signature. Members get member-only pricing and priority scheduling. We walk through the exact scope when you sign up.",
+          "The Exterior Care Plan is how you stop chasing appointments every spring. Starter, Preferred, and Signature. Members get priority scheduling. We walk through the exact scope when you sign up.",
         ],
         links: [
           { href: "/holiday-lights-installation", label: "Holiday light installation" },
@@ -249,11 +249,11 @@ const cityPages: Partial<Record<CitySlug, CityPageContent>> = {
       },
       {
         q: "Can I bundle a house wash with other exterior work?",
-        a: "Yes. Bundle services and save. House washing with window cleaning and gutter cleaning is a common combination. A driveway or a roof can be quoted in the same visit. We price the services you actually want.",
+        a: "Yes. You can bundle services in one visit. House washing with windows and gutters is a common combination.",
       },
       {
         q: "Can I stay on a schedule instead of booking every spring?",
-        a: "Yes. The Exterior Care Plan has Starter, Preferred, and Signature tiers. Members get member-only pricing and priority scheduling. We walk through the exact scope when you sign up.",
+        a: "Yes. The Exterior Care Plan has Starter, Preferred, and Signature tiers. Members get priority scheduling. We walk through the exact scope when you sign up.",
       },
       {
         q: "What if the wash isn't right?",
@@ -283,12 +283,58 @@ const cityPages: Partial<Record<CitySlug, CityPageContent>> = {
 
 export type PublishedCity = CityCatalogEntry & CityPageContent & { path: string };
 
+/**
+ * Top-level App Router segments that already have their own page or route
+ * handler. A city slug must never claim one of these. Static folders still
+ * win over `[city]` in Next.js; this set is the in-handler guard.
+ */
+export const reservedCitySlugs = [
+  "about-us",
+  "admin",
+  "api",
+  "blog",
+  "card",
+  "commercial",
+  "concrete-pressure-washing",
+  "confirm",
+  "contact",
+  "deck-pressure-washing",
+  "driveway-pressure-washing",
+  "exterior-painting",
+  "feedback",
+  "fence-deck-cleaning",
+  "fence-pressure-washing",
+  "gallery",
+  "gutter-cleaning",
+  "holiday-lights-installation",
+  "house-washing",
+  "maintenance-plan",
+  "permanent-lighting",
+  "podcast",
+  "privacy-policy",
+  "residential",
+  "reviews",
+  "roof-washing",
+  "services",
+  "sidewalk-pressure-washing",
+  "soft-washing",
+  "terms-of-service",
+  "window-cleaning",
+  "wolfpack-training-academy",
+] as const;
+
+const reservedCitySlugSet = new Set<string>(reservedCitySlugs);
+
+export function isReservedCitySlug(slug: string): boolean {
+  return reservedCitySlugSet.has(slug);
+}
+
 function isCitySlug(slug: string): slug is CitySlug {
   return cityCatalog.some((entry) => entry.slug === slug);
 }
 
 export function getPublishedCity(slug: string): PublishedCity | undefined {
-  if (!isCitySlug(slug)) return undefined;
+  if (isReservedCitySlug(slug) || !isCitySlug(slug)) return undefined;
   const area = cityCatalog.find((entry) => entry.slug === slug);
   const content = cityPages[slug];
   if (!area || !content) return undefined;
