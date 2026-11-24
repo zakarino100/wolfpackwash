@@ -1,12 +1,80 @@
-import { notFound } from 'next/navigation';
-import { getBlogPost, blogPosts } from '@/lib/site/blog';
+import type { ReactNode } from "react";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getBlogPost, blogPosts, blogPostKeywords } from "@/lib/site/blog";
+import { buildMetadata } from "@/lib/site/seo";
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+const linkClass =
+  "font-semibold text-[#C81920] underline decoration-[#C81920]/50 underline-offset-4 hover:text-white";
+
+const inlineLinkPattern = /\[([^\]]+)\]\(([^)\s]+)\)/g;
+
+function renderInlineLinks(text: string): ReactNode[] {
+  const nodes: ReactNode[] = [];
+  const pattern = new RegExp(inlineLinkPattern.source, inlineLinkPattern.flags);
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  let linkIndex = 0;
+
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      nodes.push(text.slice(lastIndex, match.index));
+    }
+
+    const label = match[1];
+    const href = match[2];
+    const key = `${href}-${linkIndex}`;
+    linkIndex += 1;
+
+    if (href.startsWith("/") && !href.startsWith("//")) {
+      nodes.push(
+        <Link key={key} href={href} className={linkClass}>
+          {label}
+        </Link>,
+      );
+    } else if (/^tel:\+\d+$/.test(href)) {
+      nodes.push(
+        <a key={key} href={href} className={linkClass}>
+          {label}
+        </a>,
+      );
+    } else {
+      nodes.push(match[0]);
+    }
+
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    nodes.push(text.slice(lastIndex));
+  }
+
+  return nodes;
+}
+
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
+}
+
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getBlogPost(slug);
+
+  if (!post) {
+    return {};
+  }
+
+  return buildMetadata({
+    title: post.title,
+    description: post.description,
+    path: `/blog/${post.slug}`,
+    keywords: blogPostKeywords[post.slug] ?? [],
+  });
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
@@ -36,7 +104,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         <div className="mt-10 space-y-6 text-base leading-8 text-white/82">
           {post.body.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
+            <p key={paragraph}>{renderInlineLinks(paragraph)}</p>
           ))}
         </div>
       </div>
