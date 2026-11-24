@@ -37,7 +37,7 @@ export function BlogImage({ src, alt }: { src?: string; alt?: string }) {
 function CoverFrame({ src, alt }: { src: string; alt: string }) {
   return (
     <span className="relative block aspect-[4/3] overflow-hidden rounded-[1.35rem] bg-[#0d1b27]">
-      <Image src={src} alt={alt} fill sizes="(min-width: 1024px) 46rem, 100vw" className="object-cover" />
+      <Image src={src} alt={alt} fill sizes="(max-width: 767px) 320px, 42rem" quality={60} className="object-cover" />
     </span>
   );
 }

@@ -52,8 +52,9 @@ export function PostArticle({ post, readTime, canonical, toc, related, showPlan,
               <CoverImage
                 src={post.cover}
                 alt={post.coverAlt}
-                sizes="(min-width: 1024px) 52rem, 100vw"
-                priority
+                sizes="(max-width: 767px) 220px, (max-width: 1279px) 60vw, 40rem"
+                preload
+                fetchPriority="high"
                 frame="bleed"
               />
               <Link
@@ -156,7 +157,7 @@ export function PostArticle({ post, readTime, canonical, toc, related, showPlan,
               {related.map((item) => (
                 <article key={item.slug} className="overflow-hidden rounded-[1.75rem] border border-[var(--hairline)] bg-[var(--card)] themed-card">
                   <Link href={`/blog/${item.slug}`} className="blog-card flex h-full flex-col">
-                    <CoverImage src={item.cover} alt={item.coverAlt} sizes="(min-width: 768px) 22rem, 100vw" frame="bleed" />
+                    <CoverImage src={item.cover} alt={item.coverAlt} sizes="(max-width: 767px) 280px, 22rem" frame="bleed" />
                     <div className="flex flex-1 flex-col p-5">
                       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C81920]">{item.category}</p>
                       <h3 className="mt-3 text-lg font-semibold leading-snug text-[var(--ink-strong)]">{item.title}</h3>

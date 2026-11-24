@@ -4,11 +4,23 @@ type CoverImageProps = {
   src: string;
   alt: string;
   sizes: string;
-  priority?: boolean;
+  /** Put a preload link in the head. */
+  preload?: boolean;
+  /** Use "high" only for the post cover, which is the LCP element. */
+  fetchPriority?: "high" | "low" | "auto";
+  quality?: number;
   frame?: "rounded" | "bleed";
 };
 
-export function CoverImage({ src, alt, sizes, priority = false, frame = "rounded" }: CoverImageProps) {
+export function CoverImage({
+  src,
+  alt,
+  sizes,
+  preload = false,
+  fetchPriority = "auto",
+  quality = 60,
+  frame = "rounded",
+}: CoverImageProps) {
   const radius = frame === "rounded" ? "rounded-[1.35rem]" : "";
   if (src === "brand") {
     return (
@@ -24,7 +36,17 @@ export function CoverImage({ src, alt, sizes, priority = false, frame = "rounded
 
   return (
     <div className={`relative aspect-[4/3] overflow-hidden bg-[#0d1b27] ${radius}`}>
-      <Image src={src} alt={alt} fill sizes={sizes} priority={priority} className="object-cover" />
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes={sizes}
+        quality={quality}
+        preload={preload}
+        fetchPriority={fetchPriority}
+        decoding={fetchPriority === "high" ? "sync" : "async"}
+        className="object-cover"
+      />
     </div>
   );
 }
