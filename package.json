@@ -6,14 +6,24 @@
     "dev": "next dev -p 5000 -H 0.0.0.0",
     "build": "next build",
     "start": "next start -p 5000 -H 0.0.0.0",
-    "lint": "eslint"
+    "lint": "eslint",
+    "blog:import": "node scripts/import-legacy-blog.mjs",
+    "blog:samples": "node scripts/sample-posts.mjs"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^3.1.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
+    "github-slugger": "^2.0.0",
+    "gray-matter": "^4.0.3",
     "next": "16.2.3",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1",
+    "server-only": "^0.0.1",
+    "unist-util-visit": "^5.2.0",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

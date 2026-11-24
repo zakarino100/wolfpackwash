@@ -13,11 +13,15 @@ import { FunnelProvider } from "@/components/funnel/funnel-context";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
+  preload: false,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -48,9 +52,9 @@ export const metadata: Metadata = {
     "permanent lighting Raleigh NC",
   ],
   icons: {
-    icon: [{ url: "/logos/wpw-emblem.png", type: "image/png" }],
-    shortcut: ["/logos/wpw-emblem.png"],
-    apple: [{ url: "/logos/wpw-emblem.png" }],
+    icon: [{ url: "/logos/wpw-touch.png", type: "image/png" }],
+    shortcut: ["/logos/wpw-touch.png"],
+    apple: [{ url: "/logos/wpw-touch.png" }],
   },
   openGraph: {
     title: "Wolf Pack Wash | The Triangle's Best Softwash & Home Services",

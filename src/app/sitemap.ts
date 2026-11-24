@@ -1,7 +1,9 @@
 import type { MetadataRoute } from "next";
-import { siteConfig } from "@/lib/site/config";
-import { blogPosts } from "@/lib/site/blog";
+import { blogDateToUtc } from "@/lib/blog/dates";
+import { POSTS_PER_PAGE, blogPageHref, categoryPageHref, tagPageHref } from "@/lib/blog/paths";
+import { getPublishedPosts, listCategories, listTags } from "@/lib/blog/posts";
 import { getPublishedCities } from "@/lib/site/cities";
+import { siteConfig } from "@/lib/site/config";
 
 type RouteConfig = {
   path: string;
@@ -44,6 +46,21 @@ const routes: RouteConfig[] = [
   { path: "/terms-of-service", priority: 0.30, changeFrequency: "yearly" },
 ];
 
+function pagedEntries(
+  hrefFor: (page: number) => string,
+  count: number,
+  lastModified: Date,
+  priority: number,
+): MetadataRoute.Sitemap {
+  const totalPages = Math.max(1, Math.ceil(count / POSTS_PER_PAGE));
+  return Array.from({ length: totalPages }, (_, index) => ({
+    url: `${siteConfig.domain}${hrefFor(index + 1)}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: index === 0 ? priority : Math.max(0.3, priority - 0.15),
+  }));
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const pages = routes.map(({ path, priority, changeFrequency }) => ({
@@ -52,11 +69,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency,
     priority,
   }));
-  const posts = blogPosts.map((post) => ({
+  const posts = getPublishedPosts();
+  const newest = posts[0] ? blogDateToUtc(posts[0].updated) : now;
+  const postEntries: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${siteConfig.domain}/blog/${post.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
+    lastModified: blogDateToUtc(post.updated),
+    changeFrequency: "monthly",
     priority: 0.72,
   }));
-  return [...pages, ...posts];
+  const indexPages = pagedEntries(blogPageHref, posts.length, newest, 0.5).filter((entry) => !entry.url.endsWith("/blog"));
+  const categories = listCategories(posts).flatMap((category) =>
+    pagedEntries((page) => categoryPageHref(category.slug, page), category.count, newest, 0.55),
+  );
+  const tags = listTags(posts).flatMap((tag) => pagedEntries((page) => tagPageHref(tag.slug, page), tag.count, newest, 0.45));
+  return [...pages, ...postEntries, ...indexPages, ...categories, ...tags];
 }

@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site/config";
 
+type ArticleSeo = {
+  publishedTime: string;
+  modifiedTime: string;
+  authors?: string[];
+  tags?: string[];
+};
+
 type SEOInput = {
   title: string;
   description: string;
   path: string;
   keywords?: string[];
   ogImage?: string;
+  ogImageAlt?: string;
+  article?: ArticleSeo;
 };
 
 const defaultKeywords = [
@@ -25,10 +34,22 @@ const defaultKeywords = [
   "exterior cleaning Triangle area",
 ];
 
-export function buildMetadata({ title, description, path, keywords = [], ogImage }: SEOInput): Metadata {
+export function buildMetadata({ title, description, path, keywords = [], ogImage, ogImageAlt, article }: SEOInput): Metadata {
   const url = new URL(path, siteConfig.domain).toString();
   const mergedKeywords = [...new Set([...defaultKeywords, ...keywords])];
   const image = ogImage ?? "/logos/wpw-og.png";
+  const imageAlt = ogImageAlt ?? title;
+  const images = ogImage
+    ? [{ url: image, alt: imageAlt }]
+    : [{ url: image, width: 1200, height: 630, alt: imageAlt }];
+  const openGraphBase = {
+    title,
+    description,
+    url,
+    siteName: siteConfig.name,
+    images,
+    locale: "en_US",
+  };
 
   return {
     title,
@@ -37,22 +58,19 @@ export function buildMetadata({ title, description, path, keywords = [], ogImage
     alternates: {
       canonical: url,
     },
-    openGraph: {
-      title,
-      description,
-      url,
-      siteName: siteConfig.name,
-      images: [
-        {
-          url: image,
-          width: 1200,
-          height: 630,
-          alt: title,
+    openGraph: article
+      ? {
+          ...openGraphBase,
+          type: "article",
+          publishedTime: article.publishedTime,
+          modifiedTime: article.modifiedTime,
+          authors: article.authors,
+          tags: article.tags,
+        }
+      : {
+          ...openGraphBase,
+          type: "website",
         },
-      ],
-      locale: "en_US",
-      type: "website",
-    },
     twitter: {
       card: "summary_large_image",
       title,

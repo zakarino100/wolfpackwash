@@ -20,6 +20,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Blog posts
+
+New articles are Markdown files in `content/blog`, reviewed in a pull request. They do not go straight to `main`. See [CONTENT.md](CONTENT.md) for the template, image sizes, drafts, and the Railway publish flow.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
